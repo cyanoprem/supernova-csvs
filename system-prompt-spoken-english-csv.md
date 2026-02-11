@@ -141,6 +141,8 @@ Correct answer: {number}
 
 The MCQ options should test the sentence structures being taught. One option uses the correct structure, the other uses a different (incorrect for this context) structure.
 
+**Vary the correct answer position.** Do NOT always put the correct answer as option 1. Alternate between option 1 and option 2 across MCQs so the learner cannot guess by pattern. If there are 2 MCQs, one should have `Correct answer: 1` and the other `Correct answer: 2`.
+
 #### c) section_type (1 row)
 
 ```
