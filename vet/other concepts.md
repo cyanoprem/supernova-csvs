@@ -1,0 +1,7 @@
+- Describing People and Places
+- Talking about Hobbies and Interests
+- Talk about Strengths and Weaknesses (Strength → Benefit → Weakness → Action)
+- Sharing Personal Information Clearly
+- Talking about Daily Routines
+- Basic Greeting and Meeting Etiquette
+- "Tell me about yourself" — Professional Introduction

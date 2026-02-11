@@ -1,0 +1,74 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Educational Background,,,
+header,title,,Educational Background,,,
+config,voices,,Priya-Priya,,,
+config,activity_type,,lesson,,,
+config,display_activity_type,,Grammar Builder,,,
+config,personas,,spoken-english-adults-level-A0,,,
+config,description,,Learn how to talk about your educational background,TRUE,,
+config,populate,,TRUE,,,
+config,populate_languages,,TRUE,,,
+config,always_show_hint,,TRUE,,,
+config,read_aloud_after_jumble,,TRUE,,,
+config,reattempt_jumble,,TRUE,,,
+config,english_language_toggle,,FALSE,,,
+config,skip_transcription,,TRUE,,,
+config,rich_chat,,TRUE,,,
+config,key_skills,,"speaking,grammar",,,
+config,chat_suggestions,,Yes! Let's Start.,,,
+config,disable_skip,,FALSE,,,
+config,tts_config,,"{""silent_mode"":false}",,,
+config,badge_title,,Learn,,,
+1,chat_lessons,,"message:
+Hey! Today we’re learning how to talk about your educational background
+
+image_url:
+button_text: Cool!
+
+message:
+You will learn how to talk about your school and college education etc
+
+image_url:
+button_text: Got it!
+
+message:
+Let’s practice talking about your educational background
+
+image_url:
+button_text: Let’s start!",,,
+1,mcqs,,"Look at the image and select the correct way to describe where and when you completed your schooling
+
+1.I completed my schooling from [school name] in [year]
+2.I am pursuing my [degree] in [specialization]
+
+Correct answer: 1
+",,,
+1,mcqs,,"Where did you complete your schooling and in which year?
+
+1.I completed my 12th standard with 92%
+2.I completed my schooling from Delhi Public School in 2020
+
+Correct answer: 2",,,
+1,section_type,,learn,,,
+2,jumbles_translate_and_learn,,I completed my&&schooling&&from Modern&&High&&School in&&2021.,,,
+2,jumbles_translate_and_learn,,I completed my&&12th standard with 88%.,,,
+2,jumbles_translate_and_learn,,I&&am pursuing my&&B.Sc in Information&&Technology.,,,
+2,jumbles_translate_and_learn,,I&&am in&&my second&&year in&&the 3rd&&semester.,,,
+2,jumbles_translate_and_learn,,My current CGPA is 8.7&&out&&of&&10.,,,
+2,section_type,,translate,,,
+3,roleplay,,"first_message: That was incredible! Now we're going to practice by answering a few questions in English. Can we start?
+prompt_id: 4d3f5213-fcc4-40f3-879d-051908377a31
+questions: ""1. Where did you complete your schooling and in which year?
+2. What percentage did you score in your 12th standard?
+3. Which year and semester are you currently in?
+4. What degree are you pursuing and in which specialization?
+5. What is your current CGPA?""
+sub_rules: """"
+can_do_statement: ""Educational Background""
+sentence_structure: ""- I completed my schooling from [school name] in [year]
+- I completed my 12th standard with [percentage]%.
+- I am pursuing my [degree] in [specialization]
+- I am in my [number] year in the [semester number] semester
+- My current CGPA is [number] out of 10""
+SYSTEM_TRANSLATION_RULES: """"",,,
+3,section_type,,conversation,,,

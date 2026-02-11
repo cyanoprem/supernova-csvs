@@ -1,0 +1,95 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Place prepositions,,,
+header,title,,Place prepositions,,,
+config,voices,,Priya-Priya,,,
+config,activity_type,,lesson,,,
+config,display_activity_type,,Grammar Builder,,,
+config,personas,,spoken-english-adults-level-A0,,,
+config,description,,Practice when to use prepositions of place,TRUE,,
+config,populate,,TRUE,,,
+config,populate_languages,,TRUE,,,
+config,always_show_hint,,TRUE,,,
+config,read_aloud_after_jumble,,TRUE,,,
+config,reattempt_jumble,,TRUE,,,
+config,english_language_toggle,,FALSE,,,
+config,skip_transcription,,TRUE,,,
+config,rich_chat,,TRUE,,,
+config,key_skills,,"speaking,grammar",,,
+config,chat_suggestions,,Yes! Let's Start.,,,
+config,disable_skip,,FALSE,,,
+config,tts_config,,"{""silent_mode"":false}",,,
+config,badge_title,,Learn,,,
+1,chat_lessons,,"message:
+Let us learn 'prepositions of place'
+These words tell us where something is.
+
+image_url:
+button_text: Next!
+
+message:
+Use 'on' when something is on a surface.
+Example. 'The phone is on the table.'
+
+image_url:
+button_text: Next!
+
+message:
+Use 'in' when something is inside.
+Example. 'The book is in the bag.'
+
+image_url:
+button_text: Next!
+
+message:
+Use 'in' for areas, cities, and countries.
+Example. She lives in India.
+
+image_url:
+button_text: Next!
+
+message:
+Use 'at' for exact places.
+Example. Meet me at the station.
+
+image_url:
+button_text: Next!
+
+message:
+Now let's practice using 'in, on, and at.'
+
+image_url:
+button_text: Start Practice!",,,
+1,mcqs,,"Look at the image below and choose the sentence that uses the preposition correctly.
+1.She is on India
+2.She is in India
+Correct answer: 2",,,
+1,section_type,,learn,,,
+2,jumbles_translate_and_learn,,They will meet at the park,,,
+2,jumbles_translate_and_learn,,We are in Mumbai,,,
+2,jumbles_translate_and_learn,,The plate is in the cupboard,,,
+2,jumbles_translate_and_learn,,They are in Indiranagar,,,
+2,jumbles_translate_and_learn,,My box is on the floor,,,
+2,section_type,,practice,,,
+3,roleplay,,"first_message: Hey! Great job on understanding this concept. Now, let's try to ""translate"" few sentences to English. Are you ready to start?
+prompt_id: 2b8c37a9-692f-42ac-8398-fe80471c6ce6
+questions: ""Questions: (keep these common words in english - learn, houses, computer, songs, trees, pictures, fast, problems, solve, breakfast, children, visit, cars, dinner, movies, noise,classes etc )
+1. She is in Japan.
+2. Phone is in the purse.
+3. We will eat at the restaurant. 
+4. I will cook on the stove. 
+5. She is in Gandhi Nagar.""
+grammar_concept: ""Prepositions of Place 1. • on the [table] 2. • in the [bag] 3. • in [Gandhinagar] • in [Mumbai] • in [India] 4. • at the [restaurant]""
+SYSTEM_TRANSLATION_RULES: """"",,,
+3,section_type,,translate,,,
+4,roleplay,,"first_message: That was great! Now we're going to practice by answering few questions in English. Can we start?
+prompt_id: 9a1703d2-53c1-4e16-92c8-c30dae3fabf9
+questions: ""1. Where do you live?
+2. Where is your water bottle?
+3. Where do you sleep everyday?
+4. Where will you wait for the train?
+5. Where do you usually keep your phone? ""
+sub_rules: """"
+grammar_concept: ""Prepositions of Place 1. • on the [table] 2. • in the [bag] 3. • in [Gandhinagar] • in [Mumbai] • in [India] 4. • at the [restaurant]""
+sentence_structure: """"
+SYSTEM_TRANSLATION_RULES: """"",,,
+4,section_type,,conversation,,,

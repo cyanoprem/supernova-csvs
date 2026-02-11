@@ -1,0 +1,83 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Future Continuous Tense,,,
+header,title,,Future Continuous Tense,,,
+config,voices,,Priya-Priya,,,
+config,activity_type,,lesson,,,
+config,display_activity_type,,Grammar Builder,,,
+config,personas,,spoken-english-adults-level-A0,,,
+config,description,,Learn when to use future continuous tense,TRUE,,
+config,populate,,TRUE,,,
+config,populate_languages,,TRUE,,,
+config,always_show_hint,,TRUE,,,
+config,read_aloud_after_jumble,,TRUE,,,
+config,reattempt_jumble,,TRUE,,,
+config,english_language_toggle,,FALSE,,,
+config,skip_transcription,,TRUE,,,
+config,rich_chat,,TRUE,,,
+config,key_skills,,"speaking,grammar",,,
+config,chat_suggestions,,Yes! Let's Start.,,,
+config,disable_skip,,FALSE,,,
+config,tts_config,,"{""silent_mode"":false}",,,
+config,badge_title,,Learn,,,
+1,chat_lessons,,"message:
+Let us learn to describe about future plans.
+
+image_url:
+button_text: Next!
+
+message:
+We use Future Continuous to decribe future plans.
+Use 'will be + verb-ing.'
+
+image_url:
+button_text: Next!
+
+message:
+Example.
+“I will be working.”
+
+image_url:
+button_text: Next!
+
+message:
+Now let's practice using Future Continuous.
+
+image_url:
+button_text: Start Practice!",,,
+1,mcqs,,"Look at the image below and choose the sentence that is in future continuous tense.
+
+1. He will be playing cricket
+2. He played cricket
+
+Correct answer:  1",,,
+1,section_type,,learn,,,
+2,jumbles_translate_and_learn,,I will be washing clothes.,,,
+2,jumbles_translate_and_learn,,You will be reading books.,,,
+2,jumbles_translate_and_learn,,He will be driving cars.,,,
+2,jumbles_translate_and_learn,,We will be cleaning rooms.,,,
+2,jumbles_translate_and_learn,,They will be playing games.,,,
+2,section_type,,practice,,,
+3,roleplay,,"first_message: Hey! Great job on understanding this concept. Now, let's try to ""translate"" few sentences to English. Are you ready to start?
+prompt_id: 2b8c37a9-692f-42ac-8398-fe80471c6ce6
+questions: ""Questions: (keep these common words in english - dinner, celebrate, meet, drive, walk etc )
+1. I will be cooking dinner
+2. They will be celebrating tomorrow
+3. We will be meeting tomorrow
+4. She will be driving
+5. He will be walking""
+grammar_concept: ""future continuous tense""
+SYSTEM_TRANSLATION_RULES: """"",,,
+3,section_type,,translate,,,
+4,roleplay,,"first_message: That was incredible! Now we're going to practice by answering few questions in English. Can we start?
+prompt_id: 9a1703d2-53c1-4e16-92c8-c30dae3fabf9
+grammar_concept: ""Future Continuous Tense""
+questions: ""1. Who will be cooking dinner tonight?
+2. What time will you be sleeping tonight?
+3. When will you be waking up tomorrow?
+4. What will you be doing tomorrow?
+5. What will you be eating for lunch tomorrow?""
+sub_rules: """"
+sentence_structure: """"
+SYSTEM_TRANSLATION_RULES: """"
+",,,
+4,section_type,,conversation,,,

@@ -1,0 +1,74 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Introduce Yourself,,,
+header,title,,Introduce Yourself,,,
+config,voices,,Priya-Priya,,,
+config,activity_type,,lesson,,,
+config,display_activity_type,,Grammar Builder,,,
+config,personas,,spoken-english-adults-level-A0,,,
+config,description,,Learn how to introduce yourself,TRUE,,
+config,populate,,TRUE,,,
+config,populate_languages,,TRUE,,,
+config,always_show_hint,,TRUE,,,
+config,read_aloud_after_jumble,,TRUE,,,
+config,reattempt_jumble,,TRUE,,,
+config,english_language_toggle,,FALSE,,,
+config,skip_transcription,,TRUE,,,
+config,rich_chat,,TRUE,,,
+config,key_skills,,"speaking,grammar",,,
+config,chat_suggestions,,Yes! Let's Start.,,,
+config,disable_skip,,FALSE,,,
+config,tts_config,,"{""silent_mode"":false}",,,
+config,badge_title,,Learn,,,
+1,chat_lessons,,"message:
+Let us learn how to talk about yourself
+
+image_url:
+button_text: Next!
+
+message:
+You will talk about where you live, who you live with, your hobbies etc.
+
+image_url:
+button_text: Next!
+
+message:
+Let’s practice introducing yourself
+
+image_url:
+button_text: Start Practice!",,,
+1,mcqs,,"Look at the image and select the correct way to say your name and age
+
+1.I'm [name] and I'm [number] years old
+2.I like [verb+ing] and [verb+ing]
+
+Correct answer: 1",,,
+1,mcqs,,"Look at the image and select the correct way to say who do you live with.
+
+1.I'm [name] and I'm [number] years old
+2.I live with my [persons]
+
+Correct answer: 2
+",,,
+1,section_type,,learn,,,
+2,jumbles_translate_and_learn,,I'm Meera and I'm 26 years&&old,,,
+2,jumbles_translate_and_learn,,I&&was&&born&&in Ahmedabad and I&&live&&in Mumbai now,,,
+2,jumbles_translate_and_learn,,I live with my three&&roommates,,,
+2,jumbles_translate_and_learn,,I like playing tennis,,,
+2,jumbles_translate_and_learn,,I&&am eager&&to start&&my&&career in data&&analytics,,,
+2,section_type,,translate,,,
+3,roleplay,,"first_message: That was incredible! Now we're going to practice by answering few questions in English. Can we start?
+prompt_id: 4d3f5213-fcc4-40f3-879d-051908377a31
+questions: ""1. What is your name and age?
+2. Where were you born and where do you live now?
+3. Who do you live with?
+4. What do you like doing in your free time?
+5. What field are you eager to start your career in?""
+sub_rules: """"
+can_do_statement: ""Introducing yourself""
+sentence_structure: ""1. ""I’m [name] and I’m [age] years old.”
+2. “I was born in [place] and I live in [place] now.”
+3. “I live with my [persons].”
+4. “I like [verb+ing] [object].”
+5. “I am eager to start my career in [field].”""
+SYSTEM_TRANSLATION_RULES: """"",,,
+3,section_type,,conversation,,,
