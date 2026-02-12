@@ -41,6 +41,12 @@ Break the concept into exactly **5 sub-concepts**. For each sub-concept, provide
 
 7. **Each sub-concept should cover a distinct aspect** — The 5 sub-concepts should together cover the full scope of the concept without redundancy. Each sub-concept addresses a different facet or use case.
 
+8. **No dashes in sentence structures** — Never use em dashes (—) or en dashes (–) inside sentence structures. They sound AI-generated and unnatural in spoken English. Rewrite using commas, periods, or split into two shorter sentences instead.
+   - BAD: `"Let me share the agenda — timeline, budget, and next steps."`
+   - GOOD: `"Let me share the agenda. Timeline, budget, and next steps."`
+   - BAD: `"To sum up — we have strong numbers and we're ready to grow."`
+   - GOOD: `"To sum up, we have strong numbers and we're ready to grow."`
+
 ## Output Format
 
 Output in exactly this format:

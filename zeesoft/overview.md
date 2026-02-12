@@ -1,4 +1,4 @@
-Subject: Supernova Trial — Communication Modules Overview for Zeesoft Technologies
+Subject: Supernova Trial, Communication Modules Overview for Zeesoft Technologies
 
 Hi Team,
 
