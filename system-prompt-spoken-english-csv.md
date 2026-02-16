@@ -161,27 +161,6 @@ Structure:
 - Every jumble must be a full, meaningful sentence — never a fragment or partial phrase
 
 
-**Chunking rules:**
-
-Use `&&` to optionally break the sentence into logical word groups. Each chunk becomes one draggable piece in the jumble UI. Some jumbles can have NO `&&` at all (each word is one chunk).
-
-- **Maximum 6 chunks. NEVER exceed 6.** Count spaces as separators. `&&` combines the words to one chunk.
-- **Keep meaningful phrases together.** Split at natural phrase boundaries, not in the middle of a phrase.
-  - BAD: `I think&&we should` — splits unnaturally between "I" and "think"
-  - GOOD: `I&&think we should` — "I think" stays together
-  - BAD: `I am&&eager to start my career in&&data analytics` — too many tiny and illogical chunks
-  - GOOD: `I&&am&&eager to&&start my&&career in data&&analytics` — logical phrase groups
-- For simple/short sentences, use NO `&&` at all:
-  - `I will be washing clothes.` → 5 chunks
-  - `I like playing tennis` → 4 chunks
-
-Examples from reference CSVs:
-- `I'm Meera and I'm 26 years&&old` → 6 chunks
-- `I live with my three&&roommates` → 5 chunks
-- `I will be washing clothes.` → 5 chunk (no &&)
-- `You will be reading books.` → 5 chunk (no &&)
-- `They will be playing games.` → 5 chunk (no &&)
-
 After the 5 jumble rows, add a section_type row:
 - **Can Do:** `2,section_type,,translate,,,`
 - **Grammar:** `2,section_type,,practice,,,`
@@ -287,7 +266,7 @@ Then add: `4,section_type,,conversation,,,`
 
 ## CONTENT QUALITY RULES
 
-1. Use Indian cultural context where appropriate (Mumbai, Delhi, Indian festivals, cricket, chai, etc.) since the target audience is Indian
+1. Use Indian cultural context where appropriate (Mumbai, Delhi, Bangalore, Chennai, Indian festivals, cricket, tea, etc.) since the target audience is Indian
 2. Match vocabulary to level: A0 = very basic everyday words, A1 = elementary, A2 = pre-intermediate, A3 = advanced
 3. Progressive difficulty: jumble sentences start simple and get slightly longer
 4. All examples must correctly follow the grammar rules / sentence structures being taught

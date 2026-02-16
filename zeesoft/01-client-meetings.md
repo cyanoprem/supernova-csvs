@@ -10,7 +10,7 @@ Sub-concept 1: Opening and setting the agenda
 Description: The learner can start a client meeting and share what will be discussed
 Sentence structures:
 1. "Thanks for joining, [name]. Today we'll cover [topic]."
-   Example: "Thanks for joining, Sharma ji. Today we'll cover the app redesign progress."
+   Example: "Thanks for joining, Sharma. Today we'll cover the app redesign progress."
 2. "Let me share the agenda. [point 1], [point 2], and [point 3]."
    Example: "Let me share the agenda. Timeline, budget, and next steps."
 3. "The goal of this meeting is to [objective]."
