@@ -8,6 +8,6 @@ Sentence structure:
 "I think [statement]."
 
 Examples:
-- "I think online shopping saves more time than offline shopping."
-- "I think work from home is better because we save travel time."
-- "I think we should use both online and offline learning together."
+- "I think online shopping is more convenient because you can buy anytime."
+- "I think work from home gives better work-life balance."
+- "I think face-to-face learning helps students focus better than online learning."

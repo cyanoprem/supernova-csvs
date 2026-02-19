@@ -8,6 +8,6 @@ Sentence structure:
 "For example, [what happened]."
 
 Examples:
-- "For example, many companies like TCS now allow employees to work from home."
-- "For example, Flipkart started as an online bookstore and changed how India shops."
-- "For example, students in rural areas got better education through online learning."
+- "For example, online shopping is cheaper because there are no store rental costs."
+- "For example, work from home saves travel time, so you have more time with family."
+- "For example, online learning lets students learn at their own pace."

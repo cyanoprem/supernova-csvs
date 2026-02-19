@@ -8,6 +8,6 @@ Sentence structure:
 "I'd like to add that [new information]."
 
 Examples:
-- "I'd like to add that online shopping also offers more discounts during festivals."
-- "I'd like to add that many companies now allow employees to work from home."
-- "I'd like to add that rural students got access to better education through online learning."
+- "I'd like to add that offline shopping lets you check the quality before buying."
+- "I'd like to add that work from office helps build stronger team relationships."
+- "I'd like to add that face-to-face classes help teachers understand student problems better."

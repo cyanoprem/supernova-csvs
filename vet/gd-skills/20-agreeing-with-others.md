@@ -8,6 +8,6 @@ Sentence structure:
 "I agree with [name] because [reason]."
 
 Examples:
-- "I agree with Priya because social media does help small businesses grow."
-- "I agree with Rahul because online classes really did help many students."
-- "I agree with you because internships are important for career growth."
+- "I agree with Priya because social media helps businesses reach more customers."
+- "I agree with Rahul because online learning gives access to quality education everywhere."
+- "I agree with you because internships give real-world experience that you can't get in college."
