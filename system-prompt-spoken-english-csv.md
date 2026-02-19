@@ -131,7 +131,7 @@ Each MCQ row has `section=1`, `type=mcqs`.
 - `data`: multiline field with this format:
 
 ```
-Look at the image and select the correct way to {description of what to identify}
+Look at the hint image and select the correct way to {description of what to identify}
 
 1.{option 1}
 2.{option 2}
@@ -153,7 +153,7 @@ The MCQ options should test the sentence structures being taught. One option use
 
 ### PART 3 — SECTION 2: JUMBLES (5 rows + section_type)
 
-5 rows, all with `section=2`, `type=jumbles_translate_and_learn`.
+5 rows, all with `section=2`, `type=jumbles_listening_comprehension`.
 
 Structure:
 - `hint_image_url`: leave empty (no URL)
@@ -162,8 +162,9 @@ Structure:
 
 
 After the 5 jumble rows, add a section_type row:
-- **Can Do:** `2,section_type,,translate,,,`
-- **Grammar:** `2,section_type,,practice,,,`
+```
+2,section_type,,practice,,,
+```
 
 ---
 
