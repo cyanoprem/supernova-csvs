@@ -1,0 +1,37 @@
+section_id,section_name,activity_id,activity_name,activity_order_index,activity_track_type
+036b0967-eb45-4278-8593-19e2e0c08cec,Talking About Possibilities,35ea14b7-bc84-4754-b7e7-53721f1975f9,Expressing Possibility,10,main
+1e2e6431-96c8-42f7-a401-b1552570ca47,Talk About What's Happening Now,5197e2b4-e253-400d-9272-b0ce576cbe02,Present Continuous Tense!,10,main
+26356547-60d5-4947-9454-c6962792012e,Reporting What People Say,1464550f-b13d-498d-8253-dec6630e2459,Reporting What Someone Says,10,main
+26e8521d-ac7d-441d-9b1e-af28c1a8391f,Describing Future Activities,952da58a-180f-41d1-a9b1-2cff063ae030,Learn about future continuous tense!,10,main
+288b9ee5-4e71-4655-a088-a838d660dd9d,Making Polite Requests,88b89e49-a5cd-4d8e-90d3-b2cc00db45ae,Making Polite Requests: I would,10,main
+29d3b89c-0013-4635-9f2e-4e101031e3f5,Shopping Basics,2797dd8f-03e5-4d12-9cb7-67a42d2a09e7,Learn to ask about prices!,10,main
+32e3da8c-a82a-4cb9-a822-1c2b9a4ebe64,Learn to describe places and things,b9e4b901-fcc1-43aa-b8e6-3022b35824b6,Describing Things: Basic Adjectives,10,main
+336b4e22-aaef-4e54-81e9-7e2adbf5c676,"Using ""Too"" and ""Enough""",c418f1e8-6c3d-4db1-b997-c670967a6afb,"Using ""Too"" - Basic Structure",10,main
+364404b2-8d94-4705-9878-6a718445e051,"""Should Have"" in Sentences",8034b564-7c8b-4840-87c3-c57cf054b163,Learn: “Should Have” Basics,10,main
+381ceda8-17a5-484b-8dbc-faa5f3d284dc,Cause and Effect,848508d7-3501-461b-95d3-0f9a09852225,Using If Conditions,10,main
+3fc2c722-a954-44ea-a598-8a439161ff81,Expressing recent actions,a2d5e5a0-3c83-4530-a121-3a380072704a,Learn about Recent Actions,10,main
+4f883734-a53f-4f61-b504-bb442bd5b536,Describing Daily Routines,4d539664-0089-4257-b44c-70d6fba85bd5,Simple Present Tense!,10,main
+52a1a9b1-4dda-4929-b355-e08a0beca82a,"Making Excuses with ""Because""",c96e3401-eabc-4160-afd3-fe80134aee43,Present Simple Excuses,10,main
+5731da5f-194e-4ee4-bc2f-8a07f0d20839,Gerunds and Infinitives,184ecd74-0864-4df6-a54a-0414f0568fa1,Learn About Gerunds and Infinitives,10,main
+59583a27-bf16-40ac-ad22-ff4736d722ff,Learn How to Ask Questions,438cedf8-4941-4998-aa72-32550bb8b927,Asking about people,10,main
+5e256f89-ede7-4b9c-b6d4-cc425055ead0,Learn to use 'Do' in past tense,3a592068-b9d7-41bf-8eac-5fd6fdfdccb7,Translate: Learn to use 'Do' in past tense,10,experiment
+626758cb-56f9-4e46-8724-50ff10a5faeb,"Articles: A, An, The",626fe32c-1c1f-4cb2-9cb4-d7a9b69a1474,Learn the Articles: A and An,10,main
+71dcfadf-434d-4321-9a8e-28963f2db4c0,Basic Connecting Words,4fa77163-a25e-4a91-8bfb-f46a71dd8eaf,Using 'And' to Connect Things,10,main
+777679af-a23c-4bd8-bd4a-0e344caa4cdf,Ask About Places and Specific Things,bf7360bc-9776-42dc-ba35-71ea3772b3de,Asking About Places,10,main
+8b017c86-59ed-471f-9071-81d0d098a3db,Talking About Past Activities,1304a421-1d71-49f7-a336-abe724417a81,Translate: Talking About Past Activities,5,experiment
+91c2d688-45fa-4f2d-bf31-fb7fe2088b2b,Express your Feelings,d414309f-9efd-4991-b839-30041e5c5b6f,Vocabulary Booster: Feelings,10,main
+b83d6c27-e402-4f34-9174-da864dc056a6,Quantifiers,11c68173-e78c-445b-8589-ebba24e000dd,Learn about countable and uncountable nouns!,10,main
+c16c54f6-be9f-4ea6-b872-d0aa5c0099dd,Reflexive Pronouns,55c87313-c285-4d20-87dc-8469cb286614,Learn about Reflexive Pronouns!,10,main
+c4979629-aa96-4eb0-8cdb-3dedaf606b37,Asking for and Giving Advice,695892e6-d336-48df-9aa7-3a58e2b74f2c,Giving Advice with 'Should',10,main
+d0723363-05b7-4f54-938d-710e7ffe8adb,"Usage of ""Either...or""",2c3d6a07-5350-4c5e-9e0a-92bb808d54c0,"Learn to use ""Either…or""",10,main
+d0a8f785-fe60-4cd4-a029-6499fc9fb504,Prepositions of time,16a5fe64-4013-43bc-9e03-046fed3ad693,Using ‘At’ for Specific Times,10,experiment
+dba533aa-af8b-4f2b-b7fc-bc4124e33273,Making Future Plans,570211a6-3083-4dbb-92d5-75ce9826dcf4,Learn about future simple tense!,10,main
+e3806ecb-b8bd-485a-b45d-40dde842881a,"Using ""Already"" and ""Yet""",baf98f7a-99d5-4665-9902-6d15424065b0,Talking About Actions with “Already”,10,main
+e40df665-cf9e-4ea4-bc03-db54ca5743bd,Learn to use 'Do' in present tense,8b6e926c-8d5a-47d6-9782-8941b09f9d28,Making Sentences with ‘Do’,10,experiment
+e635b1ad-6660-48c8-9fd2-82b40f924b5f,Talk About Future Plans & Intentions,1d44a476-ef0f-4471-b7a0-d2ad2b1f79fe,Talk About Your Plans,10,main
+e7870547-02af-4369-98d9-08f2f80b6cbf,What I Have & Don't Have,8a8e54e5-2b30-4053-a791-da729219d190,Talking About What You Have,10,main
+f2f55c64-2a8b-4e49-aa7d-44c42bbb3afd,"""Could Have"" in Sentences",462333ce-f824-4144-869e-69d468a2b142,Learn: Could Have (Basic Form),30,main
+f43ce77d-a83b-402a-a9ec-6ed3cc961c9b,Talking About Your Needs,4bf75bc7-e2c0-48a7-b282-40bab22b75dc,Talking About Your Needs,10,main
+f7970a66-ec58-4b71-9be7-8ced34346210,Describe Where things Are,5523d438-97b7-489c-b3f4-94d5f83fca66,Describing Where You Are,10,main
+f9747271-2628-41be-83e8-b203535e5105,Present Perfect Simple,473c37f7-075e-4460-8ca4-4e7643c3617f,Learn Basic Past Participles Words,10,main
+fb8e5cd1-2559-47aa-a051-5c85449cb3cd,Talk about Time,57b6aa6e-1a38-4c3a-bc8c-8c1c66aa97db,Learn how to say the time,10,main
