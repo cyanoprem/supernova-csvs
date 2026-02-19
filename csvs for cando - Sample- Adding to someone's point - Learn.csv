@@ -1,0 +1,87 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Group Discussion - Adding to Someone's Point,,,
+header,title,,Group Discussion - Adding to Someone's Point,,,
+config,voices,,Priya-Priya,,,
+config,activity_type,,lesson,,,
+config,display_activity_type,,Grammar Builder,,,
+config,personas,,spoken-english-adults-level-A1,,,
+config,description,,Learn how to add to someone's point in a group discussion,TRUE,,
+config,populate,,TRUE,,,
+config,populate_languages,,TRUE,,,
+config,always_show_hint,,TRUE,,,
+config,read_aloud_after_jumble,,TRUE,,,
+config,reattempt_jumble,,TRUE,,,
+config,english_language_toggle,,FALSE,,,
+config,skip_transcription,,TRUE,,,
+config,rich_chat,,TRUE,,,
+config,key_skills,,"speaking,grammar",,,
+config,chat_suggestions,,Yes! Let's Start.,,,
+config,disable_skip,,FALSE,,,
+config,tts_config,,"{""silent_mode"":false}",,,
+config,badge_title,,Learn,,,
+1,chat_lessons,,"message:
+Hey! Today we're learning how to add to someone's point in a group discussion.
+
+In a GD, it's important to build on what others say.
+image_url:
+button_text: Cool!
+
+message:
+When you want to add new information to someone's point, use this structure:
+""I'd like to add that [new information].""
+
+For example: ""I'd like to add that online shopping also offers more discounts during festivals.""
+image_url: 
+button_text: Got it!
+
+message:
+Here's another example.
+If someone talks about work from home, you can say:
+
+""I'd like to add that many companies now allow employees to work from home.""
+image_url:
+button_text: Next!
+
+message:
+This phrase shows you are listening and contributing something new to the discussion.
+
+It makes your point sound polite and respectful.
+image_url:
+button_text: Makes sense!
+
+message:
+Let's practice adding to someone's point in a group discussion!
+
+image_url:
+button_text: Start Practice!",,,
+1,mcqs,,"Look at the hint image and select the correct way to add to someone's point in a group discussion
+
+1.I'd like to add that rural students got access to better education through online learning.
+2.I don't agree with you about online learning.
+
+Correct answer: 1",,,
+1,mcqs,,"Look at the hint image and select the correct way to add new information to a discussion about social media
+
+1.Social media is very bad for everyone.
+2.I'd like to add that social media helps small businesses reach more customers.
+
+Correct answer: 2",,,
+1,section_type,,learn,,,
+2,jumbles_listening_comprehension,,I&&would&&like&&to add&&that online&&shopping saves&&a&&lot&&of&&time.,,,
+2,jumbles_listening_comprehension,,I&&would&&like&&to add&&that many&&companies now&&allow employees&&to work&&from&&home.,,,
+2,jumbles_listening_comprehension,,I&&would&&like&&to add&&that social&&media helps&&people stay&&connected with&&family.,,,
+2,jumbles_listening_comprehension,,I&&would&&like&&to add&&that rural&&students got&&access&&to better&&education through&&online&&learning.,,,
+2,jumbles_listening_comprehension,,I&&would&&like&&to add&&that women&&in&&India are&&now leading&&many successful&&startups.,,,
+2,section_type,,practice,,,
+3,roleplay,,"first_message: That was incredible! Now we're going to practice by answering few questions in English. Can we start?
+prompt_id: 4d3f5213-fcc4-40f3-879d-051908377a31
+questions: ""1. Someone in the GD says online shopping is convenient. What would you like to add about online shopping?
+2. Priya says social media is entertaining. What point would you like to add about social media?
+3. Someone says work from home is productive. What would you like to add about work from home?
+4. Ram says online learning is better. What would you like to add about online learning?
+5. Sindhu says gender equality has improved in India. What would you like to add about women development in India?""
+sub_rules: """"
+can_do_statement: ""Group Discussion - Adding to Someone's Point""
+sentence_structure: ""- ""I'd like to add that [new information].""""""
+SYSTEM_TRANSLATION_RULES: """"",,,
+3,section_type,,conversation,,,
