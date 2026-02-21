@@ -10,4 +10,4 @@ Sentence structure:
 Examples:
 - "I agree with Priya because social media helps businesses reach more customers."
 - "I agree with Rahul because online learning gives access to quality education everywhere."
-- "I agree with you because internships give real-world experience that you can't get in college."
+- "I agree with Ram because internships give real-world experience that you can't get in college."
