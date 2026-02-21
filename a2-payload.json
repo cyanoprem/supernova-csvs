@@ -1,0 +1,687 @@
+{
+  "key": "a2",
+  "version": "v2",
+  "course_config_id": "244e0630-e9af-4240-b4d7-8755dd9a0ba3",
+  "modified_sections": {
+    "8aef5c77-30c3-4b21-812a-bffa46b33ffa": {
+      "archived": false,
+      "modified_activities": {
+        "350f442c-2338-4f90-8d87-4fc6e802ab03": {
+          "archived": false,
+          "order": {
+            "move_before": "e149a76e-25e5-466c-80d8-7e0a0c464340"
+          }
+        },
+        "e149a76e-25e5-466c-80d8-7e0a0c464340": {
+          "archived": false
+        },
+        "6c3bb91e-67eb-4ff3-9af6-4c774db49512": {
+          "archived": false
+        }
+      }
+    },
+    "abf35ee9-b5d7-49a3-b6e9-95e9bfe3e21c": {
+      "archived": false,
+      "modified_activities": {
+        "3e182fc9-9d46-433a-bc3a-171fceb7dd13": {
+          "archived": false,
+          "order": {
+            "move_before": "b27009ed-2816-4af1-a172-03608970d57b"
+          }
+        },
+        "b27009ed-2816-4af1-a172-03608970d57b": {
+          "archived": false
+        },
+        "c4cce342-5ba3-4bc5-9499-929c0c3fac7b": {
+          "archived": false
+        }
+      }
+    },
+    "f6201150-3aa6-41c8-b733-e3b869f3cd3c": {
+      "archived": false,
+      "modified_activities": {
+        "07c5ba1c-849b-499c-aee9-8db86a7933c1": {
+          "archived": false,
+          "order": {
+            "move_before": "bf0624d0-d313-4c95-8ced-1b089d071973"
+          }
+        },
+        "bf0624d0-d313-4c95-8ced-1b089d071973": {
+          "archived": false
+        },
+        "2f2f0dd9-4ef8-4ba6-93be-1d8f34d8a0ce": {
+          "archived": false
+        }
+      }
+    },
+    "735c7dae-acfc-4be6-8ef8-725af3f7af3a": {
+      "archived": false,
+      "modified_activities": {
+        "aa8bfd7b-41c0-4461-9c12-05ae1d763b1c": {
+          "archived": false,
+          "order": {
+            "move_before": "aa84bc5a-9e2e-4ca1-a986-c9f7c85922fe"
+          }
+        },
+        "aa84bc5a-9e2e-4ca1-a986-c9f7c85922fe": {
+          "archived": false
+        },
+        "926a29a2-4ab5-42ee-8153-a0e2ad16a022": {
+          "archived": false
+        }
+      }
+    },
+    "f553e91d-2123-4340-a66a-b81815fb6707": {
+      "archived": false,
+      "modified_activities": {
+        "ac127676-16ef-4d57-9c7f-1feda8d5cbec": {
+          "archived": false,
+          "order": {
+            "move_before": "6d5310c3-437d-46b5-90e6-6b8dcdc883af"
+          }
+        },
+        "6d5310c3-437d-46b5-90e6-6b8dcdc883af": {
+          "archived": false
+        },
+        "fb78f28a-9e5e-4229-bfac-1dc620bd7652": {
+          "archived": false
+        }
+      }
+    },
+    "923a6d71-756a-4dc5-95d3-de678c301f51": {
+      "archived": false,
+      "modified_activities": {
+        "616b4939-6b9c-4929-be33-c0ff8a6fb27e": {
+          "archived": false,
+          "order": {
+            "move_before": "39365b5f-15ce-4f76-adf6-15027521366a"
+          }
+        },
+        "39365b5f-15ce-4f76-adf6-15027521366a": {
+          "archived": false
+        },
+        "22f471dc-3245-44b6-a397-923a2232fc39": {
+          "archived": false
+        }
+      }
+    },
+    "e0077388-0f62-475c-8062-189114e2e501": {
+      "archived": false,
+      "modified_activities": {
+        "8c48ba55-22ea-4e7b-89fe-fa6ae28fc89b": {
+          "archived": false,
+          "order": {
+            "move_before": "b1dee5ff-b736-4dbb-b678-7cf51e4c7e6f"
+          }
+        },
+        "b1dee5ff-b736-4dbb-b678-7cf51e4c7e6f": {
+          "archived": false
+        },
+        "4c1757a4-de9c-462c-b3f1-e468dcbb4a92": {
+          "archived": false
+        }
+      }
+    },
+    "ae9eea39-5a11-465d-a39b-e35f2883089f": {
+      "archived": false,
+      "modified_activities": {
+        "a48a4f4f-e31b-4337-9308-7900d6542a29": {
+          "archived": false,
+          "order": {
+            "move_before": "fff76411-d4cc-4aad-8ff6-4a502643cb75"
+          }
+        },
+        "fff76411-d4cc-4aad-8ff6-4a502643cb75": {
+          "archived": false
+        },
+        "14cec42c-4687-44df-9a8f-009e7a7c70ed": {
+          "archived": false
+        }
+      }
+    },
+    "0037467b-9746-4495-b8dc-1e1424f95393": {
+      "archived": false,
+      "modified_activities": {
+        "4272883a-07ec-46da-a6ae-7d969195cf18": {
+          "archived": false,
+          "order": {
+            "move_before": "14eb76c1-c6bf-4f34-9f2b-a4e6ef846dc4"
+          }
+        },
+        "14eb76c1-c6bf-4f34-9f2b-a4e6ef846dc4": {
+          "archived": false
+        },
+        "2b62f97d-bca2-4f2b-ae4d-550f8163e831": {
+          "archived": false
+        }
+      }
+    },
+    "dba0e553-2350-41eb-9df5-99d8cd64df46": {
+      "archived": false,
+      "modified_activities": {
+        "5a96236d-88bd-42df-8322-42a9c9881d75": {
+          "archived": false,
+          "order": {
+            "move_before": "b87da382-6467-486f-b340-2686b1649277"
+          }
+        },
+        "b87da382-6467-486f-b340-2686b1649277": {
+          "archived": false
+        },
+        "61c0cf52-2976-4d10-af72-66b5d1a76111": {
+          "archived": false
+        }
+      }
+    },
+    "4624bc9a-4705-488a-b679-760d6ce293ff": {
+      "archived": false,
+      "modified_activities": {
+        "09f451fd-3d06-449a-ac22-8493b904915c": {
+          "archived": false,
+          "order": {
+            "move_before": "0c7428af-d5c0-452e-9ac8-706c8abc84b0"
+          }
+        },
+        "0c7428af-d5c0-452e-9ac8-706c8abc84b0": {
+          "archived": false
+        },
+        "a9aa9e54-b97f-40c1-8899-7373eddb054a": {
+          "archived": false
+        }
+      }
+    },
+    "55754495-e496-49fa-94fe-4ad4821a3c06": {
+      "archived": false,
+      "modified_activities": {
+        "3718b5d3-f61d-4804-804b-6cfceee4866e": {
+          "archived": false,
+          "order": {
+            "move_before": "f3da02ba-a0ae-47b0-8933-ebf894debd9e"
+          }
+        },
+        "f3da02ba-a0ae-47b0-8933-ebf894debd9e": {
+          "archived": false
+        },
+        "d9219fea-2a50-4f59-bf73-3081e1f06141": {
+          "archived": false
+        }
+      }
+    },
+    "283e125a-7495-48b3-afcb-499c0b6fa3b1": {
+      "archived": false,
+      "modified_activities": {
+        "9fc63ba3-1c70-424b-aa94-fd5aa7f9f665": {
+          "archived": false,
+          "order": {
+            "move_before": "a209d21d-0750-4bf9-848f-93fc42904b13"
+          }
+        },
+        "a209d21d-0750-4bf9-848f-93fc42904b13": {
+          "archived": false
+        },
+        "32efa6b5-707b-494c-8a83-0f8c4e79fe95": {
+          "archived": false
+        }
+      }
+    },
+    "a9763e93-1650-482e-9a7a-c11432ddaca2": {
+      "archived": false,
+      "modified_activities": {
+        "a903e306-aa49-4e11-9778-23a43d0d3318": {
+          "archived": false,
+          "order": {
+            "move_before": "bc1474a5-0c9c-4255-961a-3d09b433d70e"
+          }
+        },
+        "bc1474a5-0c9c-4255-961a-3d09b433d70e": {
+          "archived": false
+        },
+        "59579b70-2493-410d-a2fc-7c3c9420e6fc": {
+          "archived": false
+        }
+      }
+    },
+    "b8b980dc-5fe3-4f25-b6e0-77faefcbc401": {
+      "archived": false,
+      "modified_activities": {
+        "f0d5c8bf-d950-498e-91be-2b93398edb44": {
+          "archived": false,
+          "order": {
+            "move_before": "2906019e-8fc7-4eef-86f8-71a5f389d79a"
+          }
+        },
+        "2906019e-8fc7-4eef-86f8-71a5f389d79a": {
+          "archived": false
+        },
+        "cf266325-93ef-4416-b2bb-92df3870585b": {
+          "archived": false
+        }
+      }
+    },
+    "4ce85865-eb1a-4d2d-8623-c00e618bdfb9": {
+      "archived": false,
+      "modified_activities": {
+        "ca66ffa1-54ed-4117-9747-65e32226d18b": {
+          "archived": false,
+          "order": {
+            "move_before": "8e2d0ff1-8ec2-44d6-9153-d961a829c27f"
+          }
+        },
+        "8e2d0ff1-8ec2-44d6-9153-d961a829c27f": {
+          "archived": false
+        },
+        "f57f1445-98ef-49be-926d-9692ba13053d": {
+          "archived": false
+        }
+      }
+    },
+    "1a361c4c-8220-485d-97c3-a94ab3465da2": {
+      "archived": false,
+      "modified_activities": {
+        "318e4a55-19f5-4d66-9425-8ed2edbf1a00": {
+          "archived": false,
+          "order": {
+            "move_before": "a21c2e62-1000-441a-aebd-713b07049216"
+          }
+        },
+        "a21c2e62-1000-441a-aebd-713b07049216": {
+          "archived": false
+        },
+        "0f7f21b1-f8af-4acc-94e3-6c58b8c42b70": {
+          "archived": false
+        }
+      }
+    },
+    "3335b226-f175-45e3-b134-4fa8d91828d5": {
+      "archived": false,
+      "modified_activities": {
+        "eac7ab97-59ab-4698-9ad1-af32ac530d69": {
+          "archived": false,
+          "order": {
+            "move_before": "03a6584e-65d6-4b36-b2f0-62f88581768c"
+          }
+        },
+        "03a6584e-65d6-4b36-b2f0-62f88581768c": {
+          "archived": false
+        },
+        "a0dabe71-fb48-4342-aa12-355887e2aed8": {
+          "archived": false
+        }
+      }
+    },
+    "2b7d6f86-3ca3-4af9-b7c4-f6b4bb95125b": {
+      "archived": false,
+      "modified_activities": {
+        "52ed0534-16f5-4aeb-8b5a-8ce38a4cb080": {
+          "archived": false,
+          "order": {
+            "move_before": "34b92e53-6866-4fb1-ba5f-7b63932c322e"
+          }
+        },
+        "34b92e53-6866-4fb1-ba5f-7b63932c322e": {
+          "archived": false
+        },
+        "11b7efab-a760-4d02-8cc8-0ac4ffd02a2b": {
+          "archived": false
+        }
+      }
+    },
+    "d806e18a-994a-4aa3-8ade-a8644e6d6671": {
+      "archived": false,
+      "modified_activities": {
+        "79fc79ef-3233-4b53-ba59-84267c3d52fb": {
+          "archived": false,
+          "order": {
+            "move_before": "92759e2c-448d-4dbd-be91-a350f7485edf"
+          }
+        },
+        "92759e2c-448d-4dbd-be91-a350f7485edf": {
+          "archived": false
+        },
+        "fb648c66-5f72-46b5-8128-28925bb3bdb5": {
+          "archived": false
+        }
+      }
+    },
+    "9b772369-5517-4aad-baa4-c0c4bd09e9f1": {
+      "archived": false,
+      "modified_activities": {
+        "99b31eb3-ca61-4803-918f-38eb60758a5a": {
+          "archived": false,
+          "order": {
+            "move_before": "f0561ce0-de6f-4294-a5a5-233bc81d32bd"
+          }
+        },
+        "f0561ce0-de6f-4294-a5a5-233bc81d32bd": {
+          "archived": false
+        },
+        "fc78defe-f227-49b9-8045-c451508422f4": {
+          "archived": false
+        }
+      }
+    },
+    "9f237feb-741f-433f-a3cb-7456c74c83d8": {
+      "archived": false,
+      "modified_activities": {
+        "21202b3f-6cd8-433b-aee2-9c0bd3f53e34": {
+          "archived": false,
+          "order": {
+            "move_before": "0287fda7-5376-4e7d-8f2c-39831e15946b"
+          }
+        },
+        "0287fda7-5376-4e7d-8f2c-39831e15946b": {
+          "archived": false
+        },
+        "db94924c-bc7e-4649-a9ab-e6d7cc58ff34": {
+          "archived": false
+        }
+      }
+    },
+    "efbda81b-aab1-44f7-bd6b-07c5a46ea296": {
+      "archived": false,
+      "modified_activities": {
+        "9dc79890-a198-4793-b2b3-239fdbcc10ba": {
+          "archived": false,
+          "order": {
+            "move_before": "0bb7c4a2-e4df-4e08-9998-16f97133da52"
+          }
+        },
+        "0bb7c4a2-e4df-4e08-9998-16f97133da52": {
+          "archived": false
+        },
+        "c60668f2-3a01-4be9-9a24-cdcbd0ba9cd6": {
+          "archived": false
+        }
+      }
+    },
+    "27d90975-597f-4427-a888-5ecccc1689ce": {
+      "archived": false,
+      "modified_activities": {
+        "ff3e07ba-dbc5-4ae2-bdd6-7e65e9622071": {
+          "archived": false,
+          "order": {
+            "move_before": "2cf463f0-3251-485c-a80b-eed97dbf1393"
+          }
+        },
+        "2cf463f0-3251-485c-a80b-eed97dbf1393": {
+          "archived": false
+        },
+        "d4eff9f1-5002-4400-b008-7515693f297f": {
+          "archived": false
+        }
+      }
+    },
+    "12626a72-827c-4843-a82a-db50fdc64f2d": {
+      "archived": false,
+      "modified_activities": {
+        "f94d99ee-0b91-4e54-89ba-ca6f813d25d4": {
+          "archived": false,
+          "order": {
+            "move_before": "7c98b24b-db08-44b4-a1d4-557fa70c6612"
+          }
+        },
+        "7c98b24b-db08-44b4-a1d4-557fa70c6612": {
+          "archived": false
+        },
+        "45c4f4e1-147b-4278-ac6a-c5b40d875fc5": {
+          "archived": false
+        }
+      }
+    },
+    "9368f752-17e1-4c8e-94c7-bdd46e70e652": {
+      "archived": false,
+      "modified_activities": {
+        "7d23e598-a0bc-4c2b-aca3-a6ea4d0c6a5e": {
+          "archived": false,
+          "order": {
+            "move_before": "78049a33-4bff-4551-baed-21e00755a78c"
+          }
+        },
+        "78049a33-4bff-4551-baed-21e00755a78c": {
+          "archived": false
+        },
+        "e3c1ab64-699b-465e-a537-87861d3146f0": {
+          "archived": false
+        }
+      }
+    },
+    "c036636b-9e7c-439a-b63b-f6df7b9152eb": {
+      "archived": false,
+      "modified_activities": {
+        "3e30e055-315d-4131-8eca-bab56f4a8ad1": {
+          "archived": false,
+          "order": {
+            "move_before": "ae32e44e-a427-40ac-8249-55fa226b941f"
+          }
+        },
+        "ae32e44e-a427-40ac-8249-55fa226b941f": {
+          "archived": false
+        },
+        "4f2f78fb-9090-4d18-b850-75f4288fe0e0": {
+          "archived": false
+        }
+      }
+    },
+    "7e090e33-701e-4bfb-a82e-16edc93078f9": {
+      "archived": false,
+      "modified_activities": {
+        "e5134368-0496-4799-9fd0-914c428fb322": {
+          "archived": false,
+          "order": {
+            "move_before": "5b0847c2-38e6-49a2-8113-96e744a17916"
+          }
+        },
+        "5b0847c2-38e6-49a2-8113-96e744a17916": {
+          "archived": false
+        },
+        "6aee40af-9853-4b3c-b971-7ad4de649137": {
+          "archived": false
+        }
+      }
+    },
+    "bcca676b-a351-41c3-901b-e5860cb2dd07": {
+      "archived": false,
+      "modified_activities": {
+        "0ff9e985-efc8-4ce8-9270-1af983029c85": {
+          "archived": false,
+          "order": {
+            "move_before": "ee88390e-aa94-4c80-bee0-b62862767250"
+          }
+        },
+        "ee88390e-aa94-4c80-bee0-b62862767250": {
+          "archived": false
+        },
+        "9c3f0182-a6a4-4dda-a36e-4ef7f886c985": {
+          "archived": false
+        }
+      }
+    },
+    "e376aa35-b323-4fcb-8210-0c287450e889": {
+      "archived": false,
+      "modified_activities": {
+        "afb7e10f-3de5-4582-b9fb-e172a8ea2615": {
+          "archived": false,
+          "order": {
+            "move_before": "9e5ddb39-6fd9-46bc-bad7-07a998dad5bf"
+          }
+        },
+        "9e5ddb39-6fd9-46bc-bad7-07a998dad5bf": {
+          "archived": false
+        },
+        "19d30210-aef1-4dfd-8d21-bd5e0fefa6cc": {
+          "archived": false
+        }
+      }
+    },
+    "b68b6ec5-004b-415c-b6c6-3122129e6e76": {
+      "archived": false,
+      "modified_activities": {
+        "2512e0f2-52a3-49ca-8964-5e1acff70525": {
+          "archived": false,
+          "order": {
+            "move_before": "ae164804-dbde-4c3f-b4f5-2fe6c4501478"
+          }
+        },
+        "ae164804-dbde-4c3f-b4f5-2fe6c4501478": {
+          "archived": false
+        },
+        "35e61c35-265a-4f8e-905c-f8b827c75057": {
+          "archived": false
+        }
+      }
+    },
+    "21f22079-1ef7-4747-bd12-a764f83feef1": {
+      "archived": false,
+      "modified_activities": {
+        "280d6278-1b0c-4bca-9299-8df11106e93a": {
+          "archived": false,
+          "order": {
+            "move_before": "bc14838d-9b6e-4511-abba-a46b55e84b3e"
+          }
+        },
+        "bc14838d-9b6e-4511-abba-a46b55e84b3e": {
+          "archived": false
+        },
+        "c7bd5543-f46e-46b6-aaa2-7eb4779d1326": {
+          "archived": false
+        }
+      }
+    },
+    "30636c31-383d-4ad9-a985-83571f2887d7": {
+      "archived": false,
+      "modified_activities": {
+        "c5ead48c-35b3-498b-a4c3-8d7eca600f71": {
+          "archived": false,
+          "order": {
+            "move_before": "e740af0b-6e89-4439-b553-6e56407001fc"
+          }
+        },
+        "e740af0b-6e89-4439-b553-6e56407001fc": {
+          "archived": false
+        },
+        "b91b1e7a-f1b9-48ba-b2b8-c02c4f377278": {
+          "archived": false
+        }
+      }
+    },
+    "95e34322-8288-4694-9415-b3a25a0d2307": {
+      "archived": false,
+      "modified_activities": {
+        "160c1c45-7331-4280-a37f-fa44adbb6d09": {
+          "archived": false,
+          "order": {
+            "move_before": "4d68acc7-6037-4466-8335-451286615d10"
+          }
+        },
+        "4d68acc7-6037-4466-8335-451286615d10": {
+          "archived": false
+        },
+        "e873e015-fa1b-4b11-b40a-005a9d2c8c6c": {
+          "archived": false
+        }
+      }
+    },
+    "d293b181-29fc-4acf-9561-0c1f4470f980": {
+      "archived": false,
+      "modified_activities": {
+        "5fe86f3e-49a8-4d64-b7b1-6423be361936": {
+          "archived": false,
+          "order": {
+            "move_before": "fb0925d3-134c-4e11-b5ff-2fdb2b754c83"
+          }
+        },
+        "fb0925d3-134c-4e11-b5ff-2fdb2b754c83": {
+          "archived": false
+        },
+        "a2afa25f-0322-4fe5-99a2-21d48407c194": {
+          "archived": false
+        }
+      }
+    },
+    "72a689be-e3c7-4104-b3d4-1c73be85510d": {
+      "archived": false,
+      "modified_activities": {
+        "782f90b4-f5a3-46ac-b366-299758d09a45": {
+          "archived": false,
+          "order": {
+            "move_before": "ec14ea10-84a2-4750-9530-5ceee5aa79bc"
+          }
+        },
+        "ec14ea10-84a2-4750-9530-5ceee5aa79bc": {
+          "archived": false
+        },
+        "9dfb23f9-5ad7-40fa-8137-1e2908d2a412": {
+          "archived": false
+        }
+      }
+    },
+    "15a5522e-fbbc-47d1-ae6c-62756bda80b5": {
+      "archived": false,
+      "modified_activities": {
+        "859d5d7f-8b45-4fc5-b0cd-3935c82b3fe3": {
+          "archived": false,
+          "order": {
+            "move_before": "c9f02a1c-d3cb-43db-8a52-f1975e1b14b2"
+          }
+        },
+        "c9f02a1c-d3cb-43db-8a52-f1975e1b14b2": {
+          "archived": false
+        },
+        "abf85685-f33d-4f42-96d6-83ee8044ff5d": {
+          "archived": false
+        }
+      }
+    },
+    "f6b16fe5-1b5d-4926-adb7-d4654fb0238e": {
+      "archived": false,
+      "modified_activities": {
+        "5e8d4517-4e75-4b87-9496-f1298c28558e": {
+          "archived": false,
+          "order": {
+            "move_before": "cf87466c-1750-404e-9f6f-5d6d887f6aef"
+          }
+        },
+        "cf87466c-1750-404e-9f6f-5d6d887f6aef": {
+          "archived": false
+        },
+        "25559a71-0121-451a-8484-ca3bdc534a68": {
+          "archived": false
+        }
+      }
+    },
+    "9c029dae-45c8-4c65-aa69-3de6b7fca05d": {
+      "archived": false,
+      "modified_activities": {
+        "058a3e6a-2a24-44fe-843a-4e6b839ec67a": {
+          "archived": false,
+          "order": {
+            "move_before": "c7b0c1d0-ea30-4454-b117-162569f7ec80"
+          }
+        },
+        "c7b0c1d0-ea30-4454-b117-162569f7ec80": {
+          "archived": false
+        },
+        "71be95ec-eb29-433d-9a6a-354a586b4d19": {
+          "archived": false
+        }
+      }
+    },
+    "1108a8c4-829b-4325-8163-269f39ad0d54": {
+      "archived": false,
+      "modified_activities": {
+        "92c6945f-34bf-4978-9f75-2f882454970c": {
+          "archived": false,
+          "order": {
+            "move_before": "d8828ca2-f5d0-455c-9322-82d008814dd3"
+          }
+        },
+        "d8828ca2-f5d0-455c-9322-82d008814dd3": {
+          "archived": false
+        },
+        "e5b4eecc-f450-4a2a-96d2-e586b2a12ca6": {
+          "archived": false
+        }
+      }
+    }
+  }
+}
