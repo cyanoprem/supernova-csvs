@@ -7,6 +7,13 @@ GD topics to use for sentences: Online Shopping vs. Offline Shopping, Social Med
 Sentence structure:
 "I think [opinion] because [reason]."
 
+Questions:
+1. Why do you think online shopping is more convenient?
+2. Why do you think social media is helpful for people?
+3. Why do you think work from home is better?
+4. Why do you think online learning is useful for students?
+5. Why do you think internships are important?
+
 Examples:
 - "I think online shopping is more convenient because you can buy anytime from home."
 - "I think work from home is better because it gives more time with family."

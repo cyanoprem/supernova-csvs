@@ -7,6 +7,23 @@ GD topics to use for sentences: Online Shopping vs. Offline Shopping, Social Med
 Sentence structure:
 "For example, [situation] because [reason]."
 
+Questions:
+1. Online shopping is convenient.
+
+Give an example with a reason.
+2. Social media helps businesses grow.
+
+Give an example with a reason.
+3. Many companies support work from home.
+
+Give an example with a reason.
+4. Online learning is becoming popular.
+
+Give an example with a reason.
+5. Internships are useful for companies.
+
+Give an example with a reason.
+
 Examples:
 - "For example, Flipkart offers big discounts because online stores have lower costs."
 - "For example, Instagram helps small businesses because they can reach more customers."

@@ -5,6 +5,13 @@ Lesson type: Can Do
 Sentence structure:
 "[Person/Place] is [adjective]. [He/She/It] has [feature]."
 
+Questions:
+1. Describe your best friend.
+2. Describe your college library.
+3. Describe your favourite teacher.
+4. Describe the city where you live.
+5. Describe your classroom.
+
 Examples:
 - "Priya is stylish. She has fashionable dresses."
 - "The library is spacious. It has comfortable seating."

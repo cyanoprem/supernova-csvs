@@ -7,6 +7,23 @@ GD topics to use for sentences: Online Shopping vs. Offline Shopping, Social Med
 Sentence structure:
 "I'd like to add that [new information]."
 
+Questions:
+1. Priya says online shopping saves time.
+
+Add new information to her point.
+2. Rahul says social media is great for networking.
+
+Add new information to his point.
+3. Ram says work from office improves teamwork.
+
+Add new information to his point.
+4. Sneha says traditional learning is more disciplined.
+
+Add new information to her point.
+5. Arjun says internships build confidence.
+
+Add new information to his point.
+
 Examples:
 - "I'd like to add that offline shopping lets you check the quality before buying."
 - "I'd like to add that work from office helps build stronger team relationships."
