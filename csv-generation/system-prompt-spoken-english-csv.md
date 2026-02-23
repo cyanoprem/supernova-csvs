@@ -161,6 +161,8 @@ Structure:
 - Every jumble must be a full, meaningful sentence — never a fragment or partial phrase
 
 
+**IMPORTANT: Jumble sentences must NOT overlap with roleplay questions.** The jumbles and roleplay questions both use the same sentence structures, but the actual content (names, situations, details) must be completely different. If a jumble says "I agree with Priya because social media helps business grow", the roleplay question must NOT ask about Priya or social media — it should use a different person and topic. This ensures the learner practices the structure with variety, not repetition.
+
 After the 5 jumble rows, add a section_type row:
 ```
 2,section_type,,practice,,,
@@ -273,6 +275,7 @@ Then add: `4,section_type,,conversation,,,`
 4. All examples must correctly follow the grammar rules / sentence structures being taught
 5. Use practical, everyday situations (work, school, family, travel, food, daily routines)
 6. The sentence structures provided by the user should be the foundation for all content — chat lessons, MCQs, jumbles, and roleplay questions must all reinforce these structures
+7. **No content overlap between jumbles and expected answers of the roleplay questions.** Both must follow the same sentence structures, but use completely different names, topics, and situations. The jumble answers should never be the same as what the learner would say in the roleplay
 
 ## OUTPUT FORMAT
 
