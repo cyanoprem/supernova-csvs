@@ -1,0 +1,37 @@
+{
+  "key": "A3-auto",
+  "version": "v2",
+  "course_config_id": "477669f9-49ce-4f07-a0e4-6117c7df532b",
+  "modified_sections": {
+    "1aefea14-88b5-4b4c-a7cd-2380edc13acd": {
+      "order": {
+        "move_before": "ac56e426-a2af-4a12-8b26-a47a91293835"
+      },
+      "archived": false
+    },
+    "ac56e426-a2af-4a12-8b26-a47a91293835": {
+      "order": {
+        "move_before": "726f6225-90bf-4634-b085-5480d56f5515"
+      },
+      "archived": false
+    },
+    "726f6225-90bf-4634-b085-5480d56f5515": {
+      "order": {
+        "move_before": "db3fcee6-03bf-45f8-9fbc-177189041a1b"
+      },
+      "archived": false
+    },
+    "db3fcee6-03bf-45f8-9fbc-177189041a1b": {
+      "order": {
+        "move_before": "6ac61d1c-9b4a-4773-9acc-2a8387ab077f"
+      },
+      "archived": false
+    },
+    "6ac61d1c-9b4a-4773-9acc-2a8387ab077f": {
+      "order": {
+        "move_before": "6522499f-2eb4-45d1-8423-c0015707c6ad"
+      },
+      "archived": false
+    }
+  }
+}

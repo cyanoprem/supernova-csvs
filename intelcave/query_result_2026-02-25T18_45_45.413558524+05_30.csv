@@ -1,0 +1,1967 @@
+schema_name,table_name,column_name,data_type,nullable,constraint_type,foreign_table,index_name
+public,_planetscale_import,ts,bigint,NOT NULL,PRIMARY KEY,,_planetscale_import_pkey
+public,_planetscale_import,status,character varying(255),NULL,,,
+public,activities,id,uuid,NOT NULL,PRIMARY KEY,,activities_pkey
+public,activities,id,uuid,NOT NULL,PRIMARY KEY,,activities_not_archived_idx
+public,activities,section_id,uuid,NOT NULL,UNIQUE,,idx_activities_section_main_active_cover
+public,activities,section_id,uuid,NOT NULL,UNIQUE,,activities_section_id_idx
+public,activities,section_id,uuid,NOT NULL,UNIQUE,,activities_section_id_order_index_key
+public,activities,section_id,uuid,NOT NULL,FOREIGN KEY,public.sections,activities_section_id_idx
+public,activities,section_id,uuid,NOT NULL,FOREIGN KEY,public.sections,activities_section_id_order_index_key
+public,activities,section_id,uuid,NOT NULL,FOREIGN KEY,public.sections,idx_activities_section_main_active_cover
+public,activities,order_index,integer,NOT NULL,UNIQUE,,activities_section_id_order_index_key
+public,activities,order_index,integer,NOT NULL,UNIQUE,,idx_activities_section_main_active_cover
+public,activities,metadata,jsonb,NOT NULL,,,
+public,activities,track_type,text,NOT NULL,,,
+public,activities,scenario_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenarios,
+public,activities,archived_at,timestamp with time zone,NULL,,,
+public,activities,inserted_at,timestamp with time zone,NOT NULL,,,
+public,activities,updated_at,timestamp with time zone,NOT NULL,,,
+public,activity_reports,id,uuid,NOT NULL,PRIMARY KEY,,activity_reports_pkey
+public,activity_reports,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,activity_reports,scenario_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenarios,
+public,activity_reports,question_data,jsonb,NOT NULL,,,
+public,activity_reports,reasons,jsonb,NOT NULL,,,
+public,activity_reports,inserted_at,timestamp with time zone,NOT NULL,,,
+public,activity_set_members,id,uuid,NOT NULL,PRIMARY KEY,,activity_set_members_pkey
+public,activity_set_members,activity_set_id,uuid,NOT NULL,FOREIGN KEY,public.activity_sets,
+public,activity_set_members,scenario_id,uuid,NULL,FOREIGN KEY,public.speak_scenarios,unique_unarchived_scenario
+public,activity_set_members,scenario_id,uuid,NULL,,,unique_unarchived_scenario
+public,activity_set_members,worksheet_id,uuid,NULL,,,unique_unarchived_worksheet
+public,activity_set_members,worksheet_id,uuid,NULL,FOREIGN KEY,public.skill_sheets,unique_unarchived_worksheet
+public,activity_set_members,inserted_at,timestamp with time zone,NOT NULL,,,
+public,activity_set_members,archived_at,timestamp with time zone,NULL,,,
+public,activity_sets,id,uuid,NOT NULL,PRIMARY KEY,,activity_sets_pkey
+public,activity_sets,description,text,NULL,,,
+public,activity_sets,inserted_at,timestamp with time zone,NOT NULL,,,
+public,activity_sets,updated_at,timestamp with time zone,NOT NULL,,,
+public,activity_sets,archived_at,timestamp with time zone,NULL,,,
+public,ad_group,ad_group_id,bigint,NULL,,,ad_group_ad_group_id_segments_date_idx
+public,ad_group,ad_group_id,bigint,NULL,,,ad_group_ad_group_id_segments_date_segments_date1__airbyte__idx
+public,ad_group,campaign_id,bigint,NULL,,,
+public,ad_group,ad_group_name,character varying,NULL,,,
+public,ad_group,segments_date,date,NULL,,,ad_group_ad_group_id_segments_date_idx
+public,ad_group,segments_date,date,NULL,,,ad_group_ad_group_id_segments_date_segments_date1__airbyte__idx
+public,ad_group,ad_group_campaign,character varying,NULL,,,
+public,ad_group,metrics_cost_micros,bigint,NULL,,,
+public,ad_group,ad_group_base_ad_group,character varying,NULL,,,
+public,ad_group,_airbyte_raw_id,character varying(36),NOT NULL,,,ad_group__airbyte_raw_id_idx
+public,ad_group,_airbyte_extracted_at,timestamp with time zone,NOT NULL,,,ad_group_ad_group_id_segments_date_segments_date1__airbyte__idx
+public,ad_group,_airbyte_extracted_at,timestamp with time zone,NOT NULL,,,ad_group__airbyte_extracted_at_idx
+public,ad_group,_airbyte_meta,jsonb,NOT NULL,,,
+public,ad_group_ad,ad_group_id,bigint,NULL,,,ad_group_ad_ad_group_id_ad_group_ad_ad_id_segments_date_idx
+public,ad_group_ad,ad_group_id,bigint,NULL,,,ad_group_ad_ad_group_id_ad_group_ad_ad_id_segments_date_seg_idx
+public,ad_group_ad,segments_date,date,NULL,,,ad_group_ad_ad_group_id_ad_group_ad_ad_id_segments_date_idx
+public,ad_group_ad,segments_date,date,NULL,,,ad_group_ad_ad_group_id_ad_group_ad_ad_id_segments_date_seg_idx
+public,ad_group_ad,ad_group_ad_ad_id,bigint,NULL,,,ad_group_ad_ad_group_id_ad_group_ad_ad_id_segments_date_idx
+public,ad_group_ad,ad_group_ad_ad_id,bigint,NULL,,,ad_group_ad_ad_group_id_ad_group_ad_ad_id_segments_date_seg_idx
+public,ad_group_ad,ad_group_ad_status,character varying,NULL,,,
+public,ad_group_ad,ad_group_ad_ad_name,character varying,NULL,,,
+public,ad_group_ad,ad_group_ad_ad_group,character varying,NULL,,,
+public,ad_group_ad,ad_group_ad_ad_hotel_ad,character varying,NULL,,,
+public,ad_group_ad,ad_group_ad_ad_strength,character varying,NULL,,,
+public,ad_group_ad,ad_group_ad_ad_local_ad_videos,jsonb,NULL,,,
+public,ad_group_ad,_airbyte_raw_id,character varying(36),NOT NULL,,,ad_group_ad__airbyte_raw_id_idx
+public,ad_group_ad,_airbyte_extracted_at,timestamp with time zone,NOT NULL,,,ad_group_ad__airbyte_extracted_at_idx
+public,ad_group_ad,_airbyte_extracted_at,timestamp with time zone,NOT NULL,,,ad_group_ad_ad_group_id_ad_group_ad_ad_id_segments_date_seg_idx
+public,ad_group_ad,_airbyte_meta,jsonb,NOT NULL,,,
+public,ad_leads,id,uuid,NOT NULL,PRIMARY KEY,,ad_leads_pkey
+public,ad_leads,inserted_at,timestamp with time zone,NOT NULL,,,
+public,ad_leads,updated_at,timestamp with time zone,NOT NULL,,,
+public,ad_leads,name,character varying(255),NULL,,,
+public,ad_leads,phone_number,character varying(255),NULL,,,ad_leads_phone_number_index
+public,ad_leads,grade,character varying(255),NULL,,,
+public,ad_leads,school,character varying(255),NULL,,,
+public,ad_leads,board,character varying(255),NULL,,,
+public,ad_leads,fb_click_id,character varying(255),NULL,,,
+public,ad_leads,google_click_id,character varying(255),NULL,,,
+public,ad_leads,utm_term,character varying(255),NULL,,,
+public,ad_leads,utm_campaign,character varying(255),NULL,,,
+public,ad_leads,utm_medium,character varying(255),NULL,,,
+public,ad_leads,utm_source,character varying(255),NULL,,,
+public,ad_leads,utm_content,character varying(255),NULL,,,
+public,ad_leads,customer_type,character varying(255),NULL,,,
+public,ad_leads,will_pay,boolean,NULL,,,
+public,ad_leads,usecase,character varying,NULL,,,
+public,ad_leads,filled_by,character varying,NULL,,,
+public,ad_leads,cookie,text,NULL,,,
+public,ad_leads,redirected_from,text,NULL,,,
+public,ad_leads,ip_address,inet,NULL,,,
+public,ad_leads,user_agent,text,NULL,,,
+public,ad_leads,city,text,NULL,,,
+public,ad_leads,language,character varying(10),NULL,,,
+public,ad_leads,school_fees,integer,NULL,,,
+public,ads_insights,cpc,"numeric(38,9)",NULL,,,
+public,ads_insights,cpm,"numeric(38,9)",NULL,,,
+public,ads_insights,cpp,"numeric(38,9)",NULL,,,
+public,ads_insights,ctr,"numeric(38,9)",NULL,,,
+public,ads_insights,ad_id,character varying,NULL,,,
+public,ads_insights,reach,bigint,NULL,,,
+public,ads_insights,spend,"numeric(38,9)",NULL,,,
+public,ads_insights,clicks,bigint,NULL,,,
+public,ads_insights,actions,jsonb,NULL,,,
+public,ads_insights,ad_name,character varying,NULL,,,
+public,ads_insights,adset_id,character varying,NULL,,,
+public,ads_insights,wish_bid,"numeric(38,9)",NULL,,,
+public,ads_insights,date_stop,date,NULL,,,
+public,ads_insights,frequency,"numeric(38,9)",NULL,,,
+public,ads_insights,objective,character varying,NULL,,,
+public,ads_insights,account_id,character varying,NULL,,,
+public,ads_insights,adset_name,character varying,NULL,,,
+public,ads_insights,date_start,date,NULL,,,
+public,ads_insights,unique_ctr,"numeric(38,9)",NULL,,,
+public,ads_insights,auction_bid,"numeric(38,9)",NULL,,,
+public,ads_insights,buying_type,character varying,NULL,,,
+public,ads_insights,campaign_id,character varying,NULL,,,
+public,ads_insights,impressions,bigint,NULL,,,
+public,ads_insights,website_ctr,jsonb,NULL,,,
+public,ads_insights,account_name,character varying,NULL,,,
+public,ads_insights,created_time,date,NULL,,,
+public,ads_insights,social_spend,"numeric(38,9)",NULL,,,
+public,ads_insights,updated_time,date,NULL,,,
+public,ads_insights,action_values,jsonb,NULL,,,
+public,ads_insights,campaign_name,character varying,NULL,,,
+public,ads_insights,unique_clicks,bigint,NULL,,,
+public,ads_insights,full_view_reach,"numeric(38,9)",NULL,,,
+public,ads_insights,outbound_clicks,jsonb,NULL,,,
+public,ads_insights,account_currency,character varying,NULL,,,
+public,ads_insights,ad_click_actions,jsonb,NULL,,,
+public,ads_insights,cost_per_ad_click,jsonb,NULL,,,
+public,ads_insights,cost_per_thruplay,jsonb,NULL,,,
+public,ads_insights,optimization_goal,character varying,NULL,,,
+public,ads_insights,inline_link_clicks,bigint,NULL,,,
+public,ads_insights,video_play_actions,jsonb,NULL,,,
+public,ads_insights,attribution_setting,character varying,NULL,,,
+public,ads_insights,outbound_clicks_ctr,jsonb,NULL,,,
+public,ads_insights,conversion_lead_rate,"numeric(38,9)",NULL,,,
+public,ads_insights,ad_impression_actions,jsonb,NULL,,,
+public,ads_insights,cost_per_unique_click,"numeric(38,9)",NULL,,,
+public,ads_insights,full_view_impressions,"numeric(38,9)",NULL,,,
+public,ads_insights,inline_link_click_ctr,"numeric(38,9)",NULL,,,
+public,ads_insights,unique_link_clicks_ctr,"numeric(38,9)",NULL,,,
+public,ads_insights,unique_outbound_clicks,jsonb,NULL,,,
+public,ads_insights,auction_competitiveness,"numeric(38,9)",NULL,,,
+public,ads_insights,conversion_rate_ranking,character varying,NULL,,,
+public,ads_insights,cost_per_outbound_click,jsonb,NULL,,,
+public,ads_insights,engagement_rate_ranking,character varying,NULL,,,
+public,ads_insights,cost_per_conversion_lead,"numeric(38,9)",NULL,,,
+public,ads_insights,video_play_curve_actions,jsonb,NULL,,,
+public,ads_insights,unique_inline_link_clicks,bigint,NULL,,,
+public,ads_insights,video_p25_watched_actions,jsonb,NULL,,,
+public,ads_insights,video_p50_watched_actions,jsonb,NULL,,,
+public,ads_insights,video_p75_watched_actions,jsonb,NULL,,,
+public,ads_insights,video_p95_watched_actions,jsonb,NULL,,,
+public,ads_insights,auction_max_competitor_bid,"numeric(38,9)",NULL,,,
+public,ads_insights,cost_per_15_sec_video_view,jsonb,NULL,,,
+public,ads_insights,unique_outbound_clicks_ctr,jsonb,NULL,,,
+public,ads_insights,video_p100_watched_actions,jsonb,NULL,,,
+public,ads_insights,video_time_watched_actions,jsonb,NULL,,,
+public,ads_insights,video_15_sec_watched_actions,jsonb,NULL,,,
+public,ads_insights,video_30_sec_watched_actions,jsonb,NULL,,,
+public,ads_insights,cost_per_unique_outbound_click,jsonb,NULL,,,
+public,ads_insights,video_avg_time_watched_actions,jsonb,NULL,,,
+public,ads_insights,video_play_retention_graph_actions,jsonb,NULL,,,
+public,ads_insights,cost_per_2_sec_continuous_video_view,jsonb,NULL,,,
+public,ads_insights,video_play_retention_0_to_15s_actions,jsonb,NULL,,,
+public,ads_insights,video_continuous_2_sec_watched_actions,jsonb,NULL,,,
+public,ads_insights,video_play_retention_20_to_60s_actions,jsonb,NULL,,,
+public,ads_insights,_airbyte_raw_id,character varying(36),NOT NULL,,,ads_insights_airbyte_tmp__airbyte_raw_id_idx
+public,ads_insights,_airbyte_extracted_at,timestamp with time zone,NOT NULL,,,ads_insights_airbyte_tmp__airbyte_extracted_at_idx
+public,ads_insights,_airbyte_meta,jsonb,NOT NULL,,,
+public,agent_roster,id,uuid,NOT NULL,PRIMARY KEY,,agent_roster_pkey
+public,agent_roster,chatwoot_agent_id,integer,NOT NULL,UNIQUE,,agent_roster_chatwoot_agent_id_key
+public,agent_roster,inserted_at,timestamp with time zone,NOT NULL,,,
+public,agent_roster,updated_at,timestamp with time zone,NOT NULL,,,
+public,agent_roster,type,text,NULL,,,
+public,agent_roster,deactivated_at,timestamp with time zone,NULL,,,
+public,agent_roster,working_today,boolean,NULL,,,
+public,agent_roster,priority,numeric,NULL,,,
+public,ai_providers,id,uuid,NOT NULL,PRIMARY KEY,,ai_providers_pkey
+public,ai_providers,name,text,NOT NULL,UNIQUE,,ai_providers_name_key
+public,ai_providers,inserted_at,timestamp with time zone,NOT NULL,,,
+public,ai_providers,updated_at,timestamp with time zone,NOT NULL,,,
+public,ai_providers,failure_count,integer,NOT NULL,,,
+public,ai_providers,last_failure_at,timestamp with time zone,NULL,,,
+public,ai_providers,failure_window_started_at,timestamp with time zone,NULL,,,
+public,anon_user_mappings,id,uuid,NOT NULL,PRIMARY KEY,,anon_user_mappings_pkey
+public,anon_user_mappings,anon_user_id,uuid,NOT NULL,UNIQUE,,anon_user_mappings_anon_user_id_key
+public,anon_user_mappings,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,anon_user_mappings_user_id_idx
+public,anon_user_mappings,inserted_at,timestamp with time zone,NOT NULL,,,
+public,anon_user_mappings,updated_at,timestamp with time zone,NOT NULL,,,
+public,anonymous_form_submissions,id,uuid,NOT NULL,PRIMARY KEY,,anonymous_form_submissions_pkey
+public,anonymous_form_submissions,anonymous_user_id,uuid,NOT NULL,,,
+public,anonymous_form_submissions,user_id,uuid,NULL,FOREIGN KEY,public.users,
+public,anonymous_form_submissions,form_id,uuid,NOT NULL,FOREIGN KEY,public.forms,
+public,anonymous_form_submissions,data,jsonb,NOT NULL,,,
+public,anonymous_form_submissions,is_completed,boolean,NOT NULL,,,
+public,anonymous_form_submissions,app_id,text,NOT NULL,,,
+public,anonymous_form_submissions,inserted_at,timestamp with time zone,NOT NULL,,,
+public,anonymous_form_submissions,updated_at,timestamp with time zone,NOT NULL,,,
+public,answer_status_enum,value,text,NOT NULL,PRIMARY KEY,,answer_status_enum_pkey
+public,answer_status_enum,description,text,NULL,,,
+public,app_event_logs,id,uuid,NOT NULL,PRIMARY KEY,,app_event_logs_pkey
+public,app_event_logs,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,app_event_logs,source,text,NOT NULL,,,
+public,app_event_logs,event_name,text,NOT NULL,,,event_name_index
+public,app_event_logs,properties,jsonb,NULL,,,
+public,app_event_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,app_notification_banners,id,uuid,NOT NULL,PRIMARY KEY,,app_notification_banners_pkey
+public,app_notification_banners,started_at,timestamp with time zone,NOT NULL,,,
+public,app_notification_banners,ended_at,timestamp with time zone,NULL,,,
+public,app_notification_banners,message,text,NOT NULL,,,
+public,app_open_logs,user_id,uuid,NULL,FOREIGN KEY,public.users,app_open_logs_user_id_idx
+public,app_open_logs,anon_user_id,uuid,NULL,,,
+public,app_open_logs,app_id,text,NULL,,,
+public,app_open_logs,version,text,NULL,,,
+public,app_open_logs,build,integer,NULL,,,
+public,app_open_logs,platform,text,NULL,,,
+public,app_open_logs,update_id,text,NULL,,,
+public,app_open_logs,inserted_at,timestamp with time zone,NOT NULL,,,app_open_logs_inserted_at_idx
+public,artifacts,id,uuid,NOT NULL,PRIMARY KEY,,artifacts_pkey
+public,artifacts,type,text,NOT NULL,,,
+public,artifacts,content,jsonb,NOT NULL,,,
+public,artifacts,client_data,jsonb,NULL,,,
+public,artifacts,status,text,NOT NULL,,,
+public,artifacts,terminated_at,timestamp with time zone,NULL,,,
+public,artifacts,inserted_at,timestamp with time zone,NOT NULL,,,
+public,artifacts,updated_at,timestamp with time zone,NOT NULL,,,
+public,assignments,id,uuid,NOT NULL,PRIMARY KEY,,assignments_pkey
+public,assignments,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,assignments_user_id_idx
+public,assignments,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,assignments_user_id_completed_at_archived_at_index
+public,assignments,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,assignments_user_id_scenario_id_completed_at_index
+public,assignments,scenario_id,uuid,NULL,,,assignments_user_id_scenario_id_completed_at_index
+public,assignments,scenario_id,uuid,NULL,FOREIGN KEY,public.speak_scenarios,assignments_user_id_scenario_id_completed_at_index
+public,assignments,scenario_id,uuid,NULL,FOREIGN KEY,public.speak_scenarios,assignments_scenario_id_completed_at_index
+public,assignments,scenario_id,uuid,NULL,,,assignments_scenario_id_completed_at_index
+public,assignments,inserted_at,timestamp with time zone,NOT NULL,,,
+public,assignments,worksheet_id,uuid,NULL,,,
+public,assignments,worksheet_id,uuid,NULL,FOREIGN KEY,public.skill_sheets,
+public,assignments,assigned_for_date,date,NOT NULL,,,
+public,assignments,is_auto_assigned,boolean,NULL,,,
+public,assignments,completed_at,timestamp with time zone,NULL,,,assignments_user_id_scenario_id_completed_at_index
+public,assignments,completed_at,timestamp with time zone,NULL,,,assignments_user_id_completed_at_archived_at_index
+public,assignments,completed_at,timestamp with time zone,NULL,,,assignments_scenario_id_completed_at_index
+public,assignments,completed_at,timestamp with time zone,NULL,,,assignments_completed_at_index
+public,assignments,archived_at,timestamp with time zone,NULL,,,assignments_user_id_completed_at_archived_at_index
+public,assignments,updated_at,timestamp with time zone,NULL,,,
+public,assignments,updated_by,uuid,NULL,FOREIGN KEY,public.users,
+public,assignments,source,text,NULL,,,assignments_source_index
+public,auto_assignments,id,uuid,NOT NULL,PRIMARY KEY,,auto_assignments_pkey
+public,auto_assignments,persona,character varying(255),NOT NULL,,,unique_aa_persona_scenario
+public,auto_assignments,index,integer,NOT NULL,,,
+public,auto_assignments,scenario_id,uuid,NULL,,,unique_aa_persona_scenario
+public,auto_assignments,scenario_id,uuid,NULL,FOREIGN KEY,public.speak_scenarios,unique_aa_persona_scenario
+public,auto_assignments,worksheet_id,uuid,NULL,FOREIGN KEY,public.skill_sheets,
+public,auto_assignments,worksheet_id,uuid,NULL,,,
+public,auto_assignments,worksheet_id,uuid,NULL,,,
+public,auto_assignments,archived_at,timestamp with time zone,NULL,,,
+public,auto_assignments,inserted_at,timestamp with time zone,NOT NULL,,,
+public,auto_assignments,updated_at,timestamp with time zone,NOT NULL,,,
+public,awsdms_apply_exceptions,TASK_NAME,character varying(128),NOT NULL,,,
+public,awsdms_apply_exceptions,TABLE_OWNER,character varying(128),NOT NULL,,,
+public,awsdms_apply_exceptions,TABLE_NAME,character varying(128),NOT NULL,,,
+public,awsdms_apply_exceptions,ERROR_TIME,timestamp without time zone,NOT NULL,,,
+public,awsdms_apply_exceptions,STATEMENT,text,NOT NULL,,,
+public,awsdms_apply_exceptions,ERROR,text,NOT NULL,,,
+public,awsdms_changes275295C83F0008B1,seq,integer,NOT NULL,PRIMARY KEY,,awsdms_changes275295C83F0008B1_pkey
+public,awsdms_changes275295C83F0008B1,col1,character varying(32768),NULL,,,
+public,awsdms_changes275295C83F0008B1,col2,character varying(32768),NULL,,,
+public,awsdms_changes275295C83F0008B1,col3,character varying(32768),NULL,,,
+public,awsdms_changes275295C83F0008B1,col4,character varying(32768),NULL,,,
+public,awsdms_changes275295C83F0008B1,col5,character varying(32768),NULL,,,
+public,awsdms_changes275295C83F0008B1,col6,character varying(32768),NULL,,,
+public,awsdms_changes275295C83F0008B1,col7,character varying(32768),NULL,,,
+public,awsdms_changes275295C83F0008B1,col8,character varying(32768),NULL,,,
+public,awsdms_changes275295C83F0008B1,col9,character varying(32768),NULL,,,
+public,awsdms_changes275295C83F0008B1,col10,character varying(32768),NULL,,,
+public,awsdms_changes275295C83F0008B1,col11,character varying(32768),NULL,,,
+public,awsdms_changes275295C83F0008B1,col12,character varying(32768),NULL,,,
+public,awsdms_changes275295C83F0008B1,col13,character varying(32768),NULL,,,
+public,awsdms_changes275295C83F0008B1,col14,character varying(37),NULL,,,
+public,awsdms_changes275295C83F0008B1,col15,character varying(37),NULL,,,
+public,awsdms_changes275295C83F0008B1,col16,character varying(37),NULL,,,
+public,awsdms_changes275295C83F0008B1,col17,character varying(37),NULL,,,
+public,awsdms_changes275295C83F0008B1,col18,character varying(37),NULL,,,
+public,awsdms_changes275295C83F0008B1,col19,character varying(37),NULL,,,
+public,awsdms_changes275295C83F0008B1,col20,character varying(37),NULL,,,
+public,awsdms_changes275295C83F0008B1,col21,character varying(37),NULL,,,
+public,awsdms_changes275295C83F0008B1,col22,character varying(20),NULL,,,
+public,awsdms_changes275295C83F0008B1,col23,character varying(20),NULL,,,
+public,awsdms_changes275295C83F0008B1,col24,character varying(20),NULL,,,
+public,awsdms_changes275295C83F0008B1,col25,text,NULL,,,
+public,awsdms_changes275295C83F0008B1,col26,text,NULL,,,
+public,awsdms_changes275295C83F0008B1,col27,text,NULL,,,
+public,awsdms_changes275295C83F0008B1,col28,text,NULL,,,
+public,awsdms_changes275295C83F0008B1,seg1,character varying(20),NULL,,,
+public,awsdms_changesB18440767B824F56,seq,integer,NOT NULL,PRIMARY KEY,,awsdms_changesB18440767B824F56_pkey
+public,awsdms_changesB18440767B824F56,col1,character varying(32768),NULL,,,
+public,awsdms_changesB18440767B824F56,col2,character varying(32768),NULL,,,
+public,awsdms_changesB18440767B824F56,col3,character varying(32768),NULL,,,
+public,awsdms_changesB18440767B824F56,col4,character varying(32768),NULL,,,
+public,awsdms_changesB18440767B824F56,col5,character varying(32768),NULL,,,
+public,awsdms_changesB18440767B824F56,col6,character varying(32768),NULL,,,
+public,awsdms_changesB18440767B824F56,col7,character varying(32768),NULL,,,
+public,awsdms_changesB18440767B824F56,col8,character varying(32768),NULL,,,
+public,awsdms_changesB18440767B824F56,col9,character varying(32768),NULL,,,
+public,awsdms_changesB18440767B824F56,col10,character varying(32768),NULL,,,
+public,awsdms_changesB18440767B824F56,col11,character varying(32768),NULL,,,
+public,awsdms_changesB18440767B824F56,col12,character varying(32768),NULL,,,
+public,awsdms_changesB18440767B824F56,col13,character varying(32768),NULL,,,
+public,awsdms_changesB18440767B824F56,col14,character varying(37),NULL,,,
+public,awsdms_changesB18440767B824F56,col15,character varying(37),NULL,,,
+public,awsdms_changesB18440767B824F56,col16,character varying(37),NULL,,,
+public,awsdms_changesB18440767B824F56,col17,character varying(37),NULL,,,
+public,awsdms_changesB18440767B824F56,col18,character varying(37),NULL,,,
+public,awsdms_changesB18440767B824F56,col19,character varying(37),NULL,,,
+public,awsdms_changesB18440767B824F56,col20,character varying(37),NULL,,,
+public,awsdms_changesB18440767B824F56,col21,character varying(37),NULL,,,
+public,awsdms_changesB18440767B824F56,col22,character varying(20),NULL,,,
+public,awsdms_changesB18440767B824F56,col23,character varying(20),NULL,,,
+public,awsdms_changesB18440767B824F56,col24,character varying(20),NULL,,,
+public,awsdms_changesB18440767B824F56,col25,text,NULL,,,
+public,awsdms_changesB18440767B824F56,col26,text,NULL,,,
+public,awsdms_changesB18440767B824F56,col27,text,NULL,,,
+public,awsdms_changesB18440767B824F56,col28,text,NULL,,,
+public,awsdms_changesB18440767B824F56,seg1,character varying(20),NULL,,,
+public,callback_logs,id,uuid,NOT NULL,PRIMARY KEY,,callback_logs_pkey
+public,callback_logs,family_id,uuid,NOT NULL,FOREIGN KEY,public.families,
+public,callback_logs,called_at,timestamp with time zone,NULL,,,
+public,callback_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,callback_logs,updated_at,timestamp with time zone,NOT NULL,,,
+public,cart,id,uuid,NOT NULL,PRIMARY KEY,,cart_pkey
+public,cart,product_id,uuid,NOT NULL,FOREIGN KEY,public.products,
+public,cart,inserted_at,timestamp with time zone,NOT NULL,,,
+public,cart,updated_at,timestamp with time zone,NOT NULL,,,
+public,cart,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,cart,processed_at,timestamp with time zone,NULL,,,
+public,chapters,id,uuid,NOT NULL,PRIMARY KEY,,chapters_pkey
+public,chapters,name,character varying(255),NOT NULL,,,
+public,chapters,grade,character varying(255),NOT NULL,,,chapters_grade_subject_number_curriculum_index
+public,chapters,grade_number,integer,NOT NULL,,,
+public,chapters,subject,character varying(255),NOT NULL,,,chapters_grade_subject_number_curriculum_index
+public,chapters,number,integer,NOT NULL,,,chapters_grade_subject_number_curriculum_index
+public,chapters,curriculum,character varying(255),NOT NULL,,,chapters_grade_subject_number_curriculum_index
+public,chapters,country,character varying(255),NOT NULL,,,
+public,chapters,inserted_at,timestamp with time zone,NOT NULL,,,
+public,chapters,updated_at,timestamp with time zone,NOT NULL,,,
+public,chapters,hidden,boolean,NULL,,,
+public,chapters,priority,integer,NULL,,,
+public,chapters,slug,character varying(255),NULL,,,
+public,chat_logs,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,chat_logs_user_id_idx
+public,chat_logs,scenario_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenarios,chat_logs_scenario_id_idx
+public,chat_logs,action,text,NOT NULL,,,chat_logs_action_idx
+public,chat_logs,status,text,NOT NULL,,,chat_logs_status_idx
+public,chat_logs,request,jsonb,NOT NULL,,,
+public,chat_logs,response,jsonb,NOT NULL,,,
+public,chat_logs,inserted_at,timestamp with time zone,NOT NULL,,,chat_logs_inserted_at_idx
+public,chatwoot_conversation_audits,id,uuid,NOT NULL,PRIMARY KEY,,chatwoot_conversation_audits_pkey
+public,chatwoot_conversation_audits,updated_at,timestamp with time zone,NOT NULL,,,
+public,chatwoot_conversation_audits,inserted_at,timestamp with time zone,NOT NULL,,,
+public,chatwoot_conversation_audits,conversation_id,integer,NOT NULL,,,
+public,chatwoot_conversation_audits,data,jsonb,NOT NULL,,,
+public,communication_opt_out,id,uuid,NOT NULL,PRIMARY KEY,,communication_opt_out_pkey
+public,communication_opt_out,inserted_at,timestamp with time zone,NOT NULL,,,
+public,communication_opt_out,updated_at,timestamp with time zone,NOT NULL,,,
+public,communication_opt_out,data,jsonb,NULL,,,
+public,communication_opt_out,phone_number,text,NOT NULL,,,communication_opt_out_phone_number_index
+public,concept_activity_sets,id,uuid,NOT NULL,PRIMARY KEY,,concept_activity_sets_pkey
+public,concept_activity_sets,inserted_at,timestamp with time zone,NOT NULL,,,
+public,concept_activity_sets,updated_at,timestamp with time zone,NOT NULL,,,
+public,concept_activity_sets,concept_id,uuid,NOT NULL,FOREIGN KEY,public.concepts,unique_non_archived_pre_post_test_per_concept
+public,concept_activity_sets,type,text,NOT NULL,,,unique_non_archived_pre_post_test_per_concept
+public,concept_activity_sets,scenario_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenarios,
+public,concept_activity_sets,index,integer,NOT NULL,,,
+public,concept_activity_sets,archived_at,timestamp with time zone,NULL,,,
+public,concepts,id,uuid,NOT NULL,PRIMARY KEY,,concepts_pkey
+public,concepts,inserted_at,timestamp with time zone,NOT NULL,,,
+public,concepts,updated_at,timestamp with time zone,NOT NULL,,,
+public,concepts,name,text,NOT NULL,,,
+public,concepts,archived_at,timestamp with time zone,NULL,,,
+public,concepts,evaluation_prompt_id,uuid,NULL,FOREIGN KEY,public.prompts,
+public,concepts,evaluation_prompt_vars,jsonb,NULL,,,
+public,concepts,passing_percentage,integer,NULL,,,
+public,concepts,skip_pattern,jsonb,NULL,,,
+public,concepts,metadata,jsonb,NOT NULL,,,
+public,contact_logs,id,uuid,NOT NULL,PRIMARY KEY,,chatwoot_logs_pkey
+public,contact_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,contact_logs,updated_at,timestamp with time zone,NOT NULL,,,
+public,contact_logs,agent_id,integer,NOT NULL,,,
+public,contact_logs,conversation_id,integer,NOT NULL,,,
+public,contact_logs,type,text,NOT NULL,,,
+public,contact_logs,reminder_at,timestamp with time zone,NULL,,,
+public,contact_logs,percentage,integer,NULL,,,
+public,contact_logs,comment,text,NULL,,,
+public,course_config,id,uuid,NOT NULL,PRIMARY KEY,,course_config_pkey
+public,course_config,key,text,NOT NULL,UNIQUE,,course_config_key_key
+public,course_config,value,jsonb,NOT NULL,,,
+public,course_config,archived_at,timestamp with time zone,NULL,,,
+public,course_config,inserted_at,timestamp with time zone,NOT NULL,,,
+public,course_config,updated_at,timestamp with time zone,NOT NULL,,,
+public,courses,id,uuid,NOT NULL,PRIMARY KEY,,courses_pkey
+public,courses,inserted_at,timestamp with time zone,NOT NULL,,,
+public,courses,updated_at,timestamp with time zone,NOT NULL,,,
+public,courses,details,jsonb,NOT NULL,,,
+public,courses,name,text,NOT NULL,,,
+public,courses,archived_at,timestamp with time zone,NULL,,,
+public,courses,slug,text,NULL,UNIQUE,,courses_slug_key
+public,courses,channel,text,NULL,,,
+public,curriculum,id,uuid,NOT NULL,PRIMARY KEY,,curriculum_pkey
+public,curriculum,updated_at,timestamp with time zone,NOT NULL,,,
+public,curriculum,inserted_at,timestamp with time zone,NOT NULL,,,
+public,curriculum,concept_id,uuid,NOT NULL,FOREIGN KEY,public.concepts,unique_active_concept_per_persona
+public,curriculum,index,integer,NOT NULL,,,
+public,curriculum,persona,text,NOT NULL,,,unique_active_concept_per_persona
+public,curriculum,archived_at,timestamp with time zone,NULL,,,
+public,customer_communication_logs,id,uuid,NOT NULL,PRIMARY KEY,,customer_communication_logs_pkey
+public,customer_communication_logs,type,text,NOT NULL,,,
+public,customer_communication_logs,status,text,NOT NULL,,,
+public,customer_communication_logs,call_time,timestamp with time zone,NOT NULL,,,
+public,customer_communication_logs,call_id,text,NOT NULL,UNIQUE,,customer_communication_logs_call_id_key
+public,customer_communication_logs,client_number,text,NOT NULL,,,
+public,customer_communication_logs,primary_facilitator,text,NOT NULL,,,
+public,customer_communication_logs,team_name,text,NULL,,,
+public,customer_communication_logs,answered_by_facilitator,text,NULL,,,
+public,customer_communication_logs,total_call_duration,integer,NULL,,,
+public,customer_communication_logs,talk_time_duration,integer,NULL,,,
+public,customer_communication_logs,hangup_cause,text,NULL,,,
+public,customer_communication_logs,recording_url,text,NULL,,,
+public,customer_communication_logs,reason_key,text,NULL,,,
+public,customer_communication_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,customer_communication_logs,updated_at,timestamp with time zone,NOT NULL,,,
+public,customer_interactions,id,uuid,NOT NULL,PRIMARY KEY,,customer_interactions_pkey
+public,customer_interactions,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,customer_interactions_user_id_idx
+public,customer_interactions,agent_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,customer_interactions,notes,text,NOT NULL,,,
+public,customer_interactions,interaction_type,character varying(255),NOT NULL,,,
+public,customer_interactions,next_interaction_scheduled_at,timestamp with time zone,NULL,,,
+public,customer_interactions,inserted_at,timestamp with time zone,NOT NULL,,,
+public,customer_interactions,updated_at,timestamp with time zone,NOT NULL,,,
+public,customer_interactions,connected,boolean,NULL,,,
+public,customer_interactions,audio_feedback_url,text,NULL,,,
+public,customer_interactions,scenario_result_id,uuid,NULL,FOREIGN KEY,public.speak_scenario_results,
+public,customer_interactions,worksheet_attempt_id,uuid,NULL,FOREIGN KEY,public.skill_sheet_attempts,
+public,dms_test,id,integer,NOT NULL,PRIMARY KEY,,dms_test_pkey
+public,dms_test,name,text,NULL,,,
+public,events,id,uuid,NOT NULL,PRIMARY KEY,,events_pkey
+public,events,game,character varying(255),NOT NULL,,,
+public,events,starting_at,timestamp with time zone,NOT NULL,,,events_starting_at_index
+public,events,ending_at,timestamp with time zone,NOT NULL,,,events_ending_at_index
+public,events,show_on_homepage,boolean,NOT NULL,,,
+public,events,room_code,character varying(255),NULL,,,events_room_code_index
+public,events,inserted_at,timestamp with time zone,NOT NULL,,,
+public,events,updated_at,timestamp with time zone,NOT NULL,,,
+public,events,title,character varying(255),NULL,,,
+public,events,preview_image_url,character varying(255),NULL,,,
+public,events,description,text,NOT NULL,,,
+public,events,cover_image_url,character varying(255),NULL,,,
+public,events,brochure_url,character varying(255),NULL,,,
+public,events,prizes,jsonb,NULL,,,
+public,events,age_heading,character varying(255),NULL,,,
+public,events,age_sub_heading,character varying(255),NULL,,,
+public,events,prize_heading,character varying(255),NULL,,,
+public,events,prize_sub_heading,character varying(255),NULL,,,
+public,events,location_heading,character varying(255),NULL,,,
+public,events,location_sub_heading,character varying(255),NULL,,,
+public,events,rank,integer,NULL,,,
+public,events,tags,character varying(255)[],NULL,,,
+public,events,grades,character varying(255)[],NULL,,,
+public,events,zoom_url,character varying(255),NULL,,,
+public,events,entry_fee,integer,NOT NULL,,,
+public,events,participant_count,integer,NOT NULL,,,
+public,events,winner_count,integer,NOT NULL,,,
+public,events,prize,character varying(255),NULL,,,
+public,events,should_send_reminder_notifications,boolean,NOT NULL,,,
+public,events,room_id,uuid,NULL,FOREIGN KEY,public.rooms,events_room_id_index
+public,events,zoom_meeting_id,character varying(255),NULL,,,
+public,events,zoom_meeting_passcode,character varying(255),NULL,,,
+public,events,had_technical_glitch,boolean,NULL,,,
+public,events,leaderboard_processed_at,timestamp with time zone,NULL,,,
+public,events,should_process_rewards,boolean,NOT NULL,,,
+public,events,rewards_processed_at,timestamp with time zone,NULL,,,
+public,events,is_subscription,boolean,NOT NULL,,,
+public,events,subtitle,character varying(255),NULL,,,
+public,events,skill_sheet_id,uuid,NULL,FOREIGN KEY,public.skill_sheets,events_skill_sheet_id_index
+public,events,facilitator,character varying(255),NULL,,,
+public,events,content_creator,character varying(255),NULL,,,
+public,experiment_set_members,id,uuid,NOT NULL,PRIMARY KEY,,experiment_set_members_pkey
+public,experiment_set_members,experiment_set_name,text,NOT NULL,FOREIGN KEY,public.experiment_sets,
+public,experiment_set_members,experiment_name,text,NOT NULL,FOREIGN KEY,public.experiments,
+public,experiment_set_members,criteria,text,NOT NULL,,,
+public,experiment_set_members,inserted_at,timestamp with time zone,NOT NULL,,,
+public,experiment_set_members,updated_at,timestamp with time zone,NOT NULL,,,
+public,experiment_set_members,priority,integer,NOT NULL,,,
+public,experiment_set_members,app_id,text,NOT NULL,,,
+public,experiment_set_members,archived_at,timestamp with time zone,NULL,,,
+public,experiment_sets,id,uuid,NOT NULL,PRIMARY KEY,,experiment_sets_pkey
+public,experiment_sets,name,text,NOT NULL,UNIQUE,,experiment_sets_name_key
+public,experiment_sets,inserted_at,timestamp with time zone,NOT NULL,,,
+public,experiment_sets,updated_at,timestamp with time zone,NOT NULL,,,
+public,experiment_sets,ended_at,timestamp with time zone,NULL,,,
+public,experiment_user_buckets,id,uuid,NOT NULL,PRIMARY KEY,,experiment_user_buckets_pkey
+public,experiment_user_buckets,inserted_at,timestamp with time zone,NOT NULL,,,experiment_user_buckets_active_user_covering_idx
+public,experiment_user_buckets,updated_at,timestamp with time zone,NOT NULL,,,
+public,experiment_user_buckets,experiment_id,uuid,NOT NULL,FOREIGN KEY,public.experiments,experiment_user_buckets_experiment_id_user_id_ended_at_uniq
+public,experiment_user_buckets,experiment_id,uuid,NOT NULL,FOREIGN KEY,public.experiments,experiment_user_buckets_active_user_covering_idx
+public,experiment_user_buckets,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,experiment_user_buckets_experiment_id_user_id_ended_at_uniq
+public,experiment_user_buckets,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,experiment_user_buckets_active_user_covering_idx
+public,experiment_user_buckets,variant_id,uuid,NOT NULL,FOREIGN KEY,public.experiment_variants,experiment_user_buckets_active_user_covering_idx
+public,experiment_user_buckets,ended_at,timestamp with time zone,NULL,,,experiment_user_buckets_experiment_id_user_id_ended_at_uniq
+public,experiment_user_buckets,archived_by_cron,boolean,NULL,,,
+public,experiment_variants,id,uuid,NOT NULL,PRIMARY KEY,,experiment_variants_pkey
+public,experiment_variants,inserted_at,timestamp with time zone,NOT NULL,,,
+public,experiment_variants,updated_at,timestamp with time zone,NOT NULL,,,
+public,experiment_variants,experiment_id,uuid,NOT NULL,FOREIGN KEY,public.experiments,experiment_variants_experiment_id_name_key
+public,experiment_variants,experiment_id,uuid,NOT NULL,UNIQUE,,experiment_variants_experiment_id_name_key
+public,experiment_variants,name,text,NOT NULL,UNIQUE,,experiment_variants_experiment_id_name_key
+public,experiment_variants,weight,numeric,NOT NULL,,,
+public,experiment_variants,payload,jsonb,NOT NULL,,,
+public,experiment_variants,ended_at,timestamp with time zone,NULL,,,
+public,experiment_variants,updated_by,uuid,NULL,FOREIGN KEY,public.users,
+public,experiments,id,uuid,NOT NULL,PRIMARY KEY,,experiments_pkey
+public,experiments,name,text,NOT NULL,UNIQUE,,experiments_name_key
+public,experiments,description,text,NULL,,,
+public,experiments,started_at,timestamp with time zone,NOT NULL,,,
+public,experiments,ended_at,timestamp with time zone,NULL,,,
+public,experiments,inserted_at,timestamp with time zone,NOT NULL,,,
+public,experiments,updated_at,timestamp with time zone,NOT NULL,,,
+public,experiments,owner,text,NULL,,,
+public,facilitators,id,uuid,NOT NULL,PRIMARY KEY,,facilitators_pkey
+public,facilitators,user_id,uuid,NOT NULL,UNIQUE,,facilitators_user_id_key
+public,facilitators,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,facilitators_user_id_key
+public,facilitators,role,text,NOT NULL,,,
+public,facilitators,inserted_at,timestamp with time zone,NOT NULL,,,
+public,facilitators,updated_at,timestamp with time zone,NOT NULL,,,
+public,facilitators,profile_photo_url,text,NULL,,,
+public,facilitators,name,text,NOT NULL,,,
+public,facilitators_persona_map,id,uuid,NOT NULL,PRIMARY KEY,,facilitators_persona_map_pkey
+public,facilitators_persona_map,facilitator_id,uuid,NOT NULL,FOREIGN KEY,public.users,unique_unarchived_facilitator_persona_mapping
+public,facilitators_persona_map,persona,character varying,NOT NULL,,,unique_unarchived_facilitator_persona_mapping
+public,facilitators_persona_map,inserted_at,timestamp with time zone,NOT NULL,,,
+public,facilitators_persona_map,archived_at,timestamp with time zone,NULL,,,
+public,facilitators_persona_map,language,text,NULL,,,
+public,families,id,uuid,NOT NULL,PRIMARY KEY,,families_pkey
+public,families,phone_number,character varying(255),NOT NULL,,,families_phone_number_index
+public,families,inserted_at,timestamp with time zone,NOT NULL,,,
+public,families,updated_at,timestamp with time zone,NOT NULL,,,
+public,families,referred_by,uuid,NULL,FOREIGN KEY,public.families,
+public,families,referral_code,character(12),NOT NULL,,,families_referral_code_index
+public,families,otp_verified_at,timestamp with time zone,NULL,,,
+public,families,original_phone_number,character varying(255),NULL,,,
+public,family_tokens,id,uuid,NOT NULL,PRIMARY KEY,,family_tokens_pkey
+public,family_tokens,family_id,uuid,NOT NULL,FOREIGN KEY,public.families,family_tokens_family_id_index
+public,family_tokens,token,bytea,NOT NULL,,,family_tokens_token_index
+public,family_tokens,inserted_at,timestamp with time zone,NOT NULL,,,
+public,feature_flags,id,uuid,NOT NULL,PRIMARY KEY,,feature_flags_pkey
+public,feature_flags,feature_key,character varying(255),NOT NULL,,,feature_flags_feature_key_user_id_index
+public,feature_flags,feature_value,jsonb,NOT NULL,,,
+public,feature_flags,description,character varying(255),NULL,,,
+public,feature_flags,user_id,uuid,NULL,FOREIGN KEY,public.users,feature_flags_feature_key_user_id_index
+public,feature_flags,inserted_at,timestamp with time zone,NOT NULL,,,
+public,feature_flags,updated_at,timestamp with time zone,NOT NULL,,,
+public,feedback,id,uuid,NOT NULL,PRIMARY KEY,,feedback_pkey
+public,feedback,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,feedback_skill_sheet_id_user_id_index
+public,feedback,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,feedback_scenario_id_user_id_index
+public,feedback,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,feedback_user_id_inserted_at_index
+public,feedback,skill_sheet_id,uuid,NULL,FOREIGN KEY,public.skill_sheets,feedback_skill_sheet_id_user_id_index
+public,feedback,feedback,jsonb,NOT NULL,,,
+public,feedback,inserted_at,timestamp with time zone,NOT NULL,,,feedback_user_id_inserted_at_index
+public,feedback,scenario_id,uuid,NULL,FOREIGN KEY,public.speak_scenarios,feedback_scenario_id_user_id_index
+public,file_uploads,id,uuid,NOT NULL,PRIMARY KEY,,file_uploads_pkey
+public,file_uploads,name,text,NOT NULL,,,
+public,file_uploads,bucket_name,text,NOT NULL,,,
+public,file_uploads,key,text,NOT NULL,,,
+public,file_uploads,provider,text,NOT NULL,,,
+public,file_uploads,url,text,NOT NULL,,,
+public,file_uploads,mime_type,text,NOT NULL,,,
+public,file_uploads,size,bigint,NOT NULL,,,
+public,file_uploads,uploaded_by,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,file_uploads,inserted_at,timestamp with time zone,NOT NULL,,,
+public,file_uploads,updated_at,timestamp with time zone,NOT NULL,,,
+public,file_uploads,status,text,NOT NULL,,,
+public,file_uploads,processed_data,jsonb,NULL,,,
+public,form_screens,id,uuid,NOT NULL,PRIMARY KEY,,form_screens_pkey
+public,form_screens,name,text,NOT NULL,UNIQUE,,form_screens_name_key
+public,form_screens,inserted_at,timestamp with time zone,NOT NULL,,,
+public,form_screens,updated_at,timestamp with time zone,NOT NULL,,,
+public,form_screens,updated_by,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,form_screens,comments,text,NOT NULL,,,
+public,form_screens,data,jsonb,NOT NULL,,,
+public,form_submissions,id,uuid,NOT NULL,PRIMARY KEY,,form_submissions_pkey
+public,form_submissions,inserted_at,timestamp with time zone,NOT NULL,,,
+public,form_submissions,updated_at,timestamp with time zone,NOT NULL,,,
+public,form_submissions,data,jsonb,NOT NULL,,,
+public,form_submissions,form_id,uuid,NOT NULL,FOREIGN KEY,public.forms,
+public,form_submissions,is_completed,boolean,NOT NULL,,,
+public,form_submissions,user_id,uuid,NULL,FOREIGN KEY,public.users,idx_form_submissions_user_id
+public,forms,id,uuid,NOT NULL,PRIMARY KEY,,forms_pkey
+public,forms,inserted_at,timestamp with time zone,NOT NULL,,,
+public,forms,updated_at,timestamp with time zone,NOT NULL,,,
+public,forms,data,jsonb,NOT NULL,,,
+public,forms,name,text,NOT NULL,UNIQUE,,forms_name_key
+public,forms,is_active,boolean,NOT NULL,,,
+public,forms,updated_by,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,forms,comments,text,NOT NULL,,,
+public,forms,form_screen_id,uuid,NULL,FOREIGN KEY,public.form_screens,idx_forms_form_screen_id
+public,free_trial_sales_lead,id,uuid,NOT NULL,PRIMARY KEY,,free_trial_sales_lead_pkey
+public,free_trial_sales_lead,phone_number,text,NOT NULL,,,
+public,free_trial_sales_lead,name,text,NOT NULL,,,
+public,free_trial_sales_lead,user_type,text,NOT NULL,,,
+public,free_trial_sales_lead,age,integer,NOT NULL,,,
+public,free_trial_sales_lead,occupation,text,NULL,,,
+public,free_trial_sales_lead,city,text,NOT NULL,,,
+public,free_trial_sales_lead,grade,text,NULL,,,
+public,free_trial_sales_lead,school,text,NULL,,,
+public,free_trial_sales_lead,free_trial_persona,text,NOT NULL,,,
+public,free_trial_sales_lead,updated_at,timestamp with time zone,NULL,,,
+public,free_trial_sales_lead,inserted_at,timestamp with time zone,NULL,,,
+public,gemstore,id,uuid,NOT NULL,PRIMARY KEY,,gemstore_pkey
+public,gemstore,inserted_at,timestamp with time zone,NOT NULL,,,
+public,gemstore,updated_at,timestamp with time zone,NOT NULL,,,
+public,gemstore,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,one_active_status_per_user
+public,gemstore,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,gemstore_user_id_index
+public,gemstore,level_id,uuid,NOT NULL,FOREIGN KEY,public.gemstore_levels,
+public,gemstore,status,text,NOT NULL,,,
+public,gemstore,start_at,timestamp with time zone,NOT NULL,,,
+public,gemstore,lives_extra,integer,NOT NULL,,,
+public,gemstore,level_end_acknowledged_at,timestamp with time zone,NULL,,,
+public,gemstore,ended_at,timestamp with time zone,NULL,,,
+public,gemstore_attendance,id,uuid,NOT NULL,PRIMARY KEY,,gemstore_attendance_pkey
+public,gemstore_attendance,inserted_at,timestamp with time zone,NOT NULL,,,
+public,gemstore_attendance,updated_at,timestamp with time zone,NOT NULL,,,
+public,gemstore_attendance,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,gemstore_attendance,gemstore_id,uuid,NOT NULL,UNIQUE,,gemstore_attendance_gemstore_id_date_key
+public,gemstore_attendance,gemstore_id,uuid,NOT NULL,FOREIGN KEY,public.gemstore,gemstore_attendance_gemstore_id_date_key
+public,gemstore_attendance,present,boolean,NOT NULL,,,
+public,gemstore_attendance,date,date,NOT NULL,UNIQUE,,gemstore_attendance_gemstore_id_date_key
+public,gemstore_levels,id,uuid,NOT NULL,PRIMARY KEY,,gemstore_levels_pkey
+public,gemstore_levels,inserted_at,timestamp with time zone,NOT NULL,,,
+public,gemstore_levels,updated_at,timestamp with time zone,NOT NULL,,,
+public,gemstore_levels,index,integer,NOT NULL,UNIQUE,,gemstore_levels_index_key
+public,gemstore_levels,name,text,NOT NULL,UNIQUE,,gemstore_levels_name_key
+public,gemstore_levels,days,integer,NOT NULL,,,
+public,gemstore_levels,lives,integer,NOT NULL,,,
+public,gemstore_levels,gems,integer,NOT NULL,,,
+public,gemstore_levels,metadata,jsonb,NOT NULL,,,
+public,gemstore_levels,gems_everyday,integer,NOT NULL,,,
+public,internal_logs,id,uuid,NOT NULL,PRIMARY KEY,,internal_logs_pkey
+public,internal_logs,updated_at,timestamp with time zone,NOT NULL,,,
+public,internal_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,internal_logs,type,text,NOT NULL,,,
+public,internal_logs,data,jsonb,NOT NULL,,,
+public,invoice_counters,fy_start,date,NOT NULL,UNIQUE,,invoice_counters_fy_start_source_type_unique
+public,invoice_counters,next_no,bigint,NOT NULL,,,
+public,invoice_counters,id,uuid,NOT NULL,PRIMARY KEY,,invoice_counters_pkey
+public,invoice_counters,source_type,text,NOT NULL,UNIQUE,,invoice_counters_fy_start_source_type_unique
+public,lead_audit_logs,id,uuid,NOT NULL,PRIMARY KEY,,lead_audit_logs_pkey
+public,lead_audit_logs,conversation_id,integer,NOT NULL,,,
+public,lead_audit_logs,agent_id,integer,NOT NULL,,,
+public,lead_audit_logs,agent_name,text,NOT NULL,,,
+public,lead_audit_logs,manager_id,integer,NULL,,,
+public,lead_audit_logs,manager_name,text,NULL,,,
+public,lead_audit_logs,sale_date_time,timestamp with time zone,NULL,,,
+public,lead_audit_logs,sale_value,integer,NULL,,,
+public,lead_audit_logs,pitch_quality,text,NULL,,,
+public,lead_audit_logs,sale_percentage,integer,NULL,,,
+public,lead_audit_logs,manager_comment,text,NULL,,,
+public,lead_audit_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,lead_audit_logs,updated_at,timestamp with time zone,NOT NULL,,,
+public,lead_audit_logs,recording_url,text,NULL,,,
+public,lead_audit_logs,audited_at,timestamp with time zone,NULL,,,
+public,lead_audit_logs,archived_at,timestamp with time zone,NULL,,,
+public,lead_communication_logs,inserted_at,timestamp with time zone,NOT NULL,,,lead_communication_logs_lead_phone_number_inserted_at_duration_
+public,lead_communication_logs,inserted_at,timestamp with time zone,NOT NULL,,,idx_lead_communication_logs_emp_inserted_at_lead_phone_number
+public,lead_communication_logs,updated_at,timestamp with time zone,NOT NULL,,,
+public,lead_communication_logs,employee_name,character varying,NOT NULL,,,idx_lead_communication_logs_emp_inserted_at_lead_phone_number
+public,lead_communication_logs,employee_phone_number,character varying,NOT NULL,,,
+public,lead_communication_logs,id,character varying,NOT NULL,PRIMARY KEY,,lead_communication_logs_pkey
+public,lead_communication_logs,lead_phone_number,character varying,NOT NULL,,,idx_lead_communication_logs_emp_inserted_at_lead_phone_number
+public,lead_communication_logs,lead_phone_number,character varying,NOT NULL,,,lead_communication_logs_lead_phone_number_inserted_at_duration_
+public,lead_communication_logs,lead_name,character varying,NULL,,,
+public,lead_communication_logs,duration,integer,NOT NULL,,,lead_communication_logs_lead_phone_number_inserted_at_duration_
+public,lead_communication_logs,type,character varying,NOT NULL,,,
+public,lead_communication_logs,recording_url,character varying,NULL,,,
+public,lead_communication_logs,called_at,timestamp with time zone,NOT NULL,,,
+public,lead_communication_logs,modified_at,timestamp with time zone,NULL,,,
+public,lead_communication_logs,reminder_at,timestamp with time zone,NULL,,,
+public,lead_communication_logs,note,character varying,NULL,,,
+public,lead_communication_logs,sales_call_audit_summary,jsonb,NULL,,,
+public,lead_communication_logs,transcription,text,NULL,,,
+public,lead_prioritization_config,id,uuid,NOT NULL,PRIMARY KEY,,lead_prioritization_config_pkey
+public,lead_prioritization_config,inserted_at,timestamp with time zone,NOT NULL,,,
+public,lead_prioritization_config,updated_at,timestamp with time zone,NOT NULL,,,
+public,lead_prioritization_config,archived_at,timestamp with time zone,NULL,,,
+public,lead_prioritization_config,utm_campaign,character varying,NOT NULL,,,
+public,lead_prioritization_config,utm_source,character varying,NOT NULL,,,
+public,lead_prioritization_config,utm_content,character varying,NOT NULL,,,
+public,leaderboard,id,uuid,NOT NULL,PRIMARY KEY,,leaderboard_pkey
+public,leaderboard,room_id,uuid,NOT NULL,FOREIGN KEY,public.rooms,
+public,leaderboard,room_code,character varying(255),NOT NULL,,,
+public,leaderboard,event_id,uuid,NOT NULL,FOREIGN KEY,public.events,
+public,leaderboard,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,leaderboard,rank,integer,NOT NULL,,,
+public,leaderboard,score,integer,NOT NULL,,,
+public,leaderboard,user_count,integer,NOT NULL,,,
+public,leaderboard,high_score,integer,NOT NULL,,,
+public,leaderboard,inserted_at,timestamp with time zone,NOT NULL,,,
+public,leaderboard,correct_answer_count,integer,NOT NULL,,,
+public,leaderboard,wrong_answer_count,integer,NOT NULL,,,
+public,leaderboard,unattempted_answer_count,integer,NOT NULL,,,
+public,leaderboard,reward_amount,integer,NOT NULL,,,
+public,leaderboard,original_reward_amount,integer,NOT NULL,,,
+public,leaderboard,reward_url,character varying(255),NULL,,,
+public,leaderboard,original_rank,integer,NOT NULL,,,
+public,leaderboard,reward_processed_at,timestamp with time zone,NULL,,,
+public,leaderboard,has_premium_upgrade,boolean,NULL,,,
+public,leaderboard,is_in_free_trial,boolean,NULL,,,
+public,leaderboard_participants,id,uuid,NOT NULL,PRIMARY KEY,,leaderboard_participants_pkey
+public,leaderboard_participants,leaderboard_id,uuid,NOT NULL,FOREIGN KEY,public.leaderboards,leaderboard_participants_leaderboard_id_user_id_ended_at_uniq
+public,leaderboard_participants,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,leaderboard_participants_leaderboard_id_user_id_ended_at_uniq
+public,leaderboard_participants,points,integer,NOT NULL,,,
+public,leaderboard_participants,ended_at,timestamp with time zone,NULL,,,leaderboard_participants_leaderboard_id_user_id_ended_at_uniq
+public,leaderboard_participants,inserted_at,timestamp with time zone,NOT NULL,,,
+public,leaderboard_participants,updated_at,timestamp with time zone,NOT NULL,,,
+public,leaderboards,id,uuid,NOT NULL,PRIMARY KEY,,leaderboards_pkey
+public,leaderboards,inserted_at,timestamp with time zone,NOT NULL,,,
+public,leaderboards,ending_at,timestamp with time zone,NOT NULL,,,
+public,leaderboards,config,jsonb,NOT NULL,,,
+public,leaderboards,updated_at,timestamp with time zone,NOT NULL,,,
+public,leads,id,uuid,NOT NULL,PRIMARY KEY,,leads_pkey
+public,leads,phone_number,character varying(255),NOT NULL,,,
+public,leads,child_name,character varying(255),NULL,,,
+public,leads,parent_name,character varying(255),NULL,,,
+public,leads,grade,character varying(255),NULL,,,
+public,leads,school,character varying(255),NULL,,,
+public,leads,inserted_at,timestamp with time zone,NOT NULL,,,
+public,leads,updated_at,timestamp with time zone,NOT NULL,,,
+public,leads,data,jsonb,NULL,,,
+public,leads_routing_logs,id,uuid,NOT NULL,PRIMARY KEY,,leads_routing_logs_pkey
+public,leads_routing_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,leads_routing_logs,updated_at,timestamp with time zone,NOT NULL,,,
+public,leads_routing_logs,ad_lead_id,uuid,NOT NULL,FOREIGN KEY,public.ad_leads,
+public,leads_routing_logs,destination_number,text,NOT NULL,,,
+public,leads_routing_logs,lead_phone_number,text,NOT NULL,,,
+public,leads_routing_logs,rule_name,text,NOT NULL,,,
+public,learning_outcomes,id,uuid,NOT NULL,PRIMARY KEY,,learning_outcomes_pkey
+public,learning_outcomes,inserted_at,timestamp with time zone,NOT NULL,,,
+public,learning_outcomes,updated_at,timestamp with time zone,NOT NULL,,,
+public,learning_outcomes,concept_id,uuid,NOT NULL,FOREIGN KEY,public.concepts,unique_unarchived_concept_id_pre_test_rule
+public,learning_outcomes,scenario_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenarios,
+public,learning_outcomes,type,text,NOT NULL,,,
+public,learning_outcomes,archived_at,timestamp with time zone,NULL,,,
+public,llm_batch_logs,id,uuid,NOT NULL,PRIMARY KEY,,llm_batch_logs_pkey
+public,llm_batch_logs,external_batch_id,text,NOT NULL,,,
+public,llm_batch_logs,status,text,NOT NULL,,,
+public,llm_batch_logs,model,text,NOT NULL,,,
+public,llm_batch_logs,request,jsonb,NOT NULL,,,
+public,llm_batch_logs,response,jsonb,NULL,,,
+public,llm_batch_logs,metadata,jsonb,NULL,,,
+public,llm_batch_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,llm_batch_logs,updated_at,timestamp with time zone,NOT NULL,,,
+public,llm_log_tasks,id,uuid,NOT NULL,,,
+public,llm_log_tasks,inserted_at,timestamp with time zone,NOT NULL,,,
+public,llm_log_tasks,updated_at,timestamp with time zone,NOT NULL,,,
+public,llm_log_tasks,status,text,NOT NULL,,,
+public,llm_log_tasks,llm_usage_logs_payload,jsonb,NOT NULL,,,
+public,llm_log_tasks,llm_api_logs_payload,jsonb,NOT NULL,,,
+public,llm_log_tasks,fail_reason,text,NULL,,,
+public,llm_log_tasks_experiment,id,uuid,NOT NULL,PRIMARY KEY,,llm_log_tasks_experiment_pkey
+public,llm_log_tasks_experiment,inserted_at,timestamp with time zone,NOT NULL,,,
+public,llm_log_tasks_experiment,updated_at,timestamp with time zone,NOT NULL,,,
+public,llm_log_tasks_experiment,status,text,NOT NULL,,,
+public,llm_log_tasks_experiment,llm_usage_logs_payload,jsonb,NOT NULL,,,
+public,llm_log_tasks_experiment,llm_api_logs_payload,jsonb,NOT NULL,,,
+public,llm_log_tasks_experiment,fail_reason,text,NULL,,,
+public,llm_log_tasks_template,id,uuid,NOT NULL,PRIMARY KEY,,llm_log_tasks_template_pkey
+public,llm_log_tasks_template,inserted_at,timestamp with time zone,NOT NULL,,,
+public,llm_log_tasks_template,updated_at,timestamp with time zone,NOT NULL,,,
+public,llm_log_tasks_template,status,text,NOT NULL,,,
+public,llm_log_tasks_template,llm_usage_logs_payload,jsonb,NOT NULL,,,
+public,llm_log_tasks_template,llm_api_logs_payload,jsonb,NOT NULL,,,
+public,llm_log_tasks_template,fail_reason,text,NULL,,,
+public,llm_usage_logs,id,uuid,NOT NULL,,,
+public,llm_usage_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,llm_usage_logs,usecase,text,NOT NULL,,,
+public,llm_usage_logs,provider,text,NOT NULL,,,
+public,llm_usage_logs,model,text,NOT NULL,,,
+public,llm_usage_logs,user_id,uuid,NULL,FOREIGN KEY,public.users,
+public,llm_usage_logs,scenario_id,uuid,NULL,,,
+public,llm_usage_logs,prompt_id,uuid,NULL,,,
+public,llm_usage_logs,metadata,jsonb,NULL,,,
+public,llm_usage_logs,prompt_tokens,integer,NOT NULL,,,
+public,llm_usage_logs,completion_tokens,integer,NOT NULL,,,
+public,llm_usage_logs,estimated_prompt_cost_micro_usd,integer,NULL,,,
+public,llm_usage_logs,estimated_completion_cost_micro_usd,integer,NULL,,,
+public,llm_usage_logs,cache_creation_input_tokens,integer,NULL,,,
+public,llm_usage_logs,cache_read_input_tokens,integer,NULL,,,
+public,llm_usage_logs,estimated_cache_creation_input_cost_micro_usd,integer,NULL,,,
+public,llm_usage_logs,estimated_cache_read_input_cost_micro_usd,integer,NULL,,,
+public,llm_usage_logs,logged_at,timestamp with time zone,NOT NULL,,,
+public,llm_usage_logs,thread_id,uuid,NULL,,,
+public,llm_usage_logs,latency_ms,integer,NULL,,,
+public,locations,id,uuid,NOT NULL,PRIMARY KEY,,locations_pkey
+public,locations,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,locations,address,character varying(255),NOT NULL,,,
+public,locations,pincode,character varying(255),NOT NULL,,,
+public,locations,inserted_at,timestamp with time zone,NOT NULL,,,
+public,locations,updated_at,timestamp with time zone,NOT NULL,,,
+public,lootbox_rewards,id,uuid,NOT NULL,PRIMARY KEY,,lootbox_rewards_pkey
+public,lootbox_rewards,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,lootbox_rewards,expired_at,timestamp with time zone,NOT NULL,,,
+public,lootbox_rewards,redeemed_at,timestamp with time zone,NULL,,,
+public,lootbox_rewards,details,jsonb,NOT NULL,,,
+public,lootbox_rewards,inserted_at,timestamp with time zone,NOT NULL,,,
+public,lootbox_rewards,updated_at,timestamp with time zone,NOT NULL,,,
+public,megatron_action_logs,id,uuid,NOT NULL,PRIMARY KEY,,megatron_action_logs_pkey
+public,megatron_action_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,megatron_action_logs,updated_at,timestamp with time zone,NOT NULL,,,
+public,megatron_action_logs,action_key,text,NULL,,,
+public,megatron_action_logs,action_type,text,NULL,,,
+public,megatron_action_logs,action_details,jsonb,NULL,,,
+public,megatron_action_logs,chatwoot_conversation_id,integer,NOT NULL,,,megatron_action_logs_chatwoot_conversation_id_index
+public,megatron_action_logs,chatwoot_contact_id,integer,NOT NULL,,,
+public,megatron_action_logs,log_task_id,uuid,NULL,,,
+public,megatron_action_logs,megatron_flow_id,uuid,NULL,FOREIGN KEY,public.megatron_flows,
+public,megatron_action_logs,status,text,NULL,,,
+public,megatron_action_logs,phone_number,text,NULL,,,
+public,megatron_action_logs,chatwoot_inbox_id,integer,NULL,,,
+public,megatron_action_logs,current_message,text,NULL,,,
+public,megatron_action_logs,metadata,jsonb,NULL,,,
+public,megatron_action_logs,scheduled_at,timestamp with time zone,NULL,,,
+public,megatron_flows,id,uuid,NOT NULL,PRIMARY KEY,,megatron_flows_pkey
+public,megatron_flows,inserted_at,timestamp with time zone,NOT NULL,,,
+public,megatron_flows,updated_at,timestamp with time zone,NOT NULL,,,
+public,megatron_flows,key,text,NOT NULL,UNIQUE,,megatron_flows_key_key
+public,megatron_flows,flow,text,NOT NULL,,,
+public,message_templates,id,integer,NOT NULL,PRIMARY KEY,,message_templates_pkey
+public,message_templates,inserted_at,timestamp with time zone,NOT NULL,,,
+public,message_templates,updated_at,timestamp with time zone,NOT NULL,,,
+public,message_templates,template,text,NOT NULL,,,
+public,message_templates,name,text,NOT NULL,,,
+public,message_templates,language,text,NOT NULL,,,
+public,non_curriculum_activities,id,uuid,NOT NULL,PRIMARY KEY,,non_curriculum_activities_pkey
+public,non_curriculum_activities,inserted_at,timestamp with time zone,NOT NULL,,,
+public,non_curriculum_activities,updated_at,timestamp without time zone,NOT NULL,,,
+public,non_curriculum_activities,archived_at,timestamp with time zone,NULL,,,
+public,non_curriculum_activities,scenario_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenarios,
+public,non_curriculum_activities,persona,text,NOT NULL,,,
+public,non_curriculum_activities,index,integer,NOT NULL,,,
+public,notification_logs,id,uuid,NOT NULL,PRIMARY KEY,,notification_logs_pkey
+public,notification_logs,user_id,uuid,NULL,FOREIGN KEY,public.users,
+public,notification_logs,message_template_name,character varying(255),NOT NULL,,,notification_logs_message_template_name_index
+public,notification_logs,sent_at,timestamp with time zone,NOT NULL,,,
+public,notification_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,notification_logs,phone_number,character varying(255),NULL,,,
+public,nps,id,uuid,NOT NULL,PRIMARY KEY,,nps_pkey
+public,nps,rating,integer,NOT NULL,,,
+public,nps,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,nps,comment,text,NULL,,,
+public,nps,inserted_at,timestamp with time zone,NOT NULL,,,
+public,nps,updated_at,timestamp with time zone,NOT NULL,,,
+public,nps,submitted_at,timestamp with time zone,NOT NULL,,,
+public,nps,classified_as,text,NULL,,,
+public,nps,mentor_rating,integer,NULL,,,
+public,oban_jobs,id,bigint,NOT NULL,PRIMARY KEY,,oban_jobs_state_queue_priority_scheduled_at_id_index
+public,oban_jobs,id,bigint,NOT NULL,PRIMARY KEY,,oban_jobs_pkey
+public,oban_jobs,state,oban_job_state,NOT NULL,,,oban_jobs_state_queue_priority_scheduled_at_id_index
+public,oban_jobs,queue,text,NOT NULL,,,oban_jobs_state_queue_priority_scheduled_at_id_index
+public,oban_jobs,worker,text,NOT NULL,,,
+public,oban_jobs,args,jsonb,NOT NULL,,,oban_jobs_args_index
+public,oban_jobs,errors,jsonb[],NOT NULL,,,
+public,oban_jobs,attempt,integer,NOT NULL,,,
+public,oban_jobs,max_attempts,integer,NOT NULL,,,
+public,oban_jobs,max_attempts,integer,NOT NULL,,,
+public,oban_jobs,inserted_at,timestamp without time zone,NOT NULL,,,
+public,oban_jobs,scheduled_at,timestamp without time zone,NOT NULL,,,oban_jobs_state_queue_priority_scheduled_at_id_index
+public,oban_jobs,attempted_at,timestamp without time zone,NULL,,,
+public,oban_jobs,completed_at,timestamp without time zone,NULL,,,
+public,oban_jobs,attempted_by,text[],NULL,,,
+public,oban_jobs,discarded_at,timestamp without time zone,NULL,,,
+public,oban_jobs,priority,integer,NOT NULL,,,oban_jobs_state_queue_priority_scheduled_at_id_index
+public,oban_jobs,tags,character varying(255)[],NULL,,,
+public,oban_jobs,meta,jsonb,NULL,,,oban_jobs_meta_index
+public,oban_jobs,cancelled_at,timestamp without time zone,NULL,,,
+public,oban_peers,name,text,NOT NULL,PRIMARY KEY,,oban_peers_pkey
+public,oban_peers,node,text,NOT NULL,,,
+public,oban_peers,started_at,timestamp without time zone,NOT NULL,,,
+public,oban_peers,expires_at,timestamp without time zone,NOT NULL,,,
+public,orders,id,uuid,NOT NULL,PRIMARY KEY,,orders_pkey
+public,orders,product_id,uuid,NOT NULL,FOREIGN KEY,public.products,
+public,orders,quantity,integer,NOT NULL,,,
+public,orders,price_in_gems,integer,NOT NULL,,,
+public,orders,shipped_at,timestamp with time zone,NULL,,,
+public,orders,completed_at,timestamp with time zone,NULL,,,
+public,orders,inserted_at,timestamp with time zone,NOT NULL,,,
+public,orders,updated_at,timestamp with time zone,NOT NULL,,,
+public,orders,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,orders,family_id,uuid,NOT NULL,FOREIGN KEY,public.families,
+public,orders,cancelled_at,timestamp with time zone,NULL,,,
+public,orders,estimated_delivery_date,timestamp with time zone,NULL,,,
+public,orders,cart_id,uuid,NULL,FOREIGN KEY,public.cart,
+public,orders,cost_price_in_paise,integer,NULL,,,
+public,orders,address_id,uuid,NULL,FOREIGN KEY,public.user_address,
+public,otp_login_codes,id,uuid,NOT NULL,PRIMARY KEY,,otp_login_codes_pkey
+public,otp_login_codes,phone_number,character varying(255),NOT NULL,,,idx_otp_login_codes_phone_number
+public,otp_login_codes,otp,character varying(255),NOT NULL,,,
+public,otp_login_codes,send_count,integer,NOT NULL,,,
+public,otp_login_codes,input_attempts,integer,NOT NULL,,,
+public,otp_login_codes,valid_until,timestamp with time zone,NOT NULL,,,
+public,otp_login_codes,inserted_at,timestamp with time zone,NOT NULL,,,
+public,otp_login_codes,updated_at,timestamp with time zone,NOT NULL,,,
+public,otp_login_codes,attempts,jsonb,NULL,,,
+public,otp_login_codes,archived_at,timestamp with time zone,NULL,,,
+public,otp_login_codes,last_request_at,timestamp with time zone,NULL,,,
+public,outbound_leads,id,uuid,NOT NULL,PRIMARY KEY,,outbound_leads_pkey
+public,outbound_leads,inserted_at,timestamp without time zone,NOT NULL,,,
+public,outbound_leads,updated_at,timestamp without time zone,NOT NULL,,,
+public,outbound_leads,agent_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,outbound_leads,call_status,text,NULL,,,
+public,outbound_leads,call_started_at,timestamp without time zone,NULL,,,
+public,outbound_leads,call_ended_at,timestamp without time zone,NULL,,,
+public,outbound_leads,phone_number,text,NOT NULL,,,
+public,outbound_leads,comments,text,NULL,,,
+public,outbound_leads,name,text,NULL,,,
+public,outbound_leads,grade,text,NULL,,,
+public,outbound_leads,board,text,NULL,,,
+public,outbound_leads,school_name,text,NULL,,,
+public,outbound_leads,priority,integer,NULL,,,
+public,payment_requests,id,text,NOT NULL,PRIMARY KEY,,payment_requests_pkey
+public,payment_requests,inserted_at,timestamp with time zone,NOT NULL,,,
+public,payment_requests,updated_at,timestamp with time zone,NOT NULL,,,
+public,payment_requests,agent_email,text,NOT NULL,,,
+public,payment_requests,paid_validity,text,NOT NULL,,,
+public,payment_requests,agreed_validity,text,NOT NULL,,,
+public,payment_requests,agreed_amount,integer,NOT NULL,,,
+public,payment_requests,amount,integer,NOT NULL,,,
+public,payment_requests,type_of_sale,text,NOT NULL,,,
+public,payment_requests,persona,text,NOT NULL,,,
+public,payment_requests,phone_number,text,NOT NULL,,,
+public,payment_requests,payment_url,text,NULL,,,
+public,payment_requests,payment_status,text,NOT NULL,,,
+public,payment_requests,conversation_id,integer,NOT NULL,,,
+public,payment_requests,student_name,text,NOT NULL,,,
+public,payment_requests,course_id,uuid,NOT NULL,FOREIGN KEY,public.courses,
+public,payment_requests,transaction_id,text,NULL,,,
+public,payment_requests,payment_url_generated_at,timestamp with time zone,NULL,,,
+public,payment_requests,payment_gateway,text,NULL,,,
+public,payment_requests,language,text,NULL,,,
+public,payment_requests,metadata,jsonb,NULL,,,
+public,payment_requests,contact_id,integer,NULL,,,
+public,payment_requests,user_id,uuid,NULL,FOREIGN KEY,public.users,
+public,payment_requests,country,text,NULL,,,
+public,payment_requests,country_region,text,NULL,,,
+public,payment_subscription_events,id,uuid,NOT NULL,PRIMARY KEY,,payment_subscription_events_pkey
+public,payment_subscription_events,payment_subscription_id,uuid,NOT NULL,FOREIGN KEY,public.payment_subscriptions,
+public,payment_subscription_events,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,payment_subscription_events,event_type,text,NOT NULL,,,
+public,payment_subscription_events,scheduled_at,timestamp with time zone,NOT NULL,,,
+public,payment_subscription_events,processed_at,timestamp with time zone,NULL,,,
+public,payment_subscription_events,status,text,NOT NULL,,,
+public,payment_subscription_events,retries,integer,NOT NULL,,,
+public,payment_subscription_events,attempt_number,integer,NOT NULL,,,
+public,payment_subscription_events,parent_event_id,uuid,NULL,,,
+public,payment_subscription_events,api_response,jsonb,NULL,,,
+public,payment_subscription_events,api_response_code,text,NULL,,,
+public,payment_subscription_events,next_scheduled_at,timestamp with time zone,NULL,,,
+public,payment_subscription_events,payload,jsonb,NULL,,,
+public,payment_subscription_events,inserted_at,timestamp with time zone,NOT NULL,,,
+public,payment_subscription_events,updated_at,timestamp with time zone,NOT NULL,,,
+public,payment_subscriptions,id,uuid,NOT NULL,PRIMARY KEY,,payment_subscriptions_pkey
+public,payment_subscriptions,gateway_subscription_id,text,NOT NULL,UNIQUE,,payment_subscriptions_gateway_subscription_id_key
+public,payment_subscriptions,gateway_id,text,NOT NULL,,,
+public,payment_subscriptions,updated_at,timestamp with time zone,NOT NULL,,,
+public,payment_subscriptions,inserted_at,timestamp with time zone,NOT NULL,,,
+public,payment_subscriptions,started_at,timestamp with time zone,NOT NULL,,,
+public,payment_subscriptions,ending_at,timestamp with time zone,NOT NULL,,,
+public,payment_subscriptions,renewed_at,timestamp with time zone,NULL,,,
+public,payment_subscriptions,status,text,NOT NULL,,,
+public,payment_subscriptions,halted_at,timestamp with time zone,NULL,,,
+public,payment_subscriptions,paused_at,timestamp with time zone,NULL,,,
+public,payment_subscriptions,resumed_at,timestamp with time zone,NULL,,,
+public,payment_subscriptions,user_id,uuid,NULL,FOREIGN KEY,public.users,idx_payment_subscriptions_user_id
+public,payment_subscriptions,cancelled_at,timestamp with time zone,NULL,,,
+public,payment_subscriptions,expires_at,timestamp with time zone,NULL,,,
+public,payment_subscriptions,cancelled_reason,text,NULL,,,
+public,payment_subscriptions,course_id,uuid,NOT NULL,FOREIGN KEY,public.courses,
+public,payment_subscriptions,notes,jsonb,NOT NULL,,,
+public,payment_subscriptions,cancelled_initiated_by,text,NULL,,,
+public,payment_subscriptions,phone_number,text,NULL,,,
+public,payment_subscriptions,app_id,text,NULL,,,
+public,payment_subscriptions,country,text,NULL,,,
+public,payment_subscriptions,country_region,text,NULL,,,
+public,payments,id,uuid,NOT NULL,PRIMARY KEY,,payments_pkey
+public,payments,amount,integer,NOT NULL,,,
+public,payments,registration_id,uuid,NOT NULL,FOREIGN KEY,public.registrations,
+public,payments,status,character varying(255),NOT NULL,,,
+public,payments,razorpay_order_id,character varying(255),NOT NULL,,,payments_razorpay_order_id_index
+public,payments,details,jsonb,NULL,,,
+public,payments,inserted_at,timestamp with time zone,NOT NULL,,,
+public,payments,updated_at,timestamp with time zone,NOT NULL,,,
+public,payments_v2,id,uuid,NOT NULL,PRIMARY KEY,,payments_v2_pkey
+public,payments_v2,phone_number,character varying(255),NOT NULL,,,payments_v2_phone_number_index
+public,payments_v2,name,character varying(255),NULL,,,
+public,payments_v2,amount,integer,NOT NULL,,,
+public,payments_v2,invoice_number,character varying(255),NOT NULL,,,payments_v2_invoice_number_index
+public,payments_v2,invoice_date,timestamp with time zone,NOT NULL,,,idx_payments_v2_invoice_date
+public,payments_v2,gst_percentage,integer,NOT NULL,,,
+public,payments_v2,sac,character varying(255),NOT NULL,,,
+public,payments_v2,transaction_reference_id,character varying(255),NOT NULL,,,payments_v2_transaction_reference_id_index
+public,payments_v2,subscription_ending_at,timestamp with time zone,NULL,,,
+public,payments_v2,persona,character varying(255),NOT NULL,,,
+public,payments_v2,age,integer,NULL,,,
+public,payments_v2,occupation,character varying(255),NULL,,,
+public,payments_v2,location,character varying(255),NULL,,,
+public,payments_v2,school,character varying(255),NULL,,,
+public,payments_v2,grade,character varying(255),NULL,,,
+public,payments_v2,transaction_comment,character varying(255),NULL,,,
+public,payments_v2,amount_comment,character varying(255),NULL,,,
+public,payments_v2,agent,character varying(255),NULL,,,idx_payments_v2_agent
+public,payments_v2,inserted_at,timestamp with time zone,NOT NULL,,,
+public,payments_v2,updated_at,timestamp with time zone,NOT NULL,,,
+public,payments_v2,details,jsonb,NULL,,,
+public,payments_v2,source,character varying(255),NULL,,,
+public,payments_v2,agreed_amount,integer,NULL,,,
+public,payments_v2,can_start_course,boolean,NULL,,,
+public,payments_v2,type_of_sale,character varying(255),NULL,,,
+public,payments_v2,course_started_at,timestamp with time zone,NULL,,,
+public,payments_v2,is_subscribed_to_zoom_class,boolean,NULL,,,
+public,payments_v2,email,character varying,NULL,,,
+public,payments_v2,communication_phone_number,character varying,NULL,,,payments_v2_communication_phone_number_index
+public,payments_v2,device,text,NULL,,,
+public,payments_v2,onboarding_at,timestamp with time zone,NULL,,,
+public,payments_v2,entered_by,uuid,NULL,,,
+public,payments_v2,finalized_at,timestamp with time zone,NULL,,,
+public,payments_v2,payment_request_id,text,NULL,FOREIGN KEY,public.payment_requests,
+public,payments_v2,language,text,NOT NULL,,,
+public,payments_v2,course_id,uuid,NULL,FOREIGN KEY,public.courses,
+public,payments_v2,payment_subscription_id,uuid,NULL,FOREIGN KEY,public.payment_subscriptions,
+public,payments_v2,voided_at,timestamp with time zone,NULL,,,
+public,payments_v2,payment_order_id,text,NULL,,,
+public,payments_v2,app_id,text,NULL,,,
+public,payments_v2,inserted_via,text,NULL,,,
+public,payments_v2,country,text,NULL,,,
+public,payments_v2,country_region,text,NULL,,,
+public,persona_assignment_rules,id,uuid,NOT NULL,PRIMARY KEY,,persona_assignment_rules_pkey
+public,persona_assignment_rules,scenario_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenarios,unique_unarchived_scenario_persona_assignment_rule
+public,persona_assignment_rules,data,jsonb,NOT NULL,,,
+public,persona_assignment_rules,inserted_at,timestamp with time zone,NOT NULL,,,
+public,persona_assignment_rules,updated_at,timestamp with time zone,NOT NULL,,,
+public,persona_assignment_rules,archived_at,timestamp with time zone,NULL,,,
+public,personas,name,text,NOT NULL,PRIMARY KEY,,personas_pkey
+public,personas,inserted_at,timestamp with time zone,NOT NULL,,,
+public,personas,updated_at,timestamp with time zone,NOT NULL,,,
+public,personas,archived_at,timestamp with time zone,NULL,,,
+public,phonepe_orders,id,text,NOT NULL,PRIMARY KEY,,phonepe_orders_pkey
+public,phonepe_orders,payment_subscription_id,uuid,NOT NULL,FOREIGN KEY,public.payment_subscriptions,
+public,phonepe_orders,cycle_start,timestamp with time zone,NOT NULL,,,
+public,phonepe_orders,cycle_end,timestamp with time zone,NOT NULL,,,
+public,phonepe_orders,state,text,NOT NULL,,,
+public,phonepe_orders,notification_in_progress_at,timestamp with time zone,NULL,,,
+public,phonepe_orders,notified_at,timestamp with time zone,NULL,,,
+public,phonepe_orders,completed_at,timestamp with time zone,NULL,,,
+public,phonepe_orders,failed_at,timestamp with time zone,NULL,,,
+public,phonepe_orders,inserted_at,timestamp with time zone,NOT NULL,,,
+public,phonepe_orders,updated_at,timestamp with time zone,NOT NULL,,,
+public,pixel_logs,id,uuid,NOT NULL,PRIMARY KEY,,pixel_logs_pkey
+public,pixel_logs,chatwoot_contact_id,integer,NULL,FOREIGN KEY,public.sn_contacts,pixel_logs_chatwoot_contact_id_provider_type_index
+public,pixel_logs,provider,text,NOT NULL,,,pixel_logs_provider_type_index
+public,pixel_logs,provider,text,NOT NULL,,,pixel_logs_chatwoot_contact_id_provider_type_index
+public,pixel_logs,provider,text,NOT NULL,,,pixel_logs_user_id_provider_type_index
+public,pixel_logs,provider,text,NOT NULL,,,pixel_logs_user_id_provider_index
+public,pixel_logs,type,text,NOT NULL,,,pixel_logs_chatwoot_contact_id_provider_type_index
+public,pixel_logs,type,text,NOT NULL,,,pixel_logs_inserted_at_type_idx
+public,pixel_logs,type,text,NOT NULL,,,pixel_logs_provider_type_index
+public,pixel_logs,type,text,NOT NULL,,,pixel_logs_user_id_provider_type_index
+public,pixel_logs,data,jsonb,NOT NULL,,,
+public,pixel_logs,inserted_at,timestamp with time zone,NOT NULL,,,pixel_logs_inserted_at_type_idx
+public,pixel_logs,phone_number,text,NULL,,,
+public,pixel_logs,user_id,uuid,NULL,FOREIGN KEY,public.users,pixel_logs_user_id_provider_type_index
+public,pixel_logs,user_id,uuid,NULL,FOREIGN KEY,public.users,pixel_logs_user_id_provider_index
+public,pixel_logs,source,text,NULL,,,
+public,predefined_user_attributes,id,uuid,NOT NULL,PRIMARY KEY,,predefined_user_attributes_pkey
+public,predefined_user_attributes,phone_number,text,NOT NULL,UNIQUE,,predefined_user_attributes_phone_number_key
+public,predefined_user_attributes,attributes,jsonb,NOT NULL,,,
+public,predefined_user_attributes,inserted_at,timestamp with time zone,NOT NULL,,,
+public,predefined_user_attributes,updated_at,timestamp with time zone,NOT NULL,,,
+public,predicted_ltv_configs,id,uuid,NOT NULL,PRIMARY KEY,,predicted_ltv_configs_pkey
+public,predicted_ltv_configs,name,text,NOT NULL,UNIQUE,,predicted_ltv_configs_name_key
+public,predicted_ltv_configs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,predicted_ltv_configs,updated_at,timestamp with time zone,NOT NULL,,,
+public,predicted_ltv_configs,language,text,NOT NULL,,,predicted_ltv_configs_unique_active
+public,predicted_ltv_configs,occupation,text,NULL,,,predicted_ltv_configs_unique_active
+public,predicted_ltv_configs,cohort_name,text,NULL,,,predicted_ltv_configs_unique_active
+public,predicted_ltv_configs,predicted_ltv,integer,NOT NULL,,,
+public,predicted_ltv_configs,archived_at,timestamp with time zone,NULL,,,
+public,predicted_ltv_configs,channel,text,NULL,,,predicted_ltv_configs_unique_active
+public,predicted_ltv_configs,user_type,text,NOT NULL,,,predicted_ltv_configs_unique_active
+public,prep_chapters,id,uuid,NOT NULL,PRIMARY KEY,,prep_chapters_pkey
+public,prep_chapters,prep_subject_id,uuid,NOT NULL,FOREIGN KEY,public.prep_subjects,prep_chapters_prep_subject_id_slug_key
+public,prep_chapters,prep_subject_id,uuid,NOT NULL,UNIQUE,,idx_prep_chapters_prep_subject_id_index
+public,prep_chapters,prep_subject_id,uuid,NOT NULL,UNIQUE,,prep_chapters_prep_subject_id_slug_key
+public,prep_chapters,prep_subject_id,uuid,NOT NULL,FOREIGN KEY,public.prep_subjects,idx_prep_chapters_prep_subject_id_index
+public,prep_chapters,slug,text,NOT NULL,UNIQUE,,prep_chapters_prep_subject_id_slug_key
+public,prep_chapters,data,jsonb,NOT NULL,,,
+public,prep_chapters,index,integer,NOT NULL,,,idx_prep_chapters_prep_subject_id_index
+public,prep_chapters,status,text,NOT NULL,,,
+public,prep_chapters,inserted_at,timestamp with time zone,NOT NULL,,,
+public,prep_chapters,updated_at,timestamp with time zone,NOT NULL,,,
+public,prep_chapters,updated_by,uuid,NOT NULL,,,
+public,prep_chapters,archived_at,timestamp with time zone,NULL,,,
+public,prep_contents,id,uuid,NOT NULL,PRIMARY KEY,,prep_contents_pkey
+public,prep_contents,prep_topic_id,uuid,NOT NULL,FOREIGN KEY,public.prep_topics,idx_prep_contents_prep_topic_id_type_status
+public,prep_contents,type,text,NOT NULL,,,idx_prep_contents_prep_topic_id_type_status
+public,prep_contents,data,jsonb,NOT NULL,,,
+public,prep_contents,status,text,NOT NULL,,,idx_prep_contents_prep_topic_id_type_status
+public,prep_contents,inserted_at,timestamp with time zone,NOT NULL,,,
+public,prep_contents,updated_at,timestamp with time zone,NOT NULL,,,
+public,prep_contents,updated_by,uuid,NOT NULL,,,
+public,prep_contents,archived_at,timestamp with time zone,NULL,,,
+public,prep_exams,id,uuid,NOT NULL,PRIMARY KEY,,prep_exams_pkey
+public,prep_exams,slug,text,NOT NULL,UNIQUE,,prep_exams_slug_key
+public,prep_exams,data,jsonb,NOT NULL,,,
+public,prep_exams,index,integer,NOT NULL,,,
+public,prep_exams,status,text,NOT NULL,,,
+public,prep_exams,inserted_at,timestamp with time zone,NOT NULL,,,
+public,prep_exams,updated_at,timestamp with time zone,NOT NULL,,,
+public,prep_exams,updated_by,uuid,NOT NULL,,,
+public,prep_exams,archived_at,timestamp with time zone,NULL,,,
+public,prep_subjects,id,uuid,NOT NULL,PRIMARY KEY,,prep_subjects_pkey
+public,prep_subjects,prep_exam_id,uuid,NOT NULL,UNIQUE,,prep_subjects_prep_exam_id_slug_key
+public,prep_subjects,prep_exam_id,uuid,NOT NULL,FOREIGN KEY,public.prep_exams,idx_prep_subjects_prep_exam_id_index
+public,prep_subjects,prep_exam_id,uuid,NOT NULL,FOREIGN KEY,public.prep_exams,prep_subjects_prep_exam_id_slug_key
+public,prep_subjects,prep_exam_id,uuid,NOT NULL,UNIQUE,,idx_prep_subjects_prep_exam_id_index
+public,prep_subjects,slug,text,NOT NULL,UNIQUE,,prep_subjects_prep_exam_id_slug_key
+public,prep_subjects,data,jsonb,NOT NULL,,,
+public,prep_subjects,index,integer,NOT NULL,,,idx_prep_subjects_prep_exam_id_index
+public,prep_subjects,status,text,NOT NULL,,,
+public,prep_subjects,inserted_at,timestamp with time zone,NOT NULL,,,
+public,prep_subjects,updated_at,timestamp with time zone,NOT NULL,,,
+public,prep_subjects,updated_by,uuid,NOT NULL,,,
+public,prep_subjects,archived_at,timestamp with time zone,NULL,,,
+public,prep_topics,id,uuid,NOT NULL,PRIMARY KEY,,prep_topics_pkey
+public,prep_topics,prep_chapter_id,uuid,NOT NULL,FOREIGN KEY,public.prep_chapters,prep_topics_prep_chapter_id_slug_key
+public,prep_topics,prep_chapter_id,uuid,NOT NULL,UNIQUE,,prep_topics_prep_chapter_id_slug_key
+public,prep_topics,prep_chapter_id,uuid,NOT NULL,FOREIGN KEY,public.prep_chapters,idx_prep_topics_prep_chapter_id_index
+public,prep_topics,prep_chapter_id,uuid,NOT NULL,UNIQUE,,idx_prep_topics_prep_chapter_id_index
+public,prep_topics,slug,text,NOT NULL,UNIQUE,,prep_topics_prep_chapter_id_slug_key
+public,prep_topics,data,jsonb,NOT NULL,,,
+public,prep_topics,index,integer,NOT NULL,,,idx_prep_topics_prep_chapter_id_index
+public,prep_topics,status,text,NOT NULL,,,
+public,prep_topics,inserted_at,timestamp with time zone,NOT NULL,,,
+public,prep_topics,updated_at,timestamp with time zone,NOT NULL,,,
+public,prep_topics,updated_by,uuid,NOT NULL,,,
+public,prep_topics,archived_at,timestamp with time zone,NULL,,,
+public,prep_user_progress,id,uuid,NOT NULL,PRIMARY KEY,,prep_user_progress_pkey
+public,prep_user_progress,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,prep_user_progress,prep_topic_id,uuid,NOT NULL,FOREIGN KEY,public.prep_topics,
+public,prep_user_progress,inserted_at,timestamp with time zone,NOT NULL,,,
+public,prep_user_progress,updated_at,timestamp with time zone,NOT NULL,,,
+public,prep_user_progress,archived_at,timestamp with time zone,NULL,,,
+public,prep_user_results,id,uuid,NOT NULL,PRIMARY KEY,,prep_user_results_pkey
+public,prep_user_results,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,prep_user_results,prep_topic_id,uuid,NOT NULL,FOREIGN KEY,public.prep_topics,
+public,prep_user_results,data,jsonb,NOT NULL,,,
+public,prep_user_results,inserted_at,timestamp with time zone,NOT NULL,,,
+public,prep_user_results,updated_at,timestamp with time zone,NOT NULL,,,
+public,products,id,uuid,NOT NULL,PRIMARY KEY,,products_pkey
+public,products,name,character varying(255),NOT NULL,,,
+public,products,image_url,character varying(255),NOT NULL,,,
+public,products,price_in_gems,integer,NOT NULL,,,
+public,products,inserted_at,timestamp with time zone,NOT NULL,,,
+public,products,updated_at,timestamp with time zone,NOT NULL,,,
+public,products,is_available_on_free_tier,boolean,NOT NULL,,,
+public,products,archived_at,timestamp with time zone,NULL,,,
+public,products,rank,integer,NULL,,,
+public,products,in_stock,boolean,NULL,,,
+public,products,unlock_on_day,integer,NULL,,,
+public,products,links,jsonb,NOT NULL,,,
+public,prompt_evaluation_runs,id,uuid,NOT NULL,PRIMARY KEY,,prompt_evaluation_runs_pkey
+public,prompt_evaluation_runs,prompt_id,uuid,NOT NULL,FOREIGN KEY,public.prompts,
+public,prompt_evaluation_runs,params,jsonb,NOT NULL,,,
+public,prompt_evaluation_runs,status,text,NOT NULL,,,
+public,prompt_evaluation_runs,log,jsonb,NOT NULL,,,
+public,prompt_evaluation_runs,result,jsonb,NULL,,,
+public,prompt_evaluation_runs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,prompt_evaluation_runs,updated_at,timestamp with time zone,NOT NULL,,,
+public,prompt_evaluation_runs,human_evaluation,text,NULL,,,
+public,prompt_evaluation_runs,human_comment,text,NULL,,,
+public,prompt_test_case_runs,id,uuid,NOT NULL,PRIMARY KEY,,prompt_test_case_runs_pkey
+public,prompt_test_case_runs,prompt_test_set_run_id,uuid,NOT NULL,FOREIGN KEY,public.prompt_test_set_runs,
+public,prompt_test_case_runs,prompt_test_case_id,uuid,NOT NULL,FOREIGN KEY,public.prompt_test_cases,
+public,prompt_test_case_runs,status,text,NOT NULL,,,
+public,prompt_test_case_runs,completion_log,jsonb,NULL,,,
+public,prompt_test_case_runs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,prompt_test_case_runs,updated_at,timestamp with time zone,NOT NULL,,,
+public,prompt_test_case_runs,prompt_evaluation_run_id,uuid,NULL,FOREIGN KEY,public.prompt_evaluation_runs,
+public,prompt_test_case_runs,human_evaluation,text,NULL,,,
+public,prompt_test_case_runs,human_comment,text,NULL,,,
+public,prompt_test_cases,id,uuid,NOT NULL,PRIMARY KEY,,prompt_test_cases_pkey
+public,prompt_test_cases,inserted_at,timestamp with time zone,NOT NULL,,,
+public,prompt_test_cases,updated_at,timestamp with time zone,NOT NULL,,,
+public,prompt_test_cases,test_case,jsonb,NOT NULL,,,
+public,prompt_test_cases,prompt_test_set_id,uuid,NULL,FOREIGN KEY,public.prompt_test_sets,
+public,prompt_test_cases,description,text,NULL,,,
+public,prompt_test_cases,vars,jsonb,NULL,,,
+public,prompt_test_set_runs,id,uuid,NOT NULL,PRIMARY KEY,,prompt_test_set_runs_pkey
+public,prompt_test_set_runs,prompt_test_set_id,uuid,NOT NULL,FOREIGN KEY,public.prompt_test_sets,
+public,prompt_test_set_runs,prompt_id,uuid,NOT NULL,FOREIGN KEY,public.prompts,
+public,prompt_test_set_runs,status,text,NOT NULL,,,
+public,prompt_test_set_runs,result,jsonb,NULL,,,
+public,prompt_test_set_runs,inserted_at,timestamp without time zone,NOT NULL,,,
+public,prompt_test_set_runs,updated_at,timestamp with time zone,NOT NULL,,,
+public,prompt_test_set_runs,evaluation_prompt_id,uuid,NULL,FOREIGN KEY,public.prompts,
+public,prompt_test_set_runs,params,jsonb,NOT NULL,,,
+public,prompt_test_sets,id,uuid,NOT NULL,PRIMARY KEY,,prompt_test_sets_pkey
+public,prompt_test_sets,inserted_at,timestamp with time zone,NOT NULL,,,
+public,prompt_test_sets,updated_at,timestamp with time zone,NOT NULL,,,
+public,prompt_test_sets,description,text,NOT NULL,,,
+public,prompts,id,uuid,NOT NULL,PRIMARY KEY,,prompts_pkey
+public,prompts,inserted_at,timestamp with time zone,NOT NULL,,,
+public,prompts,updated_at,timestamp with time zone,NOT NULL,,,
+public,prompts,name,text,NOT NULL,,,
+public,prompts,prompt,text,NOT NULL,,,
+public,prompts,is_eval_prompt,boolean,NOT NULL,,,
+public,prompts,parameters,jsonb,NULL,,,
+public,prompts,type,text,NULL,,,
+public,prompts,context_vars,jsonb,NULL,,,
+public,qualitative_evaluations,id,uuid,NOT NULL,PRIMARY KEY,,qualitative_evaluations_pkey
+public,qualitative_evaluations,inserted_at,timestamp with time zone,NOT NULL,,,
+public,qualitative_evaluations,evaluation_type,text,NOT NULL,,,idx_qualitative_evaluations_ssr_id_evaluation_type
+public,qualitative_evaluations,user_id,uuid,NULL,,,
+public,qualitative_evaluations,speak_scenario_result_id,uuid,NULL,,,idx_qualitative_evaluations_ssr_id_evaluation_type
+public,qualitative_evaluations,scenario_id,uuid,NULL,,,
+public,qualitative_evaluations,result,jsonb,NULL,,,
+public,qualitative_evaluations,thread_id,uuid,NULL,,,
+public,question_templates,id,uuid,NOT NULL,PRIMARY KEY,,question_templates_pkey
+public,question_templates,name,character varying(255),NOT NULL,,,question_templates_skill_id_name_index
+public,question_templates,skill_id,uuid,NOT NULL,FOREIGN KEY,public.skills,question_templates_skill_id_name_index
+public,question_templates,inserted_at,timestamp with time zone,NOT NULL,,,
+public,question_templates,updated_at,timestamp with time zone,NOT NULL,,,
+public,question_types_enum,value,text,NOT NULL,PRIMARY KEY,,question_types_enum_pkey
+public,question_types_enum,description,text,NULL,,,
+public,questions,id,uuid,NOT NULL,PRIMARY KEY,,questions_pkey
+public,questions,template_id,uuid,NOT NULL,FOREIGN KEY,public.question_templates,
+public,questions,type,text,NOT NULL,FOREIGN KEY,public.question_types_enum,
+public,questions,data,jsonb,NOT NULL,,,
+public,questions,difficulty,integer,NOT NULL,,,
+public,questions,explanation_text,character varying(255),NULL,,,
+public,questions,inserted_at,timestamp with time zone,NOT NULL,,,
+public,questions,updated_at,timestamp with time zone,NOT NULL,,,
+public,realtime_sessions,id,uuid,NOT NULL,PRIMARY KEY,,realtime_sessions_pkey
+public,realtime_sessions,inserted_at,timestamp with time zone,NOT NULL,,,
+public,realtime_sessions,ended_at,timestamp with time zone,NULL,,,
+public,realtime_sessions,provider,text,NOT NULL,,,
+public,realtime_sessions,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,realtime_sessions,scenario_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenarios,
+public,realtime_sessions,metadata,jsonb,NULL,,,
+public,realtime_sessions,updated_at,timestamp with time zone,NULL,,,
+public,referrals,id,uuid,NOT NULL,PRIMARY KEY,,referrals_pkey
+public,referrals,referred_by,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,referrals,phone_number,character varying(255),NOT NULL,,,
+public,referrals,child_name,character varying(255),NULL,,,
+public,referrals,parent_name,character varying(255),NULL,,,
+public,referrals,inserted_at,timestamp with time zone,NOT NULL,,,
+public,referrals,updated_at,timestamp with time zone,NOT NULL,,,
+public,referrals,invited_at,timestamp with time zone,NULL,,,
+public,refunds,id,uuid,NOT NULL,PRIMARY KEY,,refunds_pkey
+public,refunds,payment_id,uuid,NOT NULL,FOREIGN KEY,public.payments_v2,
+public,refunds,amount,integer,NOT NULL,,,
+public,refunds,comment,character varying(255),NOT NULL,,,
+public,refunds,transaction_reference_id,character varying(255),NOT NULL,,,
+public,refunds,inserted_at,timestamp with time zone,NOT NULL,,,
+public,refunds,updated_at,timestamp with time zone,NOT NULL,,,
+public,refunds,source,character varying(255),NULL,,,
+public,refunds,initiated_by,text,NULL,,,
+public,refunds,type,text,NOT NULL,,,
+public,refunds,status,text,NOT NULL,,,
+public,refunds,details,jsonb,NULL,,,
+public,refunds,initiated_via,text,NULL,,,
+public,registrations,id,uuid,NOT NULL,PRIMARY KEY,,registrations_pkey
+public,registrations,event_id,uuid,NOT NULL,FOREIGN KEY,public.events,registrations_event_id_index
+public,registrations,event_id,uuid,NOT NULL,FOREIGN KEY,public.events,registrations_user_id_event_id_index
+public,registrations,user_id,uuid,NULL,FOREIGN KEY,public.users,registrations_user_id_event_id_index
+public,registrations,user_id,uuid,NULL,FOREIGN KEY,public.users,registrations_user_id_index
+public,registrations,inserted_at,timestamp with time zone,NOT NULL,,,
+public,registrations,updated_at,timestamp with time zone,NOT NULL,,,
+public,registrations,phone_number,character varying(255),NOT NULL,,,
+public,registrations,child_name,character varying(255),NOT NULL,,,
+public,registrations,grade,character varying(255),NOT NULL,,,
+public,registrations,entry_fee,integer,NOT NULL,,,
+public,registrations,payment_status,character varying(255),NOT NULL,,,
+public,registrations,razorpay_order_id,character varying(255),NULL,UNIQUE,,registrations_razorpay_order_id_unique
+public,registrations,family_id,uuid,NOT NULL,FOREIGN KEY,public.families,
+public,registrations,utm_source,character varying(255),NULL,,,
+public,registrations,utm_medium,character varying(255),NULL,,,
+public,registrations,utm_campaign,character varying(255),NULL,,,
+public,registrations,utm_content,character varying(255),NULL,,,
+public,registrations,utm_term,character varying(255),NULL,,,
+public,registrations,is_soft_registration,boolean,NULL,,,
+public,registrations,payment_status_updated_at,timestamp with time zone,NULL,,,
+public,registrations,is_upgraded,boolean,NOT NULL,,,
+public,registrations,should_send_reminder_notifications,boolean,NULL,,,
+public,registrations,subscription_plan,character varying(255),NULL,,,
+public,registrations,subscription_ending_at,timestamp with time zone,NULL,,,
+public,registrations,original_phone_number,character varying(255),NULL,,,
+public,reports,id,uuid,NOT NULL,PRIMARY KEY,,reports_pkey
+public,reports,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,reports,data,jsonb,NOT NULL,,,
+public,reports,inserted_at,timestamp with time zone,NOT NULL,,,
+public,reports,updated_at,timestamp with time zone,NOT NULL,,,
+public,reports,archived_at,timestamp with time zone,NULL,,,
+public,reports,facilitator_id,uuid,NOT NULL,FOREIGN KEY,public.facilitators,
+public,rewards,id,uuid,NOT NULL,PRIMARY KEY,,rewards_pkey
+public,rewards,value,integer,NOT NULL,,,
+public,rewards,type,character varying(255),NOT NULL,,,rewards_user_id_scenario_id_type_reason_index
+public,rewards,type,character varying(255),NOT NULL,,,rewards_user_id_skill_sheet_id_type_reason_room_id_index
+public,rewards,reason,character varying(255),NOT NULL,,,rewards_user_id_scenario_id_type_reason_index
+public,rewards,reason,character varying(255),NOT NULL,,,rewards_user_id_skill_sheet_id_type_reason_room_id_index
+public,rewards,details,jsonb,NULL,,,
+public,rewards,family_id,uuid,NOT NULL,FOREIGN KEY,public.families,rewards_family_id_index
+public,rewards,inserted_at,timestamp with time zone,NOT NULL,,,
+public,rewards,user_id,uuid,NULL,FOREIGN KEY,public.users,rewards_user_id_skill_sheet_id_type_reason_room_id_index
+public,rewards,user_id,uuid,NULL,FOREIGN KEY,public.users,rewards_user_id_scenario_id_type_reason_index
+public,rewards,event_id,uuid,NULL,FOREIGN KEY,public.events,
+public,rewards,room_id,uuid,NULL,FOREIGN KEY,public.rooms,
+public,rewards,sub_type,character varying(255),NULL,,,
+public,rewards,skill_sheet_id,uuid,NULL,FOREIGN KEY,public.skill_sheets,rewards_user_id_skill_sheet_id_type_reason_room_id_index
+public,rewards,scenario_id,uuid,NULL,FOREIGN KEY,public.speak_scenarios,rewards_user_id_scenario_id_type_reason_index
+public,ringg_ai_call_logs,id,uuid,NOT NULL,PRIMARY KEY,,ringg_ai_call_logs_pkey
+public,ringg_ai_call_logs,call_id,text,NOT NULL,UNIQUE,,ringg_ai_call_logs_call_id_key
+public,ringg_ai_call_logs,call_sid,text,NULL,,,
+public,ringg_ai_call_logs,agent_id,text,NULL,,,
+public,ringg_ai_call_logs,workspace_id,text,NULL,,,
+public,ringg_ai_call_logs,call_type,text,NULL,,,
+public,ringg_ai_call_logs,status,text,NULL,,,
+public,ringg_ai_call_logs,call_duration,integer,NULL,,,
+public,ringg_ai_call_logs,from_number,text,NULL,,,
+public,ringg_ai_call_logs,to_number,text,NULL,,,
+public,ringg_ai_call_logs,called_on,timestamp with time zone,NULL,,,
+public,ringg_ai_call_logs,retry_count,integer,NULL,,,
+public,ringg_ai_call_logs,custom_args_values,jsonb,NULL,,,
+public,ringg_ai_call_logs,recording_url,text,NULL,,,
+public,ringg_ai_call_logs,recording_duration,integer,NULL,,,
+public,ringg_ai_call_logs,platform_analysis,jsonb,NULL,,,
+public,ringg_ai_call_logs,client_analysis,jsonb,NULL,,,
+public,ringg_ai_call_logs,transcript,jsonb,NULL,,,
+public,ringg_ai_call_logs,call_completed_at,timestamp with time zone,NULL,,,
+public,ringg_ai_call_logs,recording_completed_at,timestamp with time zone,NULL,,,
+public,ringg_ai_call_logs,platform_analysis_completed_at,timestamp with time zone,NULL,,,
+public,ringg_ai_call_logs,client_analysis_completed_at,timestamp with time zone,NULL,,,
+public,ringg_ai_call_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,ringg_ai_call_logs,updated_at,timestamp with time zone,NOT NULL,,,
+public,ringg_ai_call_logs,agent_name,text,NULL,,,
+public,ringg_ai_call_logs,version_id,text,NULL,,,
+public,ringg_ai_call_logs,call_cost_in_paise,integer,NULL,,,
+public,ringg_ai_call_logs,first_utterance_seconds,"numeric(8,6)",NULL,,,
+public,ringg_ai_call_logs,overall_latency_seconds,"numeric(8,6)",NULL,,,
+public,ringg_ai_call_logs,version_slug,text,NULL,,,
+public,ringg_ai_call_logs,version_description,text,NULL,,,
+public,role_memberships,id,bigint,NOT NULL,PRIMARY KEY,,role_memberships_pkey
+public,role_memberships,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,role_memberships,role_id,bigint,NOT NULL,FOREIGN KEY,public.roles,
+public,role_memberships,inserted_at,timestamp with time zone,NOT NULL,,,
+public,roles,id,bigint,NOT NULL,PRIMARY KEY,,roles_pkey
+public,roles,name,character varying(255),NOT NULL,,,
+public,roles,inserted_at,timestamp with time zone,NOT NULL,,,
+public,rooms,id,uuid,NOT NULL,PRIMARY KEY,,rooms_pkey
+public,rooms,code,text,NOT NULL,,,single_active_room
+public,rooms,game_id,text,NOT NULL,,,
+public,rooms,data,jsonb,NOT NULL,,,
+public,rooms,session_id,uuid,NOT NULL,,,
+public,rooms,completed_at,timestamp with time zone,NULL,,,
+public,rooms,terminated_by_cron,boolean,NOT NULL,,,
+public,rooms,lock_version,integer,NULL,,,
+public,rooms,inserted_at,timestamp with time zone,NOT NULL,,,
+public,rooms,updated_at,timestamp with time zone,NOT NULL,,,
+public,rooms,should_keep_alive,boolean,NULL,,,
+public,scenario_compatibility,id,uuid,NOT NULL,PRIMARY KEY,,scenario_compatibility_pkey
+public,scenario_compatibility,inserted_at,timestamp with time zone,NOT NULL,,,
+public,scenario_compatibility,updated_at,timestamp with time zone,NOT NULL,,,
+public,scenario_compatibility,compatibility_type,text,NOT NULL,UNIQUE,,scenario_compatibility_scenario_id_compatibility_type_key
+public,scenario_compatibility,is_compatible,boolean,NOT NULL,,,
+public,scenario_compatibility,issue_summary,jsonb,NULL,,,
+public,scenario_compatibility,scenario_id,uuid,NOT NULL,UNIQUE,,scenario_compatibility_scenario_id_compatibility_type_key
+public,scenario_compatibility,scenario_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenarios,scenario_compatibility_scenario_id_compatibility_type_key
+public,scenario_tags,id,uuid,NOT NULL,PRIMARY KEY,,scenario_tags_pkey
+public,scenario_tags,inserted_at,timestamp with time zone,NOT NULL,,,
+public,scenario_tags,tag_name,text,NOT NULL,UNIQUE,,unique_scenario_id_tag_name
+public,scenario_tags,scenario_id,uuid,NOT NULL,UNIQUE,,unique_scenario_id_tag_name
+public,scenario_tags,scenario_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenarios,unique_scenario_id_tag_name
+public,schema_migrations,version,bigint,NOT NULL,PRIMARY KEY,,schema_migrations_pkey
+public,schema_migrations,inserted_at,timestamp(0) without time zone,NULL,,,
+public,sections,id,uuid,NOT NULL,PRIMARY KEY,,sections_pkey
+public,sections,id,uuid,NOT NULL,PRIMARY KEY,,sections_not_archived_idx
+public,sections,course_config_id,uuid,NOT NULL,FOREIGN KEY,public.course_config,idx_sections_course_main_active_cover
+public,sections,course_config_id,uuid,NOT NULL,FOREIGN KEY,public.course_config,sections_course_config_id_order_index_key
+public,sections,course_config_id,uuid,NOT NULL,FOREIGN KEY,public.course_config,sections_course_config_id_idx
+public,sections,course_config_id,uuid,NOT NULL,UNIQUE,,idx_sections_course_main_active_cover
+public,sections,course_config_id,uuid,NOT NULL,UNIQUE,,sections_course_config_id_order_index_key
+public,sections,course_config_id,uuid,NOT NULL,UNIQUE,,sections_course_config_id_idx
+public,sections,order_index,integer,NOT NULL,UNIQUE,,sections_course_config_id_order_index_key
+public,sections,order_index,integer,NOT NULL,UNIQUE,,idx_sections_course_main_active_cover
+public,sections,metadata,jsonb,NOT NULL,,,
+public,sections,track_type,text,NOT NULL,,,
+public,sections,archived_at,timestamp with time zone,NULL,,,
+public,sections,inserted_at,timestamp with time zone,NOT NULL,,,
+public,sections,updated_at,timestamp with time zone,NOT NULL,,,
+public,singular_attribution,id,uuid,NOT NULL,PRIMARY KEY,,singular_attribution_pkey
+public,singular_attribution,inserted_at,timestamp with time zone,NOT NULL,,,
+public,singular_attribution,updated_at,timestamp with time zone,NOT NULL,,,
+public,singular_attribution,identifier,text,NOT NULL,UNIQUE,,singular_attribution_user_id_identifier_value_key
+public,singular_attribution,value,text,NOT NULL,UNIQUE,,singular_attribution_user_id_identifier_value_key
+public,singular_attribution,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,singular_attribution_user_id_index
+public,singular_attribution,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,singular_attribution_user_id_identifier_value_key
+public,singular_attribution,user_id,uuid,NOT NULL,UNIQUE,,singular_attribution_user_id_index
+public,singular_attribution,user_id,uuid,NOT NULL,UNIQUE,,singular_attribution_user_id_identifier_value_key
+public,singular_attribution,data,jsonb,NOT NULL,,,
+public,skill_sheet_attempts,id,uuid,NOT NULL,PRIMARY KEY,,skill_sheet_attempts_pkey
+public,skill_sheet_attempts,skill_sheet_id,uuid,NOT NULL,FOREIGN KEY,public.skill_sheets,skill_sheet_attempts_user_id_skill_sheet_id_index
+public,skill_sheet_attempts,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,skill_sheet_attempts_user_id_index
+public,skill_sheet_attempts,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,skill_sheet_attempts_user_id_skill_sheet_id_index
+public,skill_sheet_attempts,inserted_at,timestamp with time zone,NOT NULL,,,
+public,skill_sheet_attempts,completed_at,timestamp with time zone,NULL,,,
+public,skill_sheet_attempts,feedback,jsonb,NULL,,,
+public,skill_sheet_questions,id,uuid,NOT NULL,PRIMARY KEY,,skill_sheet_questions_pkey
+public,skill_sheet_questions,skill_sheet_id,uuid,NOT NULL,FOREIGN KEY,public.skill_sheets,
+public,skill_sheet_questions,question_id,uuid,NOT NULL,FOREIGN KEY,public.questions,
+public,skill_sheet_questions,score,jsonb,NOT NULL,,,
+public,skill_sheet_questions,inserted_at,timestamp with time zone,NOT NULL,,,
+public,skill_sheet_questions,updated_at,timestamp with time zone,NOT NULL,,,
+public,skill_sheet_questions,index,integer,NULL,,,
+public,skill_sheet_results,id,uuid,NOT NULL,PRIMARY KEY,,skill_sheet_results_pkey
+public,skill_sheet_results,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,skill_sheet_results_user_id_skill_sheet_question_id_attempt_id_
+public,skill_sheet_results,skill_sheet_question_id,uuid,NOT NULL,FOREIGN KEY,public.skill_sheet_questions,skill_sheet_results_user_id_skill_sheet_question_id_attempt_id_
+public,skill_sheet_results,started_at,timestamp with time zone,NOT NULL,,,
+public,skill_sheet_results,completed_at,timestamp with time zone,NULL,,,
+public,skill_sheet_results,score,integer,NULL,,,
+public,skill_sheet_results,answer,jsonb,NULL,,,
+public,skill_sheet_results,answer_status,text,NULL,FOREIGN KEY,public.answer_status_enum,
+public,skill_sheet_results,inserted_at,timestamp with time zone,NOT NULL,,,
+public,skill_sheet_results,updated_at,timestamp with time zone,NOT NULL,,,
+public,skill_sheet_results,attempt_id,uuid,NULL,FOREIGN KEY,public.skill_sheet_attempts,skill_sheet_results_user_id_skill_sheet_question_id_attempt_id_
+public,skill_sheets,id,uuid,NOT NULL,PRIMARY KEY,,skill_sheets_pkey
+public,skill_sheets,skill_id,uuid,NOT NULL,FOREIGN KEY,public.skills,
+public,skill_sheets,inserted_at,timestamp with time zone,NOT NULL,,,
+public,skill_sheets,updated_at,timestamp with time zone,NOT NULL,,,
+public,skill_sheets,hidden,boolean,NULL,,,
+public,skill_sheets,archived_at,timestamp with time zone,NULL,,,
+public,skills,id,uuid,NOT NULL,PRIMARY KEY,,skills_pkey
+public,skills,name,character varying(255),NOT NULL,,,skills_chapter_id_name_index
+public,skills,chapter_id,uuid,NOT NULL,FOREIGN KEY,public.chapters,skills_chapter_id_name_index
+public,skills,video_url,character varying(255),NULL,,,
+public,skills,slides_url,character varying(255),NULL,,,
+public,skills,inserted_at,timestamp with time zone,NOT NULL,,,
+public,skills,updated_at,timestamp with time zone,NOT NULL,,,
+public,skills,description,character varying(255),NULL,,,
+public,skills,is_whatsapp_worksheet,boolean,NULL,,,
+public,skills,preview_image_url,character varying(255),NULL,,,
+public,skills,hidden,boolean,NULL,,,
+public,skills,priority,integer,NULL,,,
+public,skills,slug,character varying(255),NULL,,,
+public,skills,instructions_media,jsonb,NULL,,,
+public,sn_contacts,chatwoot_contact_id,integer,NOT NULL,UNIQUE,,contacts_chatwoot_contact_id_key
+public,sn_contacts,utm_campaign,text,NULL,,,
+public,sn_contacts,utm_source,text,NULL,,,
+public,sn_contacts,utm_content,text,NULL,,,
+public,sn_contacts,c_index,integer,NULL,,,
+public,sn_contacts,user_type,text,NULL,,,
+public,sn_contacts,grade,text,NULL,,,
+public,sn_contacts,board,text,NULL,,,
+public,sn_contacts,school_type,text,NULL,,,
+public,sn_contacts,ad_leads_will_pay,boolean,NULL,,,
+public,sn_contacts,bda_will_pay,boolean,NULL,,,
+public,sn_contacts,ad_leads_filled_by,text,NULL,,,
+public,sn_contacts,bda_filled_by,text,NULL,,,
+public,sn_contacts,callback_time,timestamp with time zone,NULL,,,
+public,sn_contacts,bda_comment,text,NULL,,,
+public,sn_contacts,manager_comment,text,NULL,,,
+public,sn_contacts,last_called_at,timestamp with time zone,NULL,,,
+public,sn_contacts,need_state,text,NULL,,,
+public,sn_contacts,remarketing_count,integer,NOT NULL,,,
+public,sn_contacts,lead_stage,text,NULL,,,
+public,sn_contacts,assignee_id,integer,NULL,,,
+public,sn_contacts,last_messaged_at,timestamp with time zone,NULL,,,
+public,sn_contacts,contact_created_at,timestamp with time zone,NULL,,,
+public,sn_contacts,app_installed_at,timestamp with time zone,NULL,,,
+public,sn_contacts,inserted_at,timestamp with time zone,NOT NULL,,,
+public,sn_contacts,updated_at,timestamp with time zone,NOT NULL,,,
+public,sn_contacts,id,uuid,NOT NULL,PRIMARY KEY,,chatwoot_contact_details_pkey
+public,sn_contacts,chatwoot_conversation_id,integer,NULL,,,
+public,sn_contacts,phone_number,text,NULL,,,contacts_phone_number_index
+public,sn_contacts,lead_segment,text,NULL,,,
+public,sn_contacts,lead_sub_segment,text,NULL,,,
+public,sn_contacts,flow_completed_at,timestamp with time zone,NULL,,,
+public,sn_contacts,first_source,text,NULL,,,
+public,sn_contacts,last_source,text,NULL,,,
+public,sn_contacts,first_sub_source,text,NULL,,,
+public,sn_contacts,last_sub_source,text,NULL,,,
+public,sn_contacts,language,text,NULL,,,
+public,sn_contacts,alternate_number_ad_lead_id,uuid,NULL,FOREIGN KEY,public.ad_leads,
+public,sn_contacts,whatsapp_blast_reactivated,boolean,NULL,,,
+public,sn_contacts,remarketed,boolean,NULL,,,
+public,sn_contacts,interest_captured,boolean,NULL,,,
+public,sn_contacts,influencer_campaign,boolean,NULL,,,
+public,sn_contacts,n_assignments_completed,integer,NULL,,,
+public,sn_contacts,n_ask_ai_sentences_used,integer,NULL,,,
+public,sn_contacts,unique_active_days,integer,NULL,,,
+public,sn_contacts,last_active_at,timestamp with time zone,NULL,,,
+public,sn_contacts,subscribe_button_clicked_at,timestamp with time zone,NULL,,,
+public,sn_contacts,upgrade_button_clicked_at,timestamp with time zone,NULL,,,
+public,sn_contacts,onboarding_started_at,timestamp with time zone,NULL,,,
+public,sn_contacts,onboarding_completed_at,timestamp with time zone,NULL,,,
+public,sn_contacts,experiment_variant_name,text,NULL,,,
+public,sn_contacts,first_messaged_at,timestamp with time zone,NULL,,,
+public,sn_contacts,last_action_at,timestamp with time zone,NULL,,,
+public,sn_contacts,first_message_inbox_id,integer,NULL,,,
+public,sn_contacts,alternate_app_phone_number,text,NULL,,,
+public,sn_contacts,interest_captured_at,timestamp with time zone,NULL,,,
+public,sn_contacts,first_z3_added_at,timestamp with time zone,NULL,,,
+public,speak_scenario_attempts,id,uuid,NOT NULL,PRIMARY KEY,,speak_scenario_attempts_pkey
+public,speak_scenario_attempts,scenario_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenarios,speak_scenario_attempts_user_id_scenario_id_index
+public,speak_scenario_attempts,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,speak_scenario_attempts_user_id_scenario_id_index
+public,speak_scenario_attempts,inserted_at,timestamp with time zone,NOT NULL,,,
+public,speak_scenario_attempts,completed_at,timestamp with time zone,NULL,,,
+public,speak_scenario_attempts,progress_state,jsonb,NULL,,,
+public,speak_scenario_attempts,updated_at,timestamp with time zone,NOT NULL,,,
+public,speak_scenario_attempts,quit_details,jsonb,NOT NULL,,,
+public,speak_scenario_results,id,uuid,NOT NULL,PRIMARY KEY,,speak_scenario_results_pkey
+public,speak_scenario_results,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,speak_scenario_results_user_id_scenario_id_index
+public,speak_scenario_results,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,speak_scenario_results_user_id_index
+public,speak_scenario_results,scenario_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenarios,speak_scenario_results_user_id_scenario_id_index
+public,speak_scenario_results,data,jsonb,NOT NULL,,,
+public,speak_scenario_results,inserted_at,timestamp with time zone,NOT NULL,,,
+public,speak_scenario_results,updated_at,timestamp with time zone,NOT NULL,,,
+public,speak_scenario_results,attempt_id,uuid,NULL,FOREIGN KEY,public.speak_scenario_attempts,
+public,speak_scenario_results,stars,integer,NULL,,,
+public,speak_scenario_results,speak_scenario_version_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenario_versions,
+public,speak_scenario_versions,id,uuid,NOT NULL,PRIMARY KEY,,speak_scenario_versions_pkey
+public,speak_scenario_versions,scenario_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenarios,
+public,speak_scenario_versions,data,jsonb,NOT NULL,,,
+public,speak_scenario_versions,private_data,jsonb,NOT NULL,,,
+public,speak_scenario_versions,inserted_at,timestamp with time zone,NOT NULL,,,
+public,speak_scenario_versions,created_by,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,speak_scenario_versions,update_comment,text,NOT NULL,,,
+public,speak_scenario_versions,compatibility_hash,text,NOT NULL,,,
+public,speak_scenarios,id,uuid,NOT NULL,PRIMARY KEY,,speak_scenarios_pkey
+public,speak_scenarios,data,jsonb,NOT NULL,,,
+public,speak_scenarios,private_data,jsonb,NOT NULL,,,
+public,speak_scenarios,inserted_at,timestamp with time zone,NOT NULL,,,
+public,speak_scenarios,updated_at,timestamp with time zone,NOT NULL,,,
+public,speak_scenarios,archived_at,timestamp with time zone,NULL,,,
+public,speak_scenarios,prompt_id,uuid,NULL,FOREIGN KEY,public.prompts,
+public,speak_scenarios,approved_at,timestamp with time zone,NULL,,,
+public,speak_scenarios,approved_by,uuid,NULL,FOREIGN KEY,public.users,
+public,speak_scenarios,updated_by,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,speak_scenarios,update_comment,text,NOT NULL,,,
+public,speak_scenarios,compatibility_hash,text,NOT NULL,,,
+public,speak_scenarios,quality_validated_at,timestamp with time zone,NULL,,,
+public,spotlight,id,uuid,NOT NULL,PRIMARY KEY,,spotlight_pkey
+public,spotlight,inserted_at,timestamp with time zone,NOT NULL,,,
+public,spotlight,updated_at,timestamp with time zone,NOT NULL,,,
+public,spotlight,conversation_id,integer,NOT NULL,,,spotlight_agent_id_conversation_id_index
+public,spotlight,agent_id,integer,NOT NULL,,,spotlight_agent_id_conversation_id_index
+public,spotlight,batch_description,text,NOT NULL,,,
+public,spotlight,actioned_at,timestamp with time zone,NULL,,,
+public,spotlight,action_comment,text,NULL,,,
+public,spotlight,closed_at,timestamp with time zone,NULL,,,
+public,spotlight,close_comment,text,NULL,,,
+public,spotlight,priority,numeric,NOT NULL,,,
+public,spotlight,bda_comment,text,NULL,,,
+public,spotlight,manager_comment,text,NULL,,,
+public,spotlight,status,text,NULL,,,
+public,streak_freeze,id,uuid,NOT NULL,PRIMARY KEY,,streak_freeze_pkey
+public,streak_freeze,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,streak_freeze,redeemed_at,timestamp with time zone,NULL,,,
+public,streak_freeze,streak_id,uuid,NULL,FOREIGN KEY,public.streaks,
+public,streak_freeze,inserted_at,timestamp with time zone,NOT NULL,,,
+public,streak_freeze,updated_at,timestamp with time zone,NOT NULL,,,
+public,streaks,id,uuid,NOT NULL,PRIMARY KEY,,streaks_pkey
+public,streaks,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,idx_streaks_user_id
+public,streaks,started_at,timestamp with time zone,NOT NULL,,,
+public,streaks,ended_at,timestamp with time zone,NOT NULL,,,
+public,streaks,inserted_at,timestamp with time zone,NOT NULL,,,
+public,streaks,updated_at,timestamp with time zone,NOT NULL,,,
+public,subscription_pauses,id,uuid,NOT NULL,PRIMARY KEY,,subscription_pauses_pkey
+public,subscription_pauses,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,idx_subscription_pauses_user_id_ending_at
+public,subscription_pauses,subscription_id,uuid,NOT NULL,FOREIGN KEY,public.user_subscription_details,
+public,subscription_pauses,started_at,timestamp with time zone,NOT NULL,,,
+public,subscription_pauses,ending_at,timestamp with time zone,NOT NULL,,,idx_subscription_pauses_user_id_ending_at
+public,subscription_pauses,inserted_at,timestamp with time zone,NOT NULL,,,
+public,subscription_pauses,updated_at,timestamp with time zone,NOT NULL,,,
+public,subscription_pauses,reason,character varying(255),NULL,,,
+public,subscription_pauses,archived_at,timestamp with time zone,NULL,,,
+public,subscription_pauses,updated_by,uuid,NULL,FOREIGN KEY,public.users,
+public,subscriptions,id,uuid,NOT NULL,PRIMARY KEY,,subscriptions_pkey
+public,subscriptions,family_id,uuid,NOT NULL,FOREIGN KEY,public.families,
+public,subscriptions,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,single_active_subscription
+public,subscriptions,started_at,timestamp with time zone,NOT NULL,,,
+public,subscriptions,ended_at,timestamp with time zone,NULL,,,
+public,subscriptions,event_type,character varying(255),NULL,,,
+public,subscriptions,inserted_at,timestamp with time zone,NOT NULL,,,
+public,subscriptions,updated_at,timestamp with time zone,NOT NULL,,,
+public,subscriptions,utm_source,character varying(255),NULL,,,
+public,subscriptions,utm_medium,character varying(255),NULL,,,
+public,subscriptions,utm_campaign,character varying(255),NULL,,,
+public,subscriptions,utm_content,character varying(255),NULL,,,
+public,subscriptions,utm_term,character varying(255),NULL,,,
+public,subscriptions,unsubscribe_reason,character varying(255),NULL,,,
+public,tab_activities,id,uuid,NOT NULL,PRIMARY KEY,,tab_activities_pkey
+public,tab_activities,english_persona,character varying,NOT NULL,,,
+public,tab_activities,tab,character varying,NOT NULL,,,
+public,tab_activities,index,integer,NOT NULL,,,
+public,tab_activities,scenario_id,uuid,NULL,,,
+public,tab_activities,scenario_id,uuid,NULL,FOREIGN KEY,public.speak_scenarios,
+public,tab_activities,worksheet_id,uuid,NULL,FOREIGN KEY,public.skill_sheets,
+public,tab_activities,worksheet_id,uuid,NULL,,,
+public,tab_activities,archived_at,timestamp with time zone,NULL,,,
+public,tab_activities,inserted_at,timestamp with time zone,NOT NULL,,,
+public,tab_activities,updated_at,timestamp with time zone,NOT NULL,,,
+public,tab_activities,preview_image_url,text,NULL,,,
+public,tab_activities,data,jsonb,NULL,,,
+public,tab_activities,tab_section_id,uuid,NULL,FOREIGN KEY,public.tab_sections,
+public,tab_sections,id,uuid,NOT NULL,PRIMARY KEY,,tab_sections_pkey
+public,tab_sections,name,text,NOT NULL,UNIQUE,,tab_sections_name_tab_id_key
+public,tab_sections,tab_id,uuid,NOT NULL,UNIQUE,,tab_sections_name_tab_id_key
+public,tab_sections,tab_id,uuid,NOT NULL,FOREIGN KEY,public.tabs,tab_sections_name_tab_id_key
+public,tab_sections,data,jsonb,NULL,,,
+public,tab_sections,inserted_at,timestamp with time zone,NOT NULL,,,
+public,tab_sections,updated_at,timestamp with time zone,NOT NULL,,,
+public,tab_sections,index,integer,NOT NULL,,,
+public,tab_sections,archived_at,timestamp with time zone,NULL,,,
+public,tabs,id,uuid,NOT NULL,PRIMARY KEY,,tabs_pkey
+public,tabs,name,text,NOT NULL,UNIQUE,,tabs_name_key
+public,tabs,data,jsonb,NULL,,,
+public,tabs,updated_at,timestamp with time zone,NOT NULL,,,
+public,tabs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,tata_tele_recordings,id,uuid,NOT NULL,PRIMARY KEY,,tata_tele_recordings_pkey
+public,tata_tele_recordings,inserted_at,timestamp with time zone,NOT NULL,,,
+public,tata_tele_recordings,updated_at,timestamp with time zone,NOT NULL,,,
+public,tata_tele_recordings,data,jsonb,NOT NULL,,,
+public,thread_items,id,uuid,NOT NULL,PRIMARY KEY,,thread_items_pkey
+public,thread_items,thread_id,uuid,NOT NULL,FOREIGN KEY,public.threads,thread_items_thread_id_idx
+public,thread_items,prompt_id,uuid,NULL,FOREIGN KEY,public.prompts,
+public,thread_items,role,text,NOT NULL,,,
+public,thread_items,type,text,NOT NULL,,,
+public,thread_items,content,jsonb,NOT NULL,,,
+public,thread_items,stage,text,NOT NULL,,,
+public,thread_items,status,text,NOT NULL,,,
+public,thread_items,llm_log,jsonb,NULL,,,
+public,thread_items,metadata,jsonb,NULL,,,
+public,thread_items,inserted_at,timestamp with time zone,NOT NULL,,,thread_items_inserted_at_idx
+public,thread_items,updated_at,timestamp with time zone,NOT NULL,,,
+public,thread_items,actioned_at,timestamp with time zone,NULL,,,
+public,threads,id,uuid,NOT NULL,PRIMARY KEY,,threads_pkey
+public,threads,title,text,NULL,,,
+public,threads,summary,text,NULL,,,
+public,threads,inserted_at,timestamp with time zone,NOT NULL,,,
+public,threads,updated_at,timestamp with time zone,NOT NULL,,,
+public,threads,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,threads_user_id_idx
+public,threads,report_reason,text,NULL,,,
+public,threads,reported_at,timestamp with time zone,NULL,,,
+public,threads,source,text,NOT NULL,,,threads_source_idx
+public,threads,scenario_id,uuid,NULL,FOREIGN KEY,public.speak_scenarios,threads_scenario_id_idx
+public,threads,is_rich_chat,boolean,NOT NULL,,,
+public,translations,id,uuid,NOT NULL,PRIMARY KEY,,translations_pkey
+public,translations,inserted_at,timestamp with time zone,NOT NULL,,,
+public,translations,updated_at,timestamp with time zone,NOT NULL,,,
+public,translations,key,character varying,NOT NULL,,,
+public,translations,translation,jsonb,NOT NULL,,,
+public,truecaller_user_profiles,id,uuid,NOT NULL,PRIMARY KEY,,truecaller_user_profiles_pkey
+public,truecaller_user_profiles,request_id,uuid,NOT NULL,,,
+public,truecaller_user_profiles,profile,jsonb,NOT NULL,,,
+public,truecaller_user_profiles,inserted_at,timestamp with time zone,NOT NULL,,,
+public,tts_logs,id,uuid,NOT NULL,PRIMARY KEY,,tts_logs_pkey
+public,tts_logs,scenario_id,uuid,NULL,FOREIGN KEY,public.speak_scenarios,
+public,tts_logs,action,text,NOT NULL,,,
+public,tts_logs,status,text,NOT NULL,,,
+public,tts_logs,request,jsonb,NOT NULL,,,
+public,tts_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,typeform_logs,id,uuid,NOT NULL,PRIMARY KEY,,typeform_logs_pkey
+public,typeform_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,typeform_logs,updated_at,timestamp with time zone,NOT NULL,,,
+public,typeform_logs,message,character varying,NOT NULL,,,
+public,typeform_logs,data,jsonb,NULL,,,
+public,typeform_logs,payment_id,uuid,NULL,FOREIGN KEY,public.payments_v2,
+public,user_activity_logs,id,uuid,NOT NULL,PRIMARY KEY,,user_activity_logs_pkey
+public,user_activity_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_activity_logs,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_activity_logs,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,user_activity_logs,scenario_id,uuid,NULL,FOREIGN KEY,public.speak_scenarios,
+public,user_activity_logs,speak_scenario_result_id,uuid,NULL,FOREIGN KEY,public.speak_scenario_results,
+public,user_activity_logs,data,jsonb,NULL,,,
+public,user_activity_logs,message,text,NOT NULL,,,
+public,user_activity_logs,persona_assignment_rule_id,uuid,NULL,FOREIGN KEY,public.persona_assignment_rules,
+public,user_address,id,uuid,NOT NULL,PRIMARY KEY,,user_address_pkey
+public,user_address,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_address,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_address,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,user_address,full_name,text,NOT NULL,,,
+public,user_address,phone_number,text,NOT NULL,,,
+public,user_address,address,text,NOT NULL,,,
+public,user_address,city,text,NOT NULL,,,
+public,user_address,landmark,text,NULL,,,
+public,user_address,pincode,text,NOT NULL,,,
+public,user_address,state,text,NOT NULL,,,
+public,user_address,country,text,NOT NULL,,,
+public,user_app_reviews,id,uuid,NOT NULL,PRIMARY KEY,,user_app_reviews_pkey
+public,user_app_reviews,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_app_reviews,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_app_reviews,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,user_app_reviews,metadata,jsonb,NULL,,,
+public,user_app_snapshots,id,uuid,NOT NULL,PRIMARY KEY,,user_app_snapshots_pkey
+public,user_app_snapshots,user_id,uuid,NOT NULL,UNIQUE,,user_app_snapshots_user_id_app_id_unique
+public,user_app_snapshots,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,user_app_snapshots_user_id_app_id_unique
+public,user_app_snapshots,app_id,text,NOT NULL,UNIQUE,,user_app_snapshots_user_id_app_id_unique
+public,user_app_snapshots,version,text,NULL,,,
+public,user_app_snapshots,build,integer,NULL,,,
+public,user_app_snapshots,platform,text,NULL,,,
+public,user_app_snapshots,update_id,text,NULL,,,
+public,user_app_snapshots,data,jsonb,NOT NULL,,,
+public,user_app_snapshots,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_app_snapshots,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_app_snapshots,os_version,text,NULL,,,
+public,user_app_snapshots,country,text,NULL,,,
+public,user_app_snapshots,country_region,text,NULL,,,
+public,user_app_snapshots,ip_address,inet,NULL,,,
+public,user_ask_ai_usage,id,uuid,NOT NULL,PRIMARY KEY,,user_ask_ai_usage_pkey
+public,user_ask_ai_usage,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_ask_ai_usage,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_ask_ai_usage,user_id,uuid,NOT NULL,UNIQUE,,user_ask_ai_usage_user_id_key
+public,user_ask_ai_usage,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,user_ask_ai_usage_user_id_key
+public,user_ask_ai_usage,count,integer,NOT NULL,,,
+public,user_assignment_exclusions,id,uuid,NOT NULL,PRIMARY KEY,,user_assignment_exclusions_pkey
+public,user_assignment_exclusions,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,user_assignment_exclusions_user_id_scenario_id_key
+public,user_assignment_exclusions,user_id,uuid,NOT NULL,UNIQUE,,user_assignment_exclusions_user_id_scenario_id_key
+public,user_assignment_exclusions,scenario_id,uuid,NOT NULL,FOREIGN KEY,public.speak_scenarios,user_assignment_exclusions_user_id_scenario_id_key
+public,user_assignment_exclusions,scenario_id,uuid,NOT NULL,UNIQUE,,user_assignment_exclusions_user_id_scenario_id_key
+public,user_assignment_exclusions,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_assignment_exclusions,approved_at,timestamp with time zone,NULL,,,
+public,user_assignment_exclusions,approved_by,uuid,NULL,FOREIGN KEY,public.users,
+public,user_assignment_exclusions,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_assignment_exclusions,comment,text,NOT NULL,,,
+public,user_assignment_exclusions,denied_at,timestamp with time zone,NULL,,,
+public,user_assignment_exclusions,denied_reason,text,NULL,,,
+public,user_assignment_pending_counts,id,uuid,NOT NULL,PRIMARY KEY,,user_assignment_pending_counts_pkey
+public,user_assignment_pending_counts,user_id,uuid,NOT NULL,UNIQUE,,user_assignment_pending_counts_user_id_key
+public,user_assignment_pending_counts,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,user_assignment_pending_counts_user_id_key
+public,user_assignment_pending_counts,pending_count,integer,NOT NULL,,,
+public,user_assignment_pending_counts,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_assignment_pending_counts,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_assignments_offset,id,uuid,NOT NULL,PRIMARY KEY,,user_assignments_offset_pkey
+public,user_assignments_offset,user_id,uuid,NOT NULL,UNIQUE,,user_assignments_offset_user_id_key
+public,user_assignments_offset,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,user_assignments_offset_user_id_key
+public,user_assignments_offset,assignments_offset,integer,NOT NULL,,,
+public,user_course_progress,id,uuid,NOT NULL,PRIMARY KEY,,user_course_progress_pkey
+public,user_course_progress,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,user_course_progress_user_id_course_config_id_section_id_key
+public,user_course_progress,user_id,uuid,NOT NULL,UNIQUE,,user_course_progress_user_id_course_config_id_section_id_key
+public,user_course_progress,user_id,uuid,NOT NULL,UNIQUE,,user_course_progress_user_id_course_config_id_idx
+public,user_course_progress,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,user_course_progress_user_id_course_config_id_idx
+public,user_course_progress,course_config_id,uuid,NOT NULL,FOREIGN KEY,public.course_config,user_course_progress_user_id_course_config_id_section_id_key
+public,user_course_progress,course_config_id,uuid,NOT NULL,FOREIGN KEY,public.course_config,user_course_progress_user_id_course_config_id_idx
+public,user_course_progress,course_config_id,uuid,NOT NULL,UNIQUE,,user_course_progress_user_id_course_config_id_section_id_key
+public,user_course_progress,course_config_id,uuid,NOT NULL,UNIQUE,,user_course_progress_user_id_course_config_id_idx
+public,user_course_progress,section_id,uuid,NOT NULL,UNIQUE,,user_course_progress_user_id_course_config_id_section_id_key
+public,user_course_progress,section_id,uuid,NOT NULL,UNIQUE,,user_course_progress_section_id_idx
+public,user_course_progress,section_id,uuid,NOT NULL,FOREIGN KEY,public.sections,user_course_progress_section_id_idx
+public,user_course_progress,section_id,uuid,NOT NULL,FOREIGN KEY,public.sections,user_course_progress_user_id_course_config_id_section_id_key
+public,user_course_progress,status,text,NOT NULL,,,user_course_progress_status_idx
+public,user_course_progress,frozen_activity_ids,uuid[],NOT NULL,,,
+public,user_course_progress,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_course_progress,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_course_progress,started_at,timestamp with time zone,NULL,,,
+public,user_course_progress,completed_at,timestamp with time zone,NULL,,,
+public,user_course_progress,skipped_at,timestamp with time zone,NULL,,,
+public,user_deeplink_params,id,uuid,NOT NULL,PRIMARY KEY,,user_singular_params_pkey
+public,user_deeplink_params,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_deeplink_params,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_deeplink_params,data,jsonb,NOT NULL,,,
+public,user_deeplink_params,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,user_deeplink_params_user_id_idx
+public,user_evaluations,id,uuid,NOT NULL,PRIMARY KEY,,user_evaluations_pkey
+public,user_evaluations,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,user_evaluations,topic,text,NOT NULL,,,
+public,user_evaluations,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_evaluations,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_evaluations,meta_data,jsonb,NOT NULL,,,
+public,user_evaluations,percentage_score,numeric,NOT NULL,,,
+public,user_evaluations,learning_outcome_id,uuid,NULL,FOREIGN KEY,public.learning_outcomes,
+public,user_evaluations,concept_id,uuid,NULL,FOREIGN KEY,public.concepts,
+public,user_evaluations,concept_activity_set_id,uuid,NULL,FOREIGN KEY,public.concept_activity_sets,
+public,user_evaluations,concept_activity_type,text,NULL,,,
+public,user_evaluations,speak_scenario_result_id,uuid,NULL,FOREIGN KEY,public.speak_scenario_results,
+public,user_events,id,uuid,NOT NULL,PRIMARY KEY,,user_events_pkey
+public,user_events,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,user_events,event_id,uuid,NOT NULL,FOREIGN KEY,public.events,
+public,user_events,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_experiment_cohorts,id,uuid,NOT NULL,PRIMARY KEY,,user_experiment_cohorts_pkey
+public,user_experiment_cohorts,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_experiment_cohorts,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_experiment_cohorts,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,user_experiment_cohorts_user_id_idx
+public,user_experiment_cohorts,cohort_name,text,NOT NULL,,,
+public,user_experiment_cohorts,archived_at,timestamp with time zone,NULL,,,
+public,user_experiment_cohorts,archived_by_cron,boolean,NULL,,,
+public,user_firebase_instances,id,uuid,NOT NULL,PRIMARY KEY,,user_firebase_instances_pkey
+public,user_firebase_instances,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,idx_user_firebase_instances_user_id
+public,user_firebase_instances,user_id,uuid,NOT NULL,UNIQUE,,user_firebase_instances_user_id_firebase_instance_id_key
+public,user_firebase_instances,user_id,uuid,NOT NULL,UNIQUE,,idx_user_firebase_instances_user_id
+public,user_firebase_instances,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,user_firebase_instances_user_id_firebase_instance_id_key
+public,user_firebase_instances,family_id,uuid,NOT NULL,FOREIGN KEY,public.families,idx_user_firebase_instances_family_id
+public,user_firebase_instances,firebase_instance_id,text,NOT NULL,UNIQUE,,user_firebase_instances_user_id_firebase_instance_id_key
+public,user_firebase_instances,platform,text,NOT NULL,,,
+public,user_firebase_instances,app_id,text,NOT NULL,,,
+public,user_firebase_instances,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_firebase_instances,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_game_log,id,uuid,NOT NULL,PRIMARY KEY,,user_game_log_pkey
+public,user_game_log,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,user_game_log,room_id,uuid,NOT NULL,FOREIGN KEY,public.rooms,
+public,user_game_log,room_code,character varying(255),NOT NULL,,,
+public,user_game_log,event_id,uuid,NOT NULL,FOREIGN KEY,public.events,
+public,user_game_log,question_index,integer,NOT NULL,,,
+public,user_game_log,answer_status,character varying(255),NOT NULL,,,
+public,user_game_log,score,integer,NOT NULL,,,
+public,user_game_log,correct_answer_user_count,integer,NOT NULL,,,
+public,user_game_log,wrong_answer_user_count,integer,NOT NULL,,,
+public,user_game_log,unattempted_user_count,integer,NOT NULL,,,
+public,user_game_log,time_taken,integer,NULL,,,
+public,user_game_log,rank,integer,NULL,,,
+public,user_game_log,avg_time_taken,double precision,NULL,,,
+public,user_game_log,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_interaction_logs,id,uuid,NOT NULL,,,idx_user_interaction_logs_id_event_at
+public,user_interaction_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_interaction_logs,user_id,uuid,NOT NULL,,,idx_user_interaction_logs_user_id_event_at_scenario_id
+public,user_interaction_logs,event_name,text,NOT NULL,,,
+public,user_interaction_logs,event_at,timestamp with time zone,NOT NULL,,,idx_user_interaction_logs_user_id_event_at_scenario_id
+public,user_interaction_logs,event_at,timestamp with time zone,NOT NULL,,,idx_user_interaction_logs_id_event_at
+public,user_interaction_logs,scenario_id,uuid,NULL,,,idx_user_interaction_logs_user_id_event_at_scenario_id
+public,user_interaction_logs,thread_id,uuid,NULL,,,
+public,user_interaction_logs,worksheet_id,uuid,NULL,,,
+public,user_interaction_logs,event_usage_count,integer,NOT NULL,,,
+public,user_interaction_logs,user_recording_count,integer,NOT NULL,,,
+public,user_memories,id,uuid,NOT NULL,PRIMARY KEY,,user_memories_pkey
+public,user_memories,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_memories,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_memories,memory_group,text,NOT NULL,,,
+public,user_memories,content,text,NOT NULL,,,
+public,user_memories,metadata,jsonb,NULL,,,
+public,user_memories,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,user_memories,archived_at,timestamp with time zone,NULL,,,
+public,user_memories,scenario_id,uuid,NULL,FOREIGN KEY,public.speak_scenarios,
+public,user_pending_assignment_mismatches,id,uuid,NOT NULL,PRIMARY KEY,,user_pending_assignment_mismatches_pkey
+public,user_pending_assignment_mismatches,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,user_pending_assignment_mismatches,expected_pending_count,integer,NOT NULL,,,
+public,user_pending_assignment_mismatches,shown_pending_count,integer,NOT NULL,,,
+public,user_pending_assignment_mismatches,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_pending_assignment_mismatches,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_preferences,id,uuid,NOT NULL,PRIMARY KEY,,user_preferences_pkey
+public,user_preferences,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,user_preferences_user_id_key
+public,user_preferences,user_id,uuid,NOT NULL,UNIQUE,,user_preferences_user_id_key
+public,user_preferences,preferences,jsonb,NOT NULL,,,
+public,user_preferences,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_preferences,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_quiz_log,id,uuid,NOT NULL,PRIMARY KEY,,user_quiz_log_pkey
+public,user_quiz_log,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,
+public,user_quiz_log,attempted_count,integer,NOT NULL,,,
+public,user_quiz_log,details,jsonb,NOT NULL,,,
+public,user_quiz_log,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_subscription_details,id,uuid,NOT NULL,PRIMARY KEY,,user_subscription_details_pkey
+public,user_subscription_details,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,user_subscription_details_type_user_id_index
+public,user_subscription_details,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,idx_user_subscription_details_user_id
+public,user_subscription_details,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,user_subscription_details_user_id_type_index
+public,user_subscription_details,started_at,timestamp with time zone,NOT NULL,,,
+public,user_subscription_details,ending_at,timestamp with time zone,NOT NULL,,,
+public,user_subscription_details,inserted_at,timestamp with time zone,NOT NULL,,,
+public,user_subscription_details,updated_at,timestamp with time zone,NOT NULL,,,
+public,user_subscription_details,type,text,NULL,,,user_subscription_details_user_id_type_index
+public,user_subscription_details,type,text,NULL,,,user_subscription_details_type_user_id_index
+public,user_subscription_details,payment_id,uuid,NULL,FOREIGN KEY,public.payments_v2,user_subscription_details_payment_id_index
+public,user_subscription_details,updated_by,uuid,NULL,FOREIGN KEY,public.users,
+public,user_subscription_details,course_id,uuid,NULL,FOREIGN KEY,public.courses,
+public,users,id,uuid,NOT NULL,PRIMARY KEY,,users_pkey
+public,users,email,citext,NOT NULL,,,users_email_index
+public,users,hashed_password,character varying(255),NOT NULL,,,
+public,users,confirmed_at,timestamp with time zone,NULL,,,
+public,users,inserted_at,timestamp with time zone,NOT NULL,,,
+public,users,updated_at,timestamp with time zone,NOT NULL,,,
+public,users,name,character varying(255),NULL,,,
+public,users,phone_number,character varying(255),NULL,,,users_phone_number_index
+public,users,school,character varying(255),NULL,,,
+public,users,grade,character varying(255),NULL,,,
+public,users,avatar,jsonb,NULL,,,
+public,users,family_id,uuid,NULL,FOREIGN KEY,public.families,users_family_id_profile_completed_at_index
+public,users,deleted_at,timestamp with time zone,NULL,,,
+public,users,profile_completed_at,timestamp with time zone,NULL,,,users_family_id_profile_completed_at_index
+public,users,parent_preferred_language,character varying(255),NULL,,,
+public,users,onboarded_at,timestamp with time zone,NULL,,,
+public,users,user_type,character varying(255),NULL,,,
+public,users,age,integer,NULL,,,
+public,users,occupation,character varying(255),NULL,,,
+public,users,city,character varying(255),NULL,,,
+public,users,english_persona,character varying(255),NULL,FOREIGN KEY,public.personas,users_english_persona_index
+public,users,facilitator_id,uuid,NULL,FOREIGN KEY,public.users,users_facilitator_id_index
+public,users,notes,text,NULL,,,
+public,users,status,character varying(255),NOT NULL,,,
+public,users,payment_type,character varying(255),NULL,,,
+public,users,profile_photo_url,character varying(255),NULL,,,
+public,users,is_subscribed_to_zoom_class,boolean,NULL,,,
+public,users,onboarded_by,uuid,NULL,FOREIGN KEY,public.users,
+public,users,onboarding_verified_at,timestamp with time zone,NULL,,,
+public,users,onboarding_verified_by,uuid,NULL,FOREIGN KEY,public.users,
+public,users,persona_updated_by,uuid,NULL,FOREIGN KEY,public.users,
+public,users,is_migration,boolean,NULL,,,
+public,users,original_phone_number,text,NULL,,,
+public,users,gem_store_activated_at,timestamp with time zone,NULL,,,
+public,users,board,text,NULL,,,
+public,users,language,text,NULL,,,
+public,users,will_pay,boolean,NULL,,,
+public,users,filled_by,text,NULL,,,
+public,users,app_id,text,NULL,,,
+public,users,app_review_enabled_at,timestamp with time zone,NULL,,,
+public,users,memory,jsonb,NULL,,,
+public,users,need,text,NULL,,,
+public,users,app_version,text,NULL,,,
+public,users,app_build,integer,NULL,,,
+public,users,app_platform,text,NULL,,,
+public,users,country,text,NULL,,,
+public,users,country_region,text,NULL,,,
+public,users,ip_address,inet,NULL,,,
+public,users_kv_store,id,uuid,NOT NULL,PRIMARY KEY,,users_kv_store_pkey
+public,users_kv_store,key,character varying(255),NOT NULL,,,users_kv_store_user_id_key_index
+public,users_kv_store,value,jsonb,NOT NULL,,,
+public,users_kv_store,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,users_kv_store_user_id_key_index
+public,users_kv_store,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,users_kv_store_user_id_index
+public,users_kv_store,inserted_at,timestamp with time zone,NOT NULL,,,
+public,users_kv_store,updated_at,timestamp with time zone,NOT NULL,,,
+public,users_tokens,id,uuid,NOT NULL,PRIMARY KEY,,users_tokens_pkey
+public,users_tokens,user_id,uuid,NOT NULL,FOREIGN KEY,public.users,users_tokens_user_id_index
+public,users_tokens,token,bytea,NOT NULL,,,users_tokens_context_token_index
+public,users_tokens,context,character varying(255),NOT NULL,,,users_tokens_context_token_index
+public,users_tokens,sent_to,character varying(255),NULL,,,
+public,users_tokens,inserted_at,timestamp with time zone,NOT NULL,,,
+public,whatsapp_campaign_message_logs,id,uuid,NOT NULL,PRIMARY KEY,,whatsapp_campaign_message_logs_pkey
+public,whatsapp_campaign_message_logs,batch_name,text,NOT NULL,,,
+public,whatsapp_campaign_message_logs,template,jsonb,NOT NULL,,,
+public,whatsapp_campaign_message_logs,status,text,NOT NULL,,,
+public,whatsapp_campaign_message_logs,scheduled_at,timestamp with time zone,NOT NULL,,,
+public,whatsapp_campaign_message_logs,log_in_chatwoot,boolean,NOT NULL,,,
+public,whatsapp_campaign_message_logs,completed_at,timestamp with time zone,NULL,,,
+public,whatsapp_campaign_message_logs,archived_at,timestamp with time zone,NULL,,,
+public,whatsapp_campaign_message_logs,inserted_at,timestamp with time zone,NOT NULL,,,
+public,whatsapp_campaign_message_logs,updated_at,timestamp with time zone,NOT NULL,,,
+public,whatsapp_sessions,id,uuid,NOT NULL,PRIMARY KEY,,whatsapp_sessions_pkey
+public,whatsapp_sessions,user_id,uuid,NOT NULL,FOREIGN KEY,public.whatsapp_users,
+public,whatsapp_sessions,session_number,integer,NOT NULL,,,
+public,whatsapp_sessions,inserted_at,timestamp with time zone,NOT NULL,,,
+public,whatsapp_sessions,updated_at,timestamp with time zone,NOT NULL,,,
+public,whatsapp_sessions,started_at,timestamp with time zone,NOT NULL,,,
+public,whatsapp_sessions,ended_at,timestamp with time zone,NOT NULL,,,
+public,whatsapp_templates,id,uuid,NOT NULL,PRIMARY KEY,,whatsapp_templates_pkey
+public,whatsapp_templates,inserted_at,timestamp with time zone,NOT NULL,,,
+public,whatsapp_templates,updated_at,timestamp with time zone,NOT NULL,,,
+public,whatsapp_templates,name,text,NOT NULL,UNIQUE,,whatsapp_templates_name_key
+public,whatsapp_templates,payload,jsonb,NOT NULL,,,
+public,whatsapp_templates,archived_at,timestamp with time zone,NULL,,,
+public,whatsapp_users,id,uuid,NOT NULL,PRIMARY KEY,,whatsapp_users_pkey
+public,whatsapp_users,inserted_at,timestamp with time zone,NOT NULL,,,
+public,whatsapp_users,updated_at,timestamp with time zone,NOT NULL,,,
+public,whatsapp_users,referral_code,character varying,NOT NULL,UNIQUE,,whatsapp_users_referral_code_key
+public,whatsapp_users,referred_by,uuid,NULL,FOREIGN KEY,public.whatsapp_users,
+public,whatsapp_users,max_sessions,integer,NOT NULL,,,
+public,whatsapp_users,phone_number,character varying,NOT NULL,,,
