@@ -1,0 +1,73 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Translate: Group Discussion - Disagreeing Politely,,,
+header,title,,Translate: Group Discussion - Disagreeing Politely,,,
+config,voices,,Priya-Priya,FALSE,,
+config,activity_type,,roleplay,FALSE,,
+config,display_activity_type,,Translate & Learn,FALSE,,
+config,personas,,spoken-english-kids-level-g-0,FALSE,,
+config,description,,Check your understanding of how to disagree politely in a group discussion.,TRUE,,
+config,populate,,TRUE,FALSE,,
+config,populate_languages,,TRUE,FALSE,,
+config,always_show_hint,,TRUE,FALSE,,
+config,read_aloud_after_jumble,,FALSE,FALSE,,
+config,reattempt_jumble,,FALSE,FALSE,,
+config,english_language_toggle,,FALSE,FALSE,,
+config,skip_transcription,,TRUE,FALSE,,
+config,rich_chat,,TRUE,FALSE,,
+config,key_skills,,"speaking,grammar",FALSE,,
+config,disable_skip,,FALSE,FALSE,,
+config,tts_config,,"{""silent_mode"":false}",FALSE,,
+config,badge_title,,Translate,FALSE,,
+1,staged_roleplay,,"first_message: Hey there! Now I will give you 10 sentences to translate into English.This activity is just for my understanding on how well you know this concept so don't worry about making any mistakes. Can we start?
+below are array of question objects to be put inside key staged_questions.default.questions
+
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I see your point, but I think online shopping has delivery issues.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Disagreeing Politely
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I see your point, but I think social media can be used well.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Disagreeing Politely
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I see your point, but I think work from home needs self-control.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Disagreeing Politely
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I see your point, but I think classrooms keep students on track.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Disagreeing Politely
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I see your point, but I think internships take time from studies.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Disagreeing Politely
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I see your point, but I think gender equality needs more action.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Disagreeing Politely
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I see your point, but I think video calls miss real connection.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Disagreeing Politely
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I see your point, but I think classroom teaching helps more.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Disagreeing Politely
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I see your point, but I think women deserve equal chances.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Disagreeing Politely
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+Here is your final question
+question: I see your point, but I think stores give better service.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Disagreeing Politely",TRUE,,

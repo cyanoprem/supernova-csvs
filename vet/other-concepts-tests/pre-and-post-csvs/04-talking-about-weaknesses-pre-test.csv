@@ -1,0 +1,73 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Translate: Talk about Weaknesses,,,
+header,title,,Translate: Talk about Weaknesses,,,
+config,voices,,Priya-Priya,FALSE,,
+config,activity_type,,roleplay,FALSE,,
+config,display_activity_type,,Translate & Learn,FALSE,,
+config,personas,,spoken-english-kids-level-g-0,FALSE,,
+config,description,,Check your understanding of how to talk about your weaknesses.,TRUE,,
+config,populate,,TRUE,FALSE,,
+config,populate_languages,,TRUE,FALSE,,
+config,always_show_hint,,TRUE,FALSE,,
+config,read_aloud_after_jumble,,FALSE,FALSE,,
+config,reattempt_jumble,,FALSE,FALSE,,
+config,english_language_toggle,,FALSE,FALSE,,
+config,skip_transcription,,TRUE,FALSE,,
+config,rich_chat,,TRUE,FALSE,,
+config,key_skills,,"speaking,grammar",FALSE,,
+config,disable_skip,,FALSE,FALSE,,
+config,tts_config,,"{""silent_mode"":false}",FALSE,,
+config,badge_title,,Translate,FALSE,,
+1,staged_roleplay,,"first_message: Hey there! Now I will give you 10 sentences to translate into English.This activity is just for my understanding on how well you know this concept so don't worry about making any mistakes. Can we start?
+below are array of question objects to be put inside key staged_questions.default.questions
+
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My weakness is shyness, so I am working on talking to new people.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Weaknesses
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My weakness is overthinking, so I am working on making quick decisions.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Weaknesses
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My weakness is procrastination, so I am working on starting tasks early.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Weaknesses
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My weakness is saying no, so I am working on setting boundaries.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Weaknesses
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My weakness is writing in English, so I am working on practising daily.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Weaknesses
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My weakness is teamwork, so I am working on listening to others.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Weaknesses
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My weakness is focus, so I am working on reducing distractions.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Weaknesses
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My weakness is nervousness, so I am working on staying calm.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Weaknesses
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My weakness is planning, so I am working on using a daily schedule.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Weaknesses
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+Here is your final question
+question: My weakness is multitasking, so I am working on doing one thing at a time.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Weaknesses",TRUE,,

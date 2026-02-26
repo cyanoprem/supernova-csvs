@@ -1,0 +1,73 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Translate: Group Discussion - Expressing Opinion,,,
+header,title,,Translate: Group Discussion - Expressing Opinion!,,,
+config,voices,,Priya-Priya,,,
+config,activity_type,,roleplay,,,
+config,display_activity_type,,Translate & Learn,,,
+config,personas,,spoken-english-kids-level-g-0,,,
+config,description,,Check your understanding of how to express your opinion in a group discussion!,TRUE,,
+config,populate,,TRUE,,,
+config,populate_languages,,TRUE,,,
+config,always_show_hint,,TRUE,,,
+config,read_aloud_after_jumble,,FALSE,,,
+config,reattempt_jumble,,FALSE,,,
+config,english_language_toggle,,FALSE,,,
+config,skip_transcription,,TRUE,,,
+config,rich_chat,,TRUE,,,
+config,key_skills,,"speaking,grammar",,,
+config,disable_skip,,FALSE,,,
+config,tts_config,,"{""silent_mode"":false}",,,
+config,badge_title,,Translate,,,
+1,staged_roleplay,,"first_message: Hey there! Now I will give you 10 sentences to translate into English.This activity is just for my understanding on how well you know this concept so don't worry about making any mistakes. Can we start?
+below are array of question objects to be put inside key staged_questions.default.questions
+
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I think online shopping is easy because you get home delivery.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Expressing Opinion
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I think social media is good because it connects communities.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Expressing Opinion
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I think work from home is comfortable because you stay with family.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Expressing Opinion
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I think online classes are helpful because you can rewatch lectures.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Expressing Opinion
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I think offline shopping is enjoyable because you try before buying.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Expressing Opinion
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I think internships are rewarding because you learn new things.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Expressing Opinion
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I think gender equality is improving because companies are changing.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Expressing Opinion
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I think virtual communication is helpful because it connects remote teams.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Expressing Opinion
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I think traditional learning is effective because students stay focused.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Expressing Opinion
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+Here is your final question
+question: I think women empowerment is great because it creates more leaders.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Expressing Opinion",TRUE,,

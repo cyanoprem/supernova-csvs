@@ -1,0 +1,73 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Translate: Group Discussion - Giving Examples,,,
+header,title,,Translate: Group Discussion - Giving Examples,,,
+config,voices,,Priya-Priya,FALSE,,
+config,activity_type,,roleplay,FALSE,,
+config,display_activity_type,,Translate & Learn,FALSE,,
+config,personas,,spoken-english-kids-level-g-0,FALSE,,
+config,description,,Check your understanding of how to give examples in a group discussion.,TRUE,,
+config,populate,,TRUE,FALSE,,
+config,populate_languages,,TRUE,FALSE,,
+config,always_show_hint,,TRUE,FALSE,,
+config,read_aloud_after_jumble,,FALSE,FALSE,,
+config,reattempt_jumble,,FALSE,FALSE,,
+config,english_language_toggle,,FALSE,FALSE,,
+config,skip_transcription,,TRUE,FALSE,,
+config,rich_chat,,TRUE,FALSE,,
+config,key_skills,,"speaking,grammar",FALSE,,
+config,disable_skip,,FALSE,FALSE,,
+config,tts_config,,"{""silent_mode"":false}",FALSE,,
+config,badge_title,,Translate,FALSE,,
+1,staged_roleplay,,"first_message: Hey there! Now I will give you 10 sentences to translate into English.This activity is just for my understanding on how well you know this concept so don't worry about making any mistakes. Can we start?
+below are array of question objects to be put inside key staged_questions.default.questions
+
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: For example, Amazon delivers fast because it has many warehouses.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Giving Examples
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: For example, WhatsApp groups help students because they share notes.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Giving Examples
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: For example, Infosys offers work from home because employees prefer it.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Giving Examples
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: For example, NPTEL is popular because it has free college courses.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Giving Examples
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: For example, Tata hires interns because they find good candidates early.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Giving Examples
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: For example, Norway leads in gender equality because of strong laws.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Giving Examples
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: For example, Zoom became popular because people needed virtual meetings.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Giving Examples
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: For example, Reliance Trends does well because people like trying clothes.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Giving Examples
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: For example, Unacademy grew because students in villages got access.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Giving Examples
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+Here is your final question
+question: For example, Wipro takes interns because they build a talent pipeline.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Giving Examples",TRUE,,

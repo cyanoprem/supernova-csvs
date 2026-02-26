@@ -1,0 +1,73 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Translate: Group Discussion - Agreeing with Others,,,
+header,title,,Translate: Group Discussion - Agreeing with Others,,,
+config,voices,,Priya-Priya,FALSE,,
+config,activity_type,,roleplay,FALSE,,
+config,display_activity_type,,Translate & Learn,FALSE,,
+config,personas,,spoken-english-kids-level-g-0,FALSE,,
+config,description,,Check your understanding of how to agree with someone's point in a group discussion.,TRUE,,
+config,populate,,TRUE,FALSE,,
+config,populate_languages,,TRUE,FALSE,,
+config,always_show_hint,,TRUE,FALSE,,
+config,read_aloud_after_jumble,,FALSE,FALSE,,
+config,reattempt_jumble,,FALSE,FALSE,,
+config,english_language_toggle,,FALSE,FALSE,,
+config,skip_transcription,,TRUE,FALSE,,
+config,rich_chat,,TRUE,FALSE,,
+config,key_skills,,"speaking,grammar",FALSE,,
+config,disable_skip,,FALSE,FALSE,,
+config,tts_config,,"{""silent_mode"":false}",FALSE,,
+config,badge_title,,Translate,FALSE,,
+1,staged_roleplay,,"first_message: Hey there! Now I will give you 10 sentences to translate into English.This activity is just for my understanding on how well you know this concept so don't worry about making any mistakes. Can we start?
+below are array of question objects to be put inside key staged_questions.default.questions
+
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I agree with Sneha because work from home saves travel time.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Agreeing with Others
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I agree with Arjun because face-to-face meetings build trust.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Agreeing with Others
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I agree with Priya because online shopping has more options.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Agreeing with Others
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I agree with Rahul because social media keeps people updated.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Agreeing with Others
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I agree with Ram because classroom learning keeps students focused.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Agreeing with Others
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I agree with Sneha because equal pay motivates women to work.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Agreeing with Others
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I agree with Arjun because internships prepare you for jobs.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Agreeing with Others
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I agree with Priya because virtual meetings are more flexible.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Agreeing with Others
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I agree with Rahul because women leaders inspire others.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Agreeing with Others
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+Here is your final question
+question: I agree with Ram because offline stores give better service.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Group Discussion - Agreeing with Others",TRUE,,

@@ -1,0 +1,73 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Translate: Basic Greeting and Meeting Etiquette,,,
+header,title,,Translate: Basic Greeting and Meeting Etiquette!,,,
+config,voices,,Priya-Priya,FALSE,,
+config,activity_type,,roleplay,FALSE,,
+config,display_activity_type,,Translate & Learn,FALSE,,
+config,personas,,spoken-english-kids-level-g-0,FALSE,,
+config,description,,Check your understanding of basic greeting and meeting etiquette.,TRUE,,
+config,populate,,TRUE,FALSE,,
+config,populate_languages,,TRUE,FALSE,,
+config,always_show_hint,,TRUE,FALSE,,
+config,read_aloud_after_jumble,,FALSE,FALSE,,
+config,reattempt_jumble,,FALSE,FALSE,,
+config,english_language_toggle,,FALSE,FALSE,,
+config,skip_transcription,,TRUE,FALSE,,
+config,rich_chat,,TRUE,FALSE,,
+config,key_skills,,"speaking,grammar",FALSE,,
+config,disable_skip,,FALSE,FALSE,,
+config,tts_config,,"{""silent_mode"":false}",FALSE,,
+config,badge_title,,Translate,FALSE,,
+1,staged_roleplay,,"first_message: Hey there! Now I will give you 10 sentences to translate into English.This activity is just for my understanding on how well you know this concept so don't worry about making any mistakes. Can we start?
+below are array of question objects to be put inside key staged_questions.default.questions
+
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: Good morning. Thank you for giving me your valuable time.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Basic Greeting and Meeting Etiquette
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: Good afternoon. Thank you for arranging this meeting.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Basic Greeting and Meeting Etiquette
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: Good morning. Thank you for the warm welcome.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Basic Greeting and Meeting Etiquette
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: Good afternoon. Thank you for inviting me to your office.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Basic Greeting and Meeting Etiquette
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: Good morning. Thank you for this interview opportunity.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Basic Greeting and Meeting Etiquette
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: Good afternoon. Thank you for making time for me.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Basic Greeting and Meeting Etiquette
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: Good morning. Thank you for reaching out to me.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Basic Greeting and Meeting Etiquette
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: Good afternoon. Thank you for giving me this platform.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Basic Greeting and Meeting Etiquette
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: Good morning. Thank you for shortlisting me.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Basic Greeting and Meeting Etiquette
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+Here is your final question
+question: Good afternoon. Thank you for the kind introduction.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Basic Greeting and Meeting Etiquette",TRUE,,

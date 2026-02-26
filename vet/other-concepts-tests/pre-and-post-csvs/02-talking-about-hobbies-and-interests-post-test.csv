@@ -1,0 +1,73 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Translate: Talking about Hobbies and Interests,,,
+header,title,,Translate: Talking about Hobbies and Interests!,,,
+config,voices,,Priya-Priya,FALSE,,
+config,activity_type,,roleplay,FALSE,,
+config,display_activity_type,,Translate & Learn,FALSE,,
+config,personas,,spoken-english-kids-level-g-0,FALSE,,
+config,description,,Check your understanding of how to talk about hobbies and interests.,TRUE,,
+config,populate,,TRUE,FALSE,,
+config,populate_languages,,TRUE,FALSE,,
+config,always_show_hint,,TRUE,FALSE,,
+config,read_aloud_after_jumble,,FALSE,FALSE,,
+config,reattempt_jumble,,FALSE,FALSE,,
+config,english_language_toggle,,FALSE,FALSE,,
+config,skip_transcription,,TRUE,FALSE,,
+config,rich_chat,,TRUE,FALSE,,
+config,key_skills,,"speaking,grammar",FALSE,,
+config,disable_skip,,FALSE,FALSE,,
+config,tts_config,,"{""silent_mode"":false}",FALSE,,
+config,badge_title,,Translate,FALSE,,
+1,staged_roleplay,,"first_message: Hey there! Now I will give you 10 sentences to translate into English.This activity is just for my understanding on how well you know this concept so don't worry about making any mistakes. Can we start?
+below are array of question objects to be put inside key staged_questions.default.questions
+
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I enjoy travelling because I see new places.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Hobbies and Interests
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I enjoy sketching because it helps me focus.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Hobbies and Interests
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I enjoy photography because I capture good moments.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Hobbies and Interests
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I enjoy playing badminton because it is fun.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Hobbies and Interests
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I enjoy baking because I like trying new recipes.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Hobbies and Interests
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I enjoy running because it gives me energy.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Hobbies and Interests
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I enjoy yoga because it keeps me calm.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Hobbies and Interests
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I enjoy playing carrom because it is fun with friends.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Hobbies and Interests
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I enjoy watching cricket because I love the game.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Hobbies and Interests
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+Here is your final question
+question: I enjoy learning guitar because I want to play songs.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Hobbies and Interests",TRUE,,

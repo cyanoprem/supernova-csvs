@@ -1,0 +1,73 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Translate: Professional Introduction,,,
+header,title,,Translate: Professional Introduction,,,
+config,voices,,Priya-Priya,FALSE,,
+config,activity_type,,roleplay,FALSE,,
+config,display_activity_type,,Translate & Learn,FALSE,,
+config,personas,,spoken-english-kids-level-g-0,FALSE,,
+config,description,,Check your understanding of how to talk about your skills and interests.,TRUE,,
+config,populate,,TRUE,FALSE,,
+config,populate_languages,,TRUE,FALSE,,
+config,always_show_hint,,TRUE,FALSE,,
+config,read_aloud_after_jumble,,FALSE,FALSE,,
+config,reattempt_jumble,,FALSE,FALSE,,
+config,english_language_toggle,,FALSE,FALSE,,
+config,skip_transcription,,TRUE,FALSE,,
+config,rich_chat,,TRUE,FALSE,,
+config,key_skills,,"speaking,grammar",FALSE,,
+config,disable_skip,,FALSE,FALSE,,
+config,tts_config,,"{""silent_mode"":false}",FALSE,,
+config,badge_title,,Translate,FALSE,,
+1,staged_roleplay,,"first_message: Hey there! Now I will give you 10 sentences to translate into English.This activity is just for my understanding on how well you know this concept so don't worry about making any mistakes. Can we start?
+below are array of question objects to be put inside key staged_questions.default.questions
+
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I have data analysis skills and I am interested in business analytics.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Professional Introduction
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I have good writing skills and I am interested in content creation.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Professional Introduction
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I have knowledge of accounting and I am interested in finance.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Professional Introduction
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I have design skills and I am interested in graphic design.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Professional Introduction
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I have coding skills and I am interested in web development.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Professional Introduction
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I have good people skills and I am interested in human resources.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Professional Introduction
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I have experience in Excel and I am interested in data entry.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Professional Introduction
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I have public speaking skills and I am interested in sales.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Professional Introduction
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I have social media skills and I am interested in online marketing.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Professional Introduction
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+Here is your final question
+question: I have teaching skills and I am interested in education.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Professional Introduction",TRUE,,

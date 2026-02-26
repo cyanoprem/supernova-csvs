@@ -1,0 +1,73 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Translate: Talking about Daily Routines,,,
+header,title,,Translate: Talking about Daily Routines,,,
+config,voices,,Priya-Priya,FALSE,,
+config,activity_type,,roleplay,FALSE,,
+config,display_activity_type,,Translate & Learn,FALSE,,
+config,personas,,spoken-english-kids-level-g-0,FALSE,,
+config,description,,Check your understanding of how to talk about daily routines.,TRUE,,
+config,populate,,TRUE,FALSE,,
+config,populate_languages,,TRUE,FALSE,,
+config,always_show_hint,,TRUE,FALSE,,
+config,read_aloud_after_jumble,,FALSE,FALSE,,
+config,reattempt_jumble,,FALSE,FALSE,,
+config,english_language_toggle,,FALSE,FALSE,,
+config,skip_transcription,,TRUE,FALSE,,
+config,rich_chat,,TRUE,FALSE,,
+config,key_skills,,"speaking,grammar",FALSE,,
+config,disable_skip,,FALSE,FALSE,,
+config,tts_config,,"{""silent_mode"":false}",FALSE,,
+config,badge_title,,Translate,FALSE,,
+1,staged_roleplay,,"first_message: Hey there! Now I will give you 10 sentences to translate into English.This activity is just for my understanding on how well you know this concept so don't worry about making any mistakes. Can we start?
+below are array of question objects to be put inside key staged_questions.default.questions
+
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I usually drink tea at 6 AM. After that, I go for a walk.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Daily Routines
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I usually take a bath at 7 AM. After that, I get ready for college.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Daily Routines
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I usually reach college at 9 AM. After that, I attend my first class.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Daily Routines
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I usually have lunch at 1 PM. After that, I rest for some time.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Daily Routines
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I usually study at 4 PM. After that, I play with my friends.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Daily Routines
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I usually watch TV at 7 PM. After that, I help with dinner.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Daily Routines
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I usually call my parents at 9 PM. After that, I go to sleep.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Daily Routines
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I usually exercise at 6 AM. After that, I have a glass of milk.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Daily Routines
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: I usually leave home at 8 AM. After that, I take the bus to work.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Daily Routines
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+Here is your final question
+question: I usually have a snack at 4 PM. After that, I continue working.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talking about Daily Routines",TRUE,,

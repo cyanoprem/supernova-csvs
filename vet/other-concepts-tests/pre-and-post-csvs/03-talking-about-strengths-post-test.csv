@@ -1,0 +1,73 @@
+section,type,hint_image_url,data,should_instruction_be_translated,jumble_extra_words_comma,question_voices
+header,icon_image_text,,Translate: Talk about Strengths,,,
+header,title,,Translate: Talk about Strengths!,,,
+config,voices,,Priya-Priya,FALSE,,
+config,activity_type,,roleplay,FALSE,,
+config,display_activity_type,,Translate & Learn,FALSE,,
+config,personas,,spoken-english-kids-level-g-0,FALSE,,
+config,description,,Check your understanding of how to talk about your strengths.,TRUE,,
+config,populate,,TRUE,FALSE,,
+config,populate_languages,,TRUE,FALSE,,
+config,always_show_hint,,TRUE,FALSE,,
+config,read_aloud_after_jumble,,FALSE,FALSE,,
+config,reattempt_jumble,,FALSE,FALSE,,
+config,english_language_toggle,,FALSE,FALSE,,
+config,skip_transcription,,TRUE,FALSE,,
+config,rich_chat,,TRUE,FALSE,,
+config,key_skills,,"speaking,grammar",FALSE,,
+config,disable_skip,,FALSE,FALSE,,
+config,tts_config,,"{""silent_mode"":false}",FALSE,,
+config,badge_title,,Translate,FALSE,,
+1,staged_roleplay,,"first_message: Hey there! Now I will give you 10 sentences to translate into English.This activity is just for my understanding on how well you know this concept so don't worry about making any mistakes. Can we start?
+below are array of question objects to be put inside key staged_questions.default.questions
+
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My strength is staying calm, which helps me during exams.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Strengths
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My strength is helping others, which helps me build good friendships.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Strengths
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My strength is decision-making, which helps me choose the right option.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Strengths
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My strength is punctuality, which helps me reach places on time.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Strengths
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My strength is positive thinking, which helps me stay motivated.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Strengths
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My strength is writing, which helps me express ideas on paper.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Strengths
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My strength is observation, which helps me notice small details.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Strengths
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My strength is networking, which helps me meet new people.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Strengths
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+question: My strength is multitasking, which helps me manage many things.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Strengths
+---
+prompt_id: 7deb4075-c026-43fe-906c-5439d404bd9c
+Here is your final question
+question: My strength is dedication, which helps me complete every project.
+SYSTEM_TRANSLATION_RULES:""""
+grammar_concept: Talk about Strengths",TRUE,,
