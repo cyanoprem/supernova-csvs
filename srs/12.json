@@ -1,0 +1,381 @@
+{
+  "type": "multi_question",
+  "image": "https://r2-activity-data.gosupernova.live/generations%2Fgeneric%2Ficons%2FClosing%2520and%2520taking%2520questions-1770907343360.jpeg",
+  "title": "Closing and taking questions",
+  "config": {
+    "personas": [
+      "spoken-english-adults-level-A1"
+    ],
+    "activity_type": "lesson",
+    "always_show_hint": true
+  },
+  "sections": [
+    {
+      "start": {
+        "pages": [
+          {
+            "type": "chat_lesson",
+            "details": {
+              "messages": {
+                "default": [
+                  {
+                    "cta": "Next!",
+                    "text": "Hey! Today we'll learn how to close a presentation.\nA strong ending leaves a lasting impression on your audience.",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/c738fcd7-439c-4138-a626-4fc2de36f5e5-Structured-Presentations---3.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Got it!",
+                    "text": "First, summarize your key points.\nUse: \"To sum up, [point 1], [point 2], and [point 3].\"\n\nExample: \"To sum up, we have product-market fit, strong numbers, and we're ready to grow.\"",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/c738fcd7-439c-4138-a626-4fc2de36f5e5-Structured-Presentations---3.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Nice!",
+                    "text": "Then, thank the audience and invite questions.\nUse: \"Thank you. Happy to take questions.\"\n\nThis is simple but very professional.",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/c738fcd7-439c-4138-a626-4fc2de36f5e5-Structured-Presentations---3.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Makes sense!",
+                    "text": "When someone asks a question, respond clearly.\nUse: \"Good question. [Short answer].\"\n\nExample: \"Good question. We chose AWS because it was cheaper for our size.\"",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/c738fcd7-439c-4138-a626-4fc2de36f5e5-Structured-Presentations---3.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Start Practice!",
+                    "text": "Now let's practice closing a presentation!",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/c738fcd7-439c-4138-a626-4fc2de36f5e5-Structured-Presentations---3.jpg",
+                      "type": "image"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "questions": [
+        {
+          "text": "Look at the image and select the correct way to summarize your key points at the end",
+          "type": "mcq",
+          "answer": [
+            "2"
+          ],
+          "options": [
+            {
+              "id": "1",
+              "text": "Good question. We chose React because it was faster."
+            },
+            {
+              "id": "2",
+              "text": "To sum up, we have product-market fit, strong numbers, and we're ready to grow."
+            }
+          ],
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Look at the image and select the correct way to summarize your key points at the end",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Look%20at%20the%20image%20and%20select%20the%20correct%20way%20to%20summarize%20your%20key%20points%20at%20the%20end&lang=en",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/c738fcd7-439c-4138-a626-4fc2de36f5e5-Structured-Presentations---3.jpg",
+              "always_show_hint": true
+            }
+          },
+          "hide_feedback": false
+        },
+        {
+          "text": "Look at the image and select the correct way to respond to a question from the audience",
+          "type": "mcq",
+          "answer": [
+            "1"
+          ],
+          "options": [
+            {
+              "id": "1",
+              "text": "Good question. We picked Mumbai because of lower costs."
+            },
+            {
+              "id": "2",
+              "text": "Thank you. Happy to take questions."
+            }
+          ],
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Look at the image and select the correct way to respond to a question from the audience",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Look%20at%20the%20image%20and%20select%20the%20correct%20way%20to%20respond%20to%20a%20question%20from%20the%20audience&lang=en",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/c738fcd7-439c-4138-a626-4fc2de36f5e5-Structured-Presentations---3.jpg",
+              "always_show_hint": true
+            }
+          },
+          "hide_feedback": false
+        }
+      ],
+      "section_type": "learn"
+    },
+    {
+      "questions": [
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "To sum up, the idea works, the data proves it, and the team is ready.",
+            "options": [
+              "To sum up,",
+              "the idea works,",
+              "the data proves it,",
+              "and the team is ready."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=To%20sum%20up%2C%20the%20idea%20works%2C%20the%20data%20proves%20it%2C%20and%20the%20team%20is%20ready.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=To%20sum%20up%2C%20the%20idea%20works%2C%20the%20data%20proves%20it%2C%20and%20the%20team%20is%20ready.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/c738fcd7-439c-4138-a626-4fc2de36f5e5-Structured-Presentations---3.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Thank you. Happy to take questions.",
+            "options": [
+              "Thank",
+              "you.",
+              "Happy",
+              "to",
+              "take",
+              "questions."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Thank%20you.%20Happy%20to%20take%20questions.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Thank%20you.%20Happy%20to%20take%20questions.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/c738fcd7-439c-4138-a626-4fc2de36f5e5-Structured-Presentations---3.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Good question. We chose this tool because it was faster.",
+            "options": [
+              "Good question.",
+              "We chose",
+              "this tool",
+              "because",
+              "it was faster."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Good%20question.%20We%20chose%20this%20tool%20because%20it%20was%20faster.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Good%20question.%20We%20chose%20this%20tool%20because%20it%20was%20faster.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/c738fcd7-439c-4138-a626-4fc2de36f5e5-Structured-Presentations---3.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "To sum up, strong sales, happy customers, and a clear roadmap.",
+            "options": [
+              "To sum up,",
+              "strong sales,",
+              "happy customers,",
+              "and",
+              "a clear roadmap."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=To%20sum%20up%2C%20strong%20sales%2C%20happy%20customers%2C%20and%20a%20clear%20roadmap.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=To%20sum%20up%2C%20strong%20sales%2C%20happy%20customers%2C%20and%20a%20clear%20roadmap.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/c738fcd7-439c-4138-a626-4fc2de36f5e5-Structured-Presentations---3.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Good question. We picked Bangalore because of the talent pool.",
+            "options": [
+              "Good question.",
+              "We picked",
+              "Bangalore",
+              "because",
+              "of the talent pool."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Good%20question.%20We%20picked%20Bangalore%20because%20of%20the%20talent%20pool.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Good%20question.%20We%20picked%20Bangalore%20because%20of%20the%20talent%20pool.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/c738fcd7-439c-4138-a626-4fc2de36f5e5-Structured-Presentations---3.jpg",
+              "always_show_hint": true
+            }
+          }
+        }
+      ],
+      "section_type": "translate"
+    },
+    {
+      "questions": [
+        {
+          "type": "roleplay",
+          "details": {
+            "first_message": "That was incredible! Now we're going to practice by answering few questions in English. Can we start?",
+            "agent_display_name": "Miss Nova",
+            "localized_first_message": {}
+          },
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            }
+          },
+          "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/c738fcd7-439c-4138-a626-4fc2de36f5e5-Structured-Presentations---3.jpg",
+          "always_show_hint": true
+        }
+      ],
+      "section_type": "conversation"
+    }
+  ],
+  "key_skills": [
+    "speaking",
+    "grammar"
+  ],
+  "objectives": {
+    "primary": {
+      "objective": "-"
+    },
+    "secondary": []
+  },
+  "tts_config": {
+    "silent_mode": false
+  },
+  "description": "Learn how to close a presentation and handle questions",
+  "disable_skip": false,
+  "instructions": "-",
+  "activity_type": "Grammar Builder",
+  "is_level_test": false,
+  "use_rich_chat": true,
+  "language_config": {
+    "show_ai_response_language_toggle": false
+  },
+  "chat_suggestions": [
+    "Yes! Let's Start."
+  ],
+  "transcription_config": {
+    "skip_transcription_review": true
+  },
+  "localized_description": {},
+  "translate_description": true
+}

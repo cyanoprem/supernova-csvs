@@ -1,0 +1,385 @@
+{
+  "type": "multi_question",
+  "image": "https://r2-activity-data.gosupernova.live/generations%2Fgeneric%2Ficons%2FOffering%2520a%2520way%2520forward-1770907182325.jpeg",
+  "title": "Offering a way forward",
+  "config": {
+    "personas": [
+      "spoken-english-adults-level-A1"
+    ],
+    "activity_type": "lesson",
+    "always_show_hint": true
+  },
+  "sections": [
+    {
+      "start": {
+        "pages": [
+          {
+            "type": "chat_lesson",
+            "details": {
+              "messages": {
+                "default": [
+                  {
+                    "cta": "Next!",
+                    "text": "Hey! Today we will learn how to handle objections by offering compromises.\nWhen a client is unsure, you can suggest a smaller step or offer helpful information.",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/f3329625-7e33-4dc5-b77f-789059add89c-Objection-Handling---3.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Got it!",
+                    "text": "First, suggest a compromise to make the client comfortable.\nUse: 'How about we [compromise] first?'\nExample: 'How about we try a 3-month pilot first?'",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/f3329625-7e33-4dc5-b77f-789059add89c-Objection-Handling---3.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Makes sense!",
+                    "text": "Next, offer to send something useful to help them decide.\nUse: 'I can send you [item] by [day] to help you decide.'\nExample: 'I can send you a comparison report by Monday to help you decide.'",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/f3329625-7e33-4dc5-b77f-789059add89c-Objection-Handling---3.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Nice!",
+                    "text": "You can also offer a flexible starting point.\nUse: 'If [option] works for you, we can start with that.'\nExample: 'If a smaller rollout works for you, we can start with that.'",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/f3329625-7e33-4dc5-b77f-789059add89c-Objection-Handling---3.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Start Practice!",
+                    "text": "Now let's practice handling objections by offering next steps!",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/f3329625-7e33-4dc5-b77f-789059add89c-Objection-Handling---3.jpg",
+                      "type": "image"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "questions": [
+        {
+          "text": "Look at the image and select the correct way to suggest a compromise to a client",
+          "type": "mcq",
+          "answer": [
+            "2"
+          ],
+          "options": [
+            {
+              "id": "1",
+              "text": "I can send you a demo video by Friday to help you decide."
+            },
+            {
+              "id": "2",
+              "text": "How about we try a 3-month pilot first?"
+            }
+          ],
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Look at the image and select the correct way to suggest a compromise to a client",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Look%20at%20the%20image%20and%20select%20the%20correct%20way%20to%20suggest%20a%20compromise%20to%20a%20client&lang=en",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/f3329625-7e33-4dc5-b77f-789059add89c-Objection-Handling---3.jpg",
+              "always_show_hint": true
+            }
+          },
+          "hide_feedback": false
+        },
+        {
+          "text": "Look at the image and select the correct way to offer helpful information to a client",
+          "type": "mcq",
+          "answer": [
+            "1"
+          ],
+          "options": [
+            {
+              "id": "1",
+              "text": "I can send you a pricing sheet by Wednesday to help you decide."
+            },
+            {
+              "id": "2",
+              "text": "If a smaller rollout works for you, we can start with that."
+            }
+          ],
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Look at the image and select the correct way to offer helpful information to a client",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Look%20at%20the%20image%20and%20select%20the%20correct%20way%20to%20offer%20helpful%20information%20to%20a%20client&lang=en",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/f3329625-7e33-4dc5-b77f-789059add89c-Objection-Handling---3.jpg",
+              "always_show_hint": true
+            }
+          },
+          "hide_feedback": false
+        }
+      ],
+      "section_type": "learn"
+    },
+    {
+      "questions": [
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "How about we try a 3-month pilot first?",
+            "options": [
+              "How",
+              "about",
+              "we try",
+              "a 3-month",
+              "pilot",
+              "first?"
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=How%20about%20we%20try%20a%203-month%20pilot%20first%3F&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=How%20about%20we%20try%20a%203-month%20pilot%20first%3F&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/f3329625-7e33-4dc5-b77f-789059add89c-Objection-Handling---3.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "I can send you a comparison report by Monday to help you decide.",
+            "options": [
+              "I can",
+              "send you",
+              "a comparison",
+              "report by Monday",
+              "to help",
+              "you decide."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=I%20can%20send%20you%20a%20comparison%20report%20by%20Monday%20to%20help%20you%20decide.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=I%20can%20send%20you%20a%20comparison%20report%20by%20Monday%20to%20help%20you%20decide.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/f3329625-7e33-4dc5-b77f-789059add89c-Objection-Handling---3.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "If a smaller rollout works for you we can start with that.",
+            "options": [
+              "If a smaller",
+              "rollout works",
+              "for you",
+              "we can",
+              "start with that."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=If%20a%20smaller%20rollout%20works%20for%20you%20we%20can%20start%20with%20that.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=If%20a%20smaller%20rollout%20works%20for%20you%20we%20can%20start%20with%20that.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/f3329625-7e33-4dc5-b77f-789059add89c-Objection-Handling---3.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "How about we start with a free trial first?",
+            "options": [
+              "How",
+              "about",
+              "we start",
+              "with a",
+              "free trial",
+              "first?"
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=How%20about%20we%20start%20with%20a%20free%20trial%20first%3F&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=How%20about%20we%20start%20with%20a%20free%20trial%20first%3F&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/f3329625-7e33-4dc5-b77f-789059add89c-Objection-Handling---3.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "I can send you a case study by Friday to help you decide.",
+            "options": [
+              "I can",
+              "send you",
+              "a case study",
+              "by Friday",
+              "to help",
+              "you decide."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=I%20can%20send%20you%20a%20case%20study%20by%20Friday%20to%20help%20you%20decide.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=I%20can%20send%20you%20a%20case%20study%20by%20Friday%20to%20help%20you%20decide.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/f3329625-7e33-4dc5-b77f-789059add89c-Objection-Handling---3.jpg",
+              "always_show_hint": true
+            }
+          }
+        }
+      ],
+      "section_type": "translate"
+    },
+    {
+      "questions": [
+        {
+          "type": "roleplay",
+          "details": {
+            "first_message": "That was incredible! Now we're going to practice by answering few questions in English. Can we start?",
+            "agent_display_name": "Miss Nova",
+            "localized_first_message": {}
+          },
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            }
+          },
+          "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/f3329625-7e33-4dc5-b77f-789059add89c-Objection-Handling---3.jpg",
+          "always_show_hint": true
+        }
+      ],
+      "section_type": "conversation"
+    }
+  ],
+  "key_skills": [
+    "speaking",
+    "grammar"
+  ],
+  "objectives": {
+    "primary": {
+      "objective": "-"
+    },
+    "secondary": []
+  },
+  "tts_config": {
+    "silent_mode": false
+  },
+  "description": "Learn how to handle objections by offering compromises and next steps",
+  "disable_skip": false,
+  "instructions": "-",
+  "activity_type": "Grammar Builder",
+  "is_level_test": false,
+  "use_rich_chat": true,
+  "language_config": {
+    "show_ai_response_language_toggle": false
+  },
+  "chat_suggestions": [
+    "Yes! Let's Start."
+  ],
+  "transcription_config": {
+    "skip_transcription_review": true
+  },
+  "localized_description": {},
+  "translate_description": true
+}

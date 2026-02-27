@@ -1,0 +1,384 @@
+{
+  "type": "multi_question",
+  "image": "https://r2-activity-data.gosupernova.live/generations%2Fgeneric%2Ficons%2FOpening%2520the%2520presentation-1770907249625.jpeg",
+  "title": "Opening the presentation",
+  "config": {
+    "personas": [
+      "spoken-english-adults-level-A1"
+    ],
+    "activity_type": "lesson",
+    "always_show_hint": true
+  },
+  "sections": [
+    {
+      "start": {
+        "pages": [
+          {
+            "type": "chat_lesson",
+            "details": {
+              "messages": {
+                "default": [
+                  {
+                    "cta": "Next!",
+                    "text": "Hey! Today we'll learn how to open a presentation.\nA strong opening helps your audience pay attention from the start.",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/aecf754c-a5ce-44c9-829c-35b5b5daac25-Structured-Presentations---1.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Got it!",
+                    "text": "First, introduce yourself and your topic.\nUse: \"Hi, I'm [name] from [team]. Today I'll talk about [topic].\"\nExample: \"Hi, I'm Ananya from the product team. Today I'll talk about our new onboarding flow.\"",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/aecf754c-a5ce-44c9-829c-35b5b5daac25-Structured-Presentations---1.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Nice!",
+                    "text": "Next, grab attention with a question.\nUse: \"Let me start with a question. [question]?\"\nExample: \"Let me start with a question. Have you ever left a sign-up page because it was too long?\"",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/aecf754c-a5ce-44c9-829c-35b5b5daac25-Structured-Presentations---1.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Makes sense!",
+                    "text": "Finally, tell the audience what they will learn.\nUse: \"By the end, you'll know [takeaway].\"\nExample: \"By the end, you'll know our plan to reduce churn by 25%.\"",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/aecf754c-a5ce-44c9-829c-35b5b5daac25-Structured-Presentations---1.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Start Practice!",
+                    "text": "Now let's practice opening a presentation!",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/aecf754c-a5ce-44c9-829c-35b5b5daac25-Structured-Presentations---1.jpg",
+                      "type": "image"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "questions": [
+        {
+          "text": "Look at the image and select the correct way to introduce yourself at the start of a presentation",
+          "type": "mcq",
+          "answer": [
+            "1"
+          ],
+          "options": [
+            {
+              "id": "1",
+              "text": "Hi, I'm [name] from [team]. Today I'll talk about [topic]."
+            },
+            {
+              "id": "2",
+              "text": "By the end, you'll know [takeaway]."
+            }
+          ],
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Look at the image and select the correct way to introduce yourself at the start of a presentation",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Look%20at%20the%20image%20and%20select%20the%20correct%20way%20to%20introduce%20yourself%20at%20the%20start%20of%20a%20presentation&lang=en",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/aecf754c-a5ce-44c9-829c-35b5b5daac25-Structured-Presentations---1.jpg",
+              "always_show_hint": true
+            }
+          },
+          "hide_feedback": false
+        },
+        {
+          "text": "Select the correct way to tell the audience what they will learn.",
+          "type": "mcq",
+          "answer": [
+            "2"
+          ],
+          "options": [
+            {
+              "id": "1",
+              "text": "Let me start with a question. [question]?"
+            },
+            {
+              "id": "2",
+              "text": "By the end, you'll know [takeaway]."
+            }
+          ],
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Select the correct way to tell the audience what they will learn.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Select%20the%20correct%20way%20to%20tell%20the%20audience%20what%20they%20will%20learn.&lang=en",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/aecf754c-a5ce-44c9-829c-35b5b5daac25-Structured-Presentations---1.jpg",
+              "always_show_hint": true
+            }
+          },
+          "hide_feedback": false
+        }
+      ],
+      "section_type": "learn"
+    },
+    {
+      "questions": [
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Hi, I'm Ravi from the sales team.",
+            "options": [
+              "Hi,",
+              "I'm Ravi",
+              "from the",
+              "sales team."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Hi%2C%20I'm%20Ravi%20from%20the%20sales%20team.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Hi%2C%20I'm%20Ravi%20from%20the%20sales%20team.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/aecf754c-a5ce-44c9-829c-35b5b5daac25-Structured-Presentations---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Today I'll talk about our new marketing plan.",
+            "options": [
+              "Today",
+              "I'll talk",
+              "about our",
+              "new marketing",
+              "plan."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Today%20I'll%20talk%20about%20our%20new%20marketing%20plan.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Today%20I'll%20talk%20about%20our%20new%20marketing%20plan.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/aecf754c-a5ce-44c9-829c-35b5b5daac25-Structured-Presentations---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Let me start with a question.",
+            "options": [
+              "Let",
+              "me",
+              "start",
+              "with",
+              "a",
+              "question."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Let%20me%20start%20with%20a%20question.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Let%20me%20start%20with%20a%20question.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/aecf754c-a5ce-44c9-829c-35b5b5daac25-Structured-Presentations---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Have you ever missed a deadline because of poor planning?",
+            "options": [
+              "Have",
+              "you",
+              "ever",
+              "missed a",
+              "deadline",
+              "because of",
+              "poor",
+              "planning?"
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Have%20you%20ever%20missed%20a%20deadline%20because%20of%20poor%20planning%3F&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Have%20you%20ever%20missed%20a%20deadline%20because%20of%20poor%20planning%3F&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/aecf754c-a5ce-44c9-829c-35b5b5daac25-Structured-Presentations---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "By the end, you'll know our plan to grow sales by 30%.",
+            "options": [
+              "By the end,",
+              "you'll know",
+              "our plan",
+              "to grow",
+              "sales by 30%."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=By%20the%20end%2C%20you'll%20know%20our%20plan%20to%20grow%20sales%20by%2030%25.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=By%20the%20end%2C%20you'll%20know%20our%20plan%20to%20grow%20sales%20by%2030%25.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/aecf754c-a5ce-44c9-829c-35b5b5daac25-Structured-Presentations---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        }
+      ],
+      "section_type": "translate"
+    },
+    {
+      "questions": [
+        {
+          "type": "roleplay",
+          "details": {
+            "first_message": "That was incredible! Now we're going to practice by answering few questions in English. Can we start?",
+            "agent_display_name": "Miss Nova",
+            "localized_first_message": {}
+          },
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            }
+          },
+          "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/aecf754c-a5ce-44c9-829c-35b5b5daac25-Structured-Presentations---1.jpg",
+          "always_show_hint": true
+        }
+      ],
+      "section_type": "conversation"
+    }
+  ],
+  "key_skills": [
+    "speaking",
+    "grammar"
+  ],
+  "objectives": {
+    "primary": {
+      "objective": "-"
+    },
+    "secondary": []
+  },
+  "tts_config": {
+    "silent_mode": false
+  },
+  "description": "Learn how to open a presentation confidently",
+  "disable_skip": false,
+  "instructions": "-",
+  "activity_type": "Grammar Builder",
+  "is_level_test": false,
+  "use_rich_chat": true,
+  "language_config": {
+    "show_ai_response_language_toggle": false
+  },
+  "chat_suggestions": [
+    "Yes! Let's Start."
+  ],
+  "transcription_config": {
+    "skip_transcription_review": true
+  },
+  "localized_description": {},
+  "translate_description": true
+}

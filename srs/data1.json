@@ -1,0 +1,385 @@
+{
+  "type": "multi_question",
+  "image": "https://r2-activity-data.gosupernova.live/generations%2Fgeneric%2Ficons%2FSharing%2520progress-1770906343677.jpeg",
+  "title": "Sharing progress",
+  "config": {
+    "personas": [
+      "spoken-english-adults-level-A1"
+    ],
+    "activity_type": "lesson",
+    "always_show_hint": true
+  },
+  "sections": [
+    {
+      "start": {
+        "pages": [
+          {
+            "type": "chat_lesson",
+            "details": {
+              "messages": {
+                "default": [
+                  {
+                    "cta": "Next!",
+                    "text": "Hey! Today we will learn how to speak confidently in client meetings.\nYou will learn how to give project updates and present your work.",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/4d69ca61-4c89-4499-95a4-492b22053c76-client-meeting---2-(1).jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Got it!",
+                    "text": "To share progress on tasks, say:\n\"We've finished [task] and now we're working on [task].\"\nExample: \"We've finished the payment setup and now we're working on the dashboard.\"",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/4d69ca61-4c89-4499-95a4-492b22053c76-client-meeting---2-(1).jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Nice!",
+                    "text": "To show something to the client, say:\n\"Let me show you [item] quickly.\"\nExample: \"Let me show you the wireframes quickly.\"",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/4d69ca61-4c89-4499-95a4-492b22053c76-client-meeting---2-(1).jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "I see!",
+                    "text": "To talk about what is on time and what needs more time, say:\n\"We're on track with [task], but [task] needs more time.\"\nExample: \"We're on track with the backend, but testing needs more time.\"",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/4d69ca61-4c89-4499-95a4-492b22053c76-client-meeting---2-(1).jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Start Practice!",
+                    "text": "Now let's practice using these in a client meeting!",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/4d69ca61-4c89-4499-95a4-492b22053c76-client-meeting---2-(1).jpg",
+                      "type": "image"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "questions": [
+        {
+          "text": "Look at the image and select the correct way to give a project update to your client",
+          "type": "mcq",
+          "answer": [
+            "1"
+          ],
+          "options": [
+            {
+              "id": "1",
+              "text": "We've finished the login page and now we're working on the homepage."
+            },
+            {
+              "id": "2",
+              "text": "Let me show you the login page quickly."
+            }
+          ],
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Look at the image and select the correct way to give a project update to your client",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Look%20at%20the%20image%20and%20select%20the%20correct%20way%20to%20give%20a%20project%20update%20to%20your%20client&lang=en",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/4d69ca61-4c89-4499-95a4-492b22053c76-client-meeting---2-(1).jpg",
+              "always_show_hint": true
+            }
+          },
+          "hide_feedback": false
+        },
+        {
+          "text": "Look at the image and select the correct way to tell your client about a delay",
+          "type": "mcq",
+          "answer": [
+            "2"
+          ],
+          "options": [
+            {
+              "id": "1",
+              "text": "Let me show you the report quickly."
+            },
+            {
+              "id": "2",
+              "text": "We're on track with the design, but development needs more time."
+            }
+          ],
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Look at the image and select the correct way to tell your client about a delay",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Look%20at%20the%20image%20and%20select%20the%20correct%20way%20to%20tell%20your%20client%20about%20a%20delay&lang=en",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/4d69ca61-4c89-4499-95a4-492b22053c76-client-meeting---2-(1).jpg",
+              "always_show_hint": true
+            }
+          },
+          "hide_feedback": false
+        }
+      ],
+      "section_type": "learn"
+    },
+    {
+      "questions": [
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Let me show you the wireframes quickly.",
+            "options": [
+              "Let me show",
+              "you",
+              "the",
+              "wireframes",
+              "quickly."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Let%20me%20show%20you%20the%20wireframes%20quickly.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Let%20me%20show%20you%20the%20wireframes%20quickly.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/4d69ca61-4c89-4499-95a4-492b22053c76-client-meeting---2-(1).jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "We've finished the payment setup and now we're working on the dashboard.",
+            "options": [
+              "We've finished",
+              "the payment setup",
+              "and",
+              "now",
+              "we're working",
+              "on the dashboard."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=We've%20finished%20the%20payment%20setup%20and%20now%20we're%20working%20on%20the%20dashboard.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=We've%20finished%20the%20payment%20setup%20and%20now%20we're%20working%20on%20the%20dashboard.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/4d69ca61-4c89-4499-95a4-492b22053c76-client-meeting---2-(1).jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "We're on track with the backend but testing needs more time.",
+            "options": [
+              "We're on track",
+              "with the backend",
+              "but",
+              "testing",
+              "needs",
+              "more time."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=We're%20on%20track%20with%20the%20backend%20but%20testing%20needs%20more%20time.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=We're%20on%20track%20with%20the%20backend%20but%20testing%20needs%20more%20time.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/4d69ca61-4c89-4499-95a4-492b22053c76-client-meeting---2-(1).jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Let me show you the report quickly.",
+            "options": [
+              "Let me show",
+              "you",
+              "the",
+              "report",
+              "quickly."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Let%20me%20show%20you%20the%20report%20quickly.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Let%20me%20show%20you%20the%20report%20quickly.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/4d69ca61-4c89-4499-95a4-492b22053c76-client-meeting---2-(1).jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "We've finished the testing and now we're working on the final review.",
+            "options": [
+              "We've finished",
+              "the testing",
+              "and",
+              "now",
+              "we're working",
+              "on the",
+              "final review."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=We've%20finished%20the%20testing%20and%20now%20we're%20working%20on%20the%20final%20review.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=We've%20finished%20the%20testing%20and%20now%20we're%20working%20on%20the%20final%20review.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/4d69ca61-4c89-4499-95a4-492b22053c76-client-meeting---2-(1).jpg",
+              "always_show_hint": true
+            }
+          }
+        }
+      ],
+      "section_type": "translate"
+    },
+    {
+      "questions": [
+        {
+          "type": "roleplay",
+          "details": {
+            "first_message": "That was incredible! Now we're going to practice by answering few questions in English. Can we start?",
+            "agent_display_name": "Miss Nova",
+            "localized_first_message": {}
+          },
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            }
+          },
+          "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/4d69ca61-4c89-4499-95a4-492b22053c76-client-meeting---2-(1).jpg",
+          "always_show_hint": true
+        }
+      ],
+      "section_type": "conversation"
+    }
+  ],
+  "key_skills": [
+    "speaking",
+    "grammar"
+  ],
+  "objectives": {
+    "primary": {
+      "objective": "-"
+    },
+    "secondary": []
+  },
+  "tts_config": {
+    "silent_mode": false
+  },
+  "description": "Learn how to give updates and present work in client meetings",
+  "disable_skip": false,
+  "instructions": "-",
+  "activity_type": "Grammar Builder",
+  "is_level_test": false,
+  "use_rich_chat": true,
+  "language_config": {
+    "show_ai_response_language_toggle": false
+  },
+  "chat_suggestions": [
+    "Yes! Let's Start."
+  ],
+  "transcription_config": {
+    "skip_transcription_review": true
+  },
+  "localized_description": {},
+  "translate_description": true
+}

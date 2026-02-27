@@ -1,0 +1,381 @@
+{
+  "type": "multi_question",
+  "image": "https://r2-activity-data.gosupernova.live/generations%2Fgeneric%2Ficons%2FReporting%2520current%2520status-1770906874277.jpeg",
+  "title": "Reporting current status",
+  "config": {
+    "personas": [
+      "spoken-english-adults-level-A1"
+    ],
+    "activity_type": "lesson",
+    "always_show_hint": true
+  },
+  "sections": [
+    {
+      "start": {
+        "pages": [
+          {
+            "type": "chat_lesson",
+            "details": {
+              "messages": {
+                "default": [
+                  {
+                    "cta": "Cool!",
+                    "text": "Hey! Today we will learn how to give technical updates at work.\nThis is very useful during team meetings and standups.",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/136ef69f-2c49-45b7-9aef-9ace7c9599b5-Technical-update---1.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Got it!",
+                    "text": "To talk about what you are doing, say:\n\"I'm working on [task]. It's [status].\"\nFor example: \"I'm working on the login page. It's almost done.\"",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/136ef69f-2c49-45b7-9aef-9ace7c9599b5-Technical-update---1.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Next!",
+                    "text": "To talk about a system problem, say:\n\"The [system] is [state] right now.\"\nFor example: \"The staging server is down right now.\"",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/136ef69f-2c49-45b7-9aef-9ace7c9599b5-Technical-update---1.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Makes sense!",
+                    "text": "To share progress with numbers, say:\n\"[Item] is at [value]. We're [on track / a bit behind].\"\nFor example: \"Test coverage is at 72%. We're a bit behind.\"",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/136ef69f-2c49-45b7-9aef-9ace7c9599b5-Technical-update---1.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Start Practice!",
+                    "text": "Now let's practice giving technical updates!",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/136ef69f-2c49-45b7-9aef-9ace7c9599b5-Technical-update---1.jpg",
+                      "type": "image"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "questions": [
+        {
+          "text": "Look at the image and select the correct way to share what you are working on",
+          "type": "mcq",
+          "answer": [
+            "1"
+          ],
+          "options": [
+            {
+              "id": "1",
+              "text": "I'm working on the payment module. It's in progress."
+            },
+            {
+              "id": "2",
+              "text": "The payment module is down right now."
+            }
+          ],
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Look at the image and select the correct way to share what you are working on",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Look%20at%20the%20image%20and%20select%20the%20correct%20way%20to%20share%20what%20you%20are%20working%20on&lang=en",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/136ef69f-2c49-45b7-9aef-9ace7c9599b5-Technical-update---1.jpg",
+              "always_show_hint": true
+            }
+          },
+          "hide_feedback": false
+        },
+        {
+          "text": "Look at the image and select the correct way to describe a system problem",
+          "type": "mcq",
+          "answer": [
+            "2"
+          ],
+          "options": [
+            {
+              "id": "1",
+              "text": "I'm working on the database. It's almost done."
+            },
+            {
+              "id": "2",
+              "text": "The database is down right now."
+            }
+          ],
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Look at the image and select the correct way to describe a system problem",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Look%20at%20the%20image%20and%20select%20the%20correct%20way%20to%20describe%20a%20system%20problem&lang=en",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/136ef69f-2c49-45b7-9aef-9ace7c9599b5-Technical-update---1.jpg",
+              "always_show_hint": true
+            }
+          },
+          "hide_feedback": false
+        }
+      ],
+      "section_type": "learn"
+    },
+    {
+      "questions": [
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "I'm working on the homepage. It's almost done.",
+            "options": [
+              "I'm",
+              "working",
+              "on",
+              "the homepage.",
+              "It's",
+              "almost done."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=I'm%20working%20on%20the%20homepage.%20It's%20almost%20done.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=I'm%20working%20on%20the%20homepage.%20It's%20almost%20done.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/136ef69f-2c49-45b7-9aef-9ace7c9599b5-Technical-update---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "The staging server is down right now.",
+            "options": [
+              "The",
+              "staging server",
+              "is down",
+              "right now."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=The%20staging%20server%20is%20down%20right%20now.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=The%20staging%20server%20is%20down%20right%20now.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/136ef69f-2c49-45b7-9aef-9ace7c9599b5-Technical-update---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Test coverage is at 72%. We're a bit behind.",
+            "options": [
+              "Test coverage",
+              "is at",
+              "72%. We're",
+              "a",
+              "bit behind."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Test%20coverage%20is%20at%2072%25.%20We're%20a%20bit%20behind.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Test%20coverage%20is%20at%2072%25.%20We're%20a%20bit%20behind.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/136ef69f-2c49-45b7-9aef-9ace7c9599b5-Technical-update---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "I'm working on the API. It's in progress.",
+            "options": [
+              "I'm",
+              "working",
+              "on",
+              "the API.",
+              "It's in",
+              "progress."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=I'm%20working%20on%20the%20API.%20It's%20in%20progress.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=I'm%20working%20on%20the%20API.%20It's%20in%20progress.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/136ef69f-2c49-45b7-9aef-9ace7c9599b5-Technical-update---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "The payment gateway is slow right now.",
+            "options": [
+              "The",
+              "payment gateway",
+              "is slow",
+              "right now."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=The%20payment%20gateway%20is%20slow%20right%20now.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=The%20payment%20gateway%20is%20slow%20right%20now.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/136ef69f-2c49-45b7-9aef-9ace7c9599b5-Technical-update---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        }
+      ],
+      "section_type": "translate"
+    },
+    {
+      "questions": [
+        {
+          "type": "roleplay",
+          "details": {
+            "first_message": "That was incredible! Now we're going to practice by answering few questions in English. Can we start?",
+            "agent_display_name": "Miss Nova",
+            "localized_first_message": {}
+          },
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            }
+          },
+          "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/136ef69f-2c49-45b7-9aef-9ace7c9599b5-Technical-update---1.jpg",
+          "always_show_hint": true
+        }
+      ],
+      "section_type": "conversation"
+    }
+  ],
+  "key_skills": [
+    "speaking",
+    "grammar"
+  ],
+  "objectives": {
+    "primary": {
+      "objective": "-"
+    },
+    "secondary": []
+  },
+  "tts_config": {
+    "silent_mode": false
+  },
+  "description": "Learn how to give technical updates at work",
+  "disable_skip": false,
+  "instructions": "-",
+  "activity_type": "Grammar Builder",
+  "is_level_test": false,
+  "use_rich_chat": true,
+  "language_config": {
+    "show_ai_response_language_toggle": false
+  },
+  "chat_suggestions": [
+    "Yes! Let's Start."
+  ],
+  "transcription_config": {
+    "skip_transcription_review": true
+  },
+  "localized_description": {},
+  "translate_description": true
+}

@@ -1,0 +1,387 @@
+{
+  "type": "multi_question",
+  "image": "https://r2-activity-data.gosupernova.live/generations%2Fgeneric%2Ficons%2FAcknowledging%2520the%2520concern-1770907075125.jpeg",
+  "title": "Acknowledging the concern",
+  "config": {
+    "personas": [
+      "spoken-english-adults-level-A1"
+    ],
+    "activity_type": "lesson",
+    "allow_without_subscription": false,
+    "use_rich_content": false
+  },
+  "sections": [
+    {
+      "start": {
+        "pages": [
+          {
+            "type": "chat_lesson",
+            "details": {
+              "messages": {
+                "default": [
+                  {
+                    "cta": "Next!",
+                    "text": "Hey! Today we're learning how to handle objections at work.\nSometimes people disagree or raise concerns.\nLet's learn how to respond politely and professionally!",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/83a19357-0a16-423a-a89c-9de8ff842c4c-Objection-Handling---1.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Got it!",
+                    "text": "When someone shares a concern, you can say:\n\"I understand your concern about [issue].\"\nFor example: \"I understand your concern about the pricing.\"\nThis shows you are listening to them.",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/83a19357-0a16-423a-a89c-9de8ff842c4c-Objection-Handling---1.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Tell me more!",
+                    "text": "When someone makes a good point, you can say:\n\"That's a fair point. Let me explain why we [action].\"\nFor example: \"That's a fair point. Let me explain why we picked this tool.\"\nThis shows respect before you give your reason.",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/83a19357-0a16-423a-a89c-9de8ff842c4c-Objection-Handling---1.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Cool!",
+                    "text": "You can also thank someone for their feedback:\n\"Thanks for raising this. [Reason it matters].\"\nFor example: \"Thanks for raising this. Timelines are important for your launch.\"\nThis makes the other person feel valued.",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/83a19357-0a16-423a-a89c-9de8ff842c4c-Objection-Handling---1.jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Start Practice!",
+                    "text": "Now let's practice handling objections!",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/83a19357-0a16-423a-a89c-9de8ff842c4c-Objection-Handling---1.jpg",
+                      "type": "image"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "questions": [
+        {
+          "text": "Look at the image and select the correct way to respond when someone raises a concern about pricing",
+          "type": "mcq",
+          "answer": [
+            "1"
+          ],
+          "options": [
+            {
+              "id": "1",
+              "text": "I understand your concern about the pricing."
+            },
+            {
+              "id": "2",
+              "text": "I don't care about your concern."
+            }
+          ],
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Look at the image and select the correct way to respond when someone raises a concern about pricing",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Look%20at%20the%20image%20and%20select%20the%20correct%20way%20to%20respond%20when%20someone%20raises%20a%20concern%20about%20pricing&lang=en",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/83a19357-0a16-423a-a89c-9de8ff842c4c-Objection-Handling---1.jpg",
+              "always_show_hint": true
+            }
+          },
+          "hide_feedback": false
+        },
+        {
+          "text": "Look at the image and select the correct way to acknowledge a fair point before explaining your reason",
+          "type": "mcq",
+          "answer": [
+            "2"
+          ],
+          "options": [
+            {
+              "id": "1",
+              "text": "That's not my problem. We chose this tool."
+            },
+            {
+              "id": "2",
+              "text": "That's a fair point. Let me explain why we picked this tool."
+            }
+          ],
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Look at the image and select the correct way to acknowledge a fair point before explaining your reason",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Look%20at%20the%20image%20and%20select%20the%20correct%20way%20to%20acknowledge%20a%20fair%20point%20before%20explaining%20your%20reason&lang=en",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/83a19357-0a16-423a-a89c-9de8ff842c4c-Objection-Handling---1.jpg",
+              "always_show_hint": true
+            }
+          },
+          "hide_feedback": false
+        }
+      ],
+      "section_type": "learn"
+    },
+    {
+      "questions": [
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "I understand your concern about the pricing.",
+            "options": [
+              "I",
+              "understand",
+              "your concern",
+              "about the",
+              "pricing."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=I%20understand%20your%20concern%20about%20the%20pricing.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=I%20understand%20your%20concern%20about%20the%20pricing.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/83a19357-0a16-423a-a89c-9de8ff842c4c-Objection-Handling---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "That's a fair point. Let me explain why we picked this.",
+            "options": [
+              "That's a fair",
+              "point.",
+              "Let me",
+              "explain why",
+              "we picked",
+              "this."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=That's%20a%20fair%20point.%20Let%20me%20explain%20why%20we%20picked%20this.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=That's%20a%20fair%20point.%20Let%20me%20explain%20why%20we%20picked%20this.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/83a19357-0a16-423a-a89c-9de8ff842c4c-Objection-Handling---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Thanks for raising this. Timelines are important for your launch.",
+            "options": [
+              "Thanks for raising",
+              "this.",
+              "Timelines",
+              "are important",
+              "for your launch."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Thanks%20for%20raising%20this.%20Timelines%20are%20important%20for%20your%20launch.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Thanks%20for%20raising%20this.%20Timelines%20are%20important%20for%20your%20launch.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/83a19357-0a16-423a-a89c-9de8ff842c4c-Objection-Handling---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "I understand your concern about the delivery timeline.",
+            "options": [
+              "I",
+              "understand",
+              "your concern",
+              "about the",
+              "delivery timeline."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=I%20understand%20your%20concern%20about%20the%20delivery%20timeline.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=I%20understand%20your%20concern%20about%20the%20delivery%20timeline.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/83a19357-0a16-423a-a89c-9de8ff842c4c-Objection-Handling---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "That's a fair point. Let me explain why we changed this.",
+            "options": [
+              "That's a fair",
+              "point.",
+              "Let me explain",
+              "why",
+              "we changed",
+              "this."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=That's%20a%20fair%20point.%20Let%20me%20explain%20why%20we%20changed%20this.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=That's%20a%20fair%20point.%20Let%20me%20explain%20why%20we%20changed%20this.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/83a19357-0a16-423a-a89c-9de8ff842c4c-Objection-Handling---1.jpg",
+              "always_show_hint": true
+            }
+          }
+        }
+      ],
+      "section_type": "translate"
+    },
+    {
+      "questions": [
+        {
+          "type": "roleplay",
+          "details": {
+            "first_message": "That was incredible! Now we're going to practice by answering few questions in English. Can we start?",
+            "agent_display_name": "Miss Nova",
+            "localized_first_message": {}
+          },
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            }
+          },
+          "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/83a19357-0a16-423a-a89c-9de8ff842c4c-Objection-Handling---1.jpg",
+          "always_show_hint": true
+        }
+      ],
+      "section_type": "conversation"
+    }
+  ],
+  "key_skills": [
+    "speaking",
+    "grammar"
+  ],
+  "objectives": {
+    "primary": {
+      "objective": "-"
+    },
+    "secondary": []
+  },
+  "tts_config": {
+    "silent_mode": false
+  },
+  "description": "Learn how to handle objections professionally",
+  "disable_skip": false,
+  "instructions": "-",
+  "activity_type": "Grammar Builder",
+  "is_level_test": false,
+  "use_rich_chat": true,
+  "language_config": {
+    "show_ai_response_language_toggle": false
+  },
+  "chat_suggestions": [
+    "Yes! Let's Start."
+  ],
+  "transcription_config": {
+    "skip_transcription_review": true
+  },
+  "localized_description": {},
+  "translate_description": true,
+  "title_badge": {
+    "badge_text": "Learn"
+  }
+}

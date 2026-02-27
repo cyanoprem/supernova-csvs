@@ -1,0 +1,386 @@
+{
+  "type": "multi_question",
+  "image": "https://r2-activity-data.gosupernova.live/generations%2Fgeneric%2Ficons%2FOpening%2520and%2520setting%2520the%2520agenda-1770906239681.jpeg",
+  "title": "Opening and setting the agenda",
+  "config": {
+    "personas": [
+      "spoken-english-adults-level-A1"
+    ],
+    "activity_type": "lesson",
+    "allow_without_subscription": false,
+    "use_rich_content": false
+  },
+  "sections": [
+    {
+      "start": {
+        "pages": [
+          {
+            "type": "chat_lesson",
+            "details": {
+              "messages": {
+                "default": [
+                  {
+                    "cta": "Next!",
+                    "text": "Hey! Today we will learn how to start a client meeting.\nYou will learn to greet the client and share the agenda.",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/10cc53d1-2098-4c32-b54d-26350428a6c6-client-meeting-(1).jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Got it!",
+                    "text": "First, greet the client and say what the meeting is about.\nUse: 'Thanks for joining, [name]. Today we'll cover [topic].'\nExample: 'Thanks for joining, Sharma. Today we'll cover the app redesign progress.'",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/10cc53d1-2098-4c32-b54d-26350428a6c6-client-meeting-(1).jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Cool!",
+                    "text": "Next, share the agenda with the client.\nUse: 'Let me share the agenda. [point 1], [point 2], and [point 3].'\nExample: 'Let me share the agenda. Timeline, budget, and next steps.'",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/10cc53d1-2098-4c32-b54d-26350428a6c6-client-meeting-(1).jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Nice!",
+                    "text": "You can also share the goal of the meeting.\nUse: 'The goal of this meeting is to [objective].'\nExample: 'The goal of this meeting is to finalize the feature list.'",
+                    "media": {
+                      "url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/10cc53d1-2098-4c32-b54d-26350428a6c6-client-meeting-(1).jpg",
+                      "type": "image"
+                    }
+                  },
+                  {
+                    "cta": "Start Practice!",
+                    "text": "Let's practice opening a client meeting and setting the agenda!",
+                    "media": null
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "questions": [
+        {
+          "text": "Look at the image and select the correct way to greet a client and introduce the meeting topic",
+          "type": "mcq",
+          "answer": [
+            "1"
+          ],
+          "options": [
+            {
+              "id": "1",
+              "text": "Thanks for joining, Priya. Today we'll cover the project update."
+            },
+            {
+              "id": "2",
+              "text": "Let me share the agenda. Timeline and budget."
+            }
+          ],
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Look at the image and select the correct way to greet a client and introduce the meeting topic",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Look%20at%20the%20image%20and%20select%20the%20correct%20way%20to%20greet%20a%20client%20and%20introduce%20the%20meeting%20topic&lang=en",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/10cc53d1-2098-4c32-b54d-26350428a6c6-client-meeting-(1).jpg",
+              "always_show_hint": true
+            }
+          },
+          "hide_feedback": false
+        },
+        {
+          "text": "Look at the image and select the correct way to state the goal of a meeting",
+          "type": "mcq",
+          "answer": [
+            "2"
+          ],
+          "options": [
+            {
+              "id": "1",
+              "text": "Let me share the agenda. Design, testing, and launch."
+            },
+            {
+              "id": "2",
+              "text": "The goal of this meeting is to review the quarterly results."
+            }
+          ],
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Look at the image and select the correct way to state the goal of a meeting",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Look%20at%20the%20image%20and%20select%20the%20correct%20way%20to%20state%20the%20goal%20of%20a%20meeting&lang=en",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/10cc53d1-2098-4c32-b54d-26350428a6c6-client-meeting-(1).jpg",
+              "always_show_hint": true
+            }
+          },
+          "hide_feedback": false
+        }
+      ],
+      "section_type": "learn"
+    },
+    {
+      "questions": [
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Thanks for joining, Sharma. Today we'll cover the project update.",
+            "options": [
+              "Thanks for joining,",
+              "Sharma.",
+              "Today",
+              "we'll cover",
+              "the project",
+              "update."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Thanks%20for%20joining%2C%20Sharma.%20Today%20we'll%20cover%20the%20project%20update.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Thanks%20for%20joining%2C%20Sharma.%20Today%20we'll%20cover%20the%20project%20update.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/10cc53d1-2098-4c32-b54d-26350428a6c6-client-meeting-(1).jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Let me share the agenda. Timeline, budget, and next steps.",
+            "options": [
+              "Let me share",
+              "the agenda.",
+              "Timeline,",
+              "budget,",
+              "and",
+              "next steps."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Let%20me%20share%20the%20agenda.%20Timeline%2C%20budget%2C%20and%20next%20steps.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Let%20me%20share%20the%20agenda.%20Timeline%2C%20budget%2C%20and%20next%20steps.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/10cc53d1-2098-4c32-b54d-26350428a6c6-client-meeting-(1).jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "The goal of this meeting is to finalize the feature list.",
+            "options": [
+              "The goal",
+              "of this meeting",
+              "is to finalize",
+              "the feature",
+              "list."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=The%20goal%20of%20this%20meeting%20is%20to%20finalize%20the%20feature%20list.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=The%20goal%20of%20this%20meeting%20is%20to%20finalize%20the%20feature%20list.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/10cc53d1-2098-4c32-b54d-26350428a6c6-client-meeting-(1).jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Thanks for joining, Meera. Today we'll cover the website redesign.",
+            "options": [
+              "Thanks for joining,",
+              "Meera.",
+              "Today",
+              "we'll cover",
+              "the website",
+              "redesign."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Thanks%20for%20joining%2C%20Meera.%20Today%20we'll%20cover%20the%20website%20redesign.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Thanks%20for%20joining%2C%20Meera.%20Today%20we'll%20cover%20the%20website%20redesign.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/10cc53d1-2098-4c32-b54d-26350428a6c6-client-meeting-(1).jpg",
+              "always_show_hint": true
+            }
+          }
+        },
+        {
+          "type": "jumble",
+          "details": {
+            "phrase": "Let me share the agenda. Design, testing, and launch.",
+            "options": [
+              "Let me share",
+              "the agenda.",
+              "Design,",
+              "testing,",
+              "and",
+              "launch."
+            ],
+            "easy_config": {
+              "number_of_blanks": 2
+            },
+            "recording_url": "https://workers.gosupernova.live/speak/say?text=Let%20me%20share%20the%20agenda.%20Design%2C%20testing%2C%20and%20launch.&lang=en",
+            "has_extra_words": false,
+            "enable_reattempt": true,
+            "enable_read_aloud": true
+          },
+          "sub_type": "jumble_translate",
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            },
+            "default": {
+              "text": "Listen to the audio and complete the jumble.",
+              "media": {
+                "url": "https://workers.gosupernova.live/speak/say?text=Let%20me%20share%20the%20agenda.%20Design%2C%20testing%2C%20and%20launch.&lang=en&voiceName=Priya",
+                "type": "audio"
+              },
+              "translate": true,
+              "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/10cc53d1-2098-4c32-b54d-26350428a6c6-client-meeting-(1).jpg",
+              "always_show_hint": true
+            }
+          }
+        }
+      ],
+      "section_type": "translate"
+    },
+    {
+      "questions": [
+        {
+          "type": "roleplay",
+          "details": {
+            "first_message": "That was incredible! Now we're going to practice by answering few questions in English. Can we start?",
+            "agent_display_name": "Miss Nova",
+            "localized_first_message": {}
+          },
+          "instructions": {
+            "avatar": {
+              "correct": "https://r2-activity-data.gosupernova.live/green-character-happy.json",
+              "waiting": "https://r2-activity-data.gosupernova.live/green-character-waiting.json"
+            }
+          },
+          "hint_image_url": "https://r2-activity-data.gosupernova.live/system-uploads/scenario-data/10cc53d1-2098-4c32-b54d-26350428a6c6-client-meeting-(1).jpg",
+          "always_show_hint": true
+        }
+      ],
+      "section_type": "conversation"
+    }
+  ],
+  "key_skills": [
+    "speaking",
+    "grammar"
+  ],
+  "objectives": {
+    "primary": {
+      "objective": "-"
+    },
+    "secondary": []
+  },
+  "tts_config": {
+    "silent_mode": false
+  },
+  "description": "Learn how to open a client meeting and set the agenda",
+  "disable_skip": false,
+  "instructions": "-",
+  "activity_type": "Grammar Builder",
+  "is_level_test": false,
+  "use_rich_chat": true,
+  "language_config": {
+    "show_ai_response_language_toggle": false
+  },
+  "chat_suggestions": [
+    "Yes! Let's Start."
+  ],
+  "transcription_config": {
+    "skip_transcription_review": true
+  },
+  "localized_description": {},
+  "translate_description": true,
+  "title_badge": {
+    "badge_text": "Learn"
+  }
+}
