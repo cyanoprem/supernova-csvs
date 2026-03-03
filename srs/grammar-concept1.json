@@ -1,0 +1,105 @@
+{
+  "sections": [
+    {
+      "questions": [
+        {
+          "default": {
+            "prompts": [
+              {
+                "id": "7deb4075-c026-43fe-906c-5439d404bd9c",
+                "vars": {
+                  "answer": "",
+                  "question": "I'm Rahul and I'm 35 years-old",
+                  "grammar_concept": "Introducing yourself",
+                  "SYSTEM_TRANSLATION_RULES": ""
+                }
+              },
+              {
+                "id": "7deb4075-c026-43fe-906c-5439d404bd9c",
+                "vars": {
+                  "answer": "",
+                  "question": "I completed my schooling from St.Mary's High School in 2019",
+                  "grammar_concept": "Educational Background",
+                  "SYSTEM_TRANSLATION_RULES": ""
+                }
+              },
+              {
+                "id": "7deb4075-c026-43fe-906c-5439d404bd9c",
+                "vars": {
+                  "answer": "",
+                  "question": "My expectation is 7 LPA, but I am open to negotiation",
+                  "grammar_concept": "Basic Interview Questions",
+                  "SYSTEM_TRANSLATION_RULES": ""
+                }
+              },
+              {
+                "id": "7deb4075-c026-43fe-906c-5439d404bd9c",
+                "vars": {
+                  "answer": "",
+                  "question": "I completed a project on web development in my 3rd year",
+                  "grammar_concept": "Basic Resume Questions",
+                  "SYSTEM_TRANSLATION_RULES": ""
+                }
+              },
+              {
+                "id": "7deb4075-c026-43fe-906c-5439d404bd9c",
+                "vars": {
+                  "answer": "",
+                  "question": "Vikram is an architect. He works at DLF",
+                  "grammar_concept": "Introducing Friends & Family",
+                  "SYSTEM_TRANSLATION_RULES": ""
+                }
+              },
+              {
+                "id": "7deb4075-c026-43fe-906c-5439d404bd9c",
+                "vars": {
+                  "answer": "",
+                  "question": "I was born in Mumbai and I live in Pune now",
+                  "grammar_concept": "Introducing yourself",
+                  "SYSTEM_TRANSLATION_RULES": ""
+                }
+              },
+              {
+                "id": "7deb4075-c026-43fe-906c-5439d404bd9c",
+                "vars": {
+                  "answer": "",
+                  "question": "I am pursuing my B.Tech in Computer Science Engineering",
+                  "grammar_concept": "Educational Background",
+                  "SYSTEM_TRANSLATION_RULES": ""
+                }
+              },
+              {
+                "id": "7deb4075-c026-43fe-906c-5439d404bd9c",
+                "vars": {
+                  "answer": "",
+                  "question": "I can join within 15 days",
+                  "grammar_concept": "Basic Interview Questions",
+                  "SYSTEM_TRANSLATION_RULES": ""
+                }
+              },
+              {
+                "id": "7deb4075-c026-43fe-906c-5439d404bd9c",
+                "vars": {
+                  "answer": "",
+                  "question": "I did an internship in Accenture for 2 months",
+                  "grammar_concept": "Basic Resume Questions",
+                  "SYSTEM_TRANSLATION_RULES": ""
+                }
+              },
+              {
+                "id": "7deb4075-c026-43fe-906c-5439d404bd9c",
+                "vars": {
+                  "answer": "",
+                  "question": "He likes cycling in his free time",
+                  "grammar_concept": "Introducing Friends & Family",
+                  "SYSTEM_TRANSLATION_RULES": ""
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "sentence_structures": []
+}

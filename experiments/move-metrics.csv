@@ -1,0 +1,24 @@
+Below is copy-pastable comma-separated format.
+
+Format:
+Metric,Idea,Impact,Confidence,Effort
+
+LEO,Weekly improvement visual report,High,High,Low
+LEO,Guided remediation on missed concepts,High,High,Medium
+LEO,Mandatory post test before next unlock,High,Medium,Low
+LEO,Instructor framing tied to score delta,Medium,High,Low
+LEO,Adaptive support for users scoring below 5,High,Medium,High
+
+Second Pay,Pre debit personalized value reinforcement message,High,High,Low
+Second Pay,Mandate transparency improvement at ₹9 step,High,High,Low
+Second Pay,4 day high intensity onboarding sprint,High,Medium,High
+Second Pay,Streak system tied to continuation,High,Medium,Medium
+Second Pay,Instructor touchpoint before debit day,High,Medium,High
+
+Retention,Fixed 4 week cohort model,High,High,Medium
+Retention,Daily 5 minute micro habit task,Medium,High,Low
+Retention,Accountability partner pairing,High,Medium,Medium
+Retention,Monthly fluency milestone event,High,Medium,Medium
+Retention,Consistency leaderboard for attendance,Medium,Medium,Low
+
+If you want, I can also give this in strict CSV format with no spaces and ready for Google Sheets import.

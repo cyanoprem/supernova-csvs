@@ -1,0 +1,25 @@
+Experiment,Variant,Experiment Logins,2nd Paid Users (Experiment),2nd Pay %,% Difference,Which is better,Confidence %,Second Day Window
+Floating_nova_button/all,redirect-to-ask-ai-activity,87290,1417.87,26.11% vs 27.13%,-1.02%,Control,81.14%,14 days
+Floating_nova_button/all,redirect-to-nova-ai-tab,56429,1031.99,26.69% vs 27.13%,-0.44%,Control,38.58%,14 days
+Course_ui_v4_v5/all,course_v4,33059,879.02,27.69% vs 27.10%,+0.59%,Experiment,45.44%,14 days
+Course_ui_v4_v5/all,course_v5,117411,2238.99,27.38% vs 27.12%,+0.26%,Experiment,26.86%,15 days
+activity_section_metadata_v2/all,enabled,90102,1816.93,27.38% vs 27.27%,+0.11%,Experiment,12.17%,15 days
+course_v2/hi/A1,Spaced repetition track_V2 - new backend with pre and post test,16273,346.02,21.40% vs 21.21%,+0.19%,Experiment,10.74%,11 days
+course_v2/hi/A2,Spaced repetition track_V2 - new backend - Nova video,11777,228.02,21.51% vs 21.00%,+0.51%,Experiment,23.38%,11 days
+course_v2/hi/A2,Spaced repetition track_V2 - new backend with pre and post test,15149,297.03,18.36% vs 20.51%,-2.15%,Control,86.83%,11 days
+course_v2/A0/homemaker,SRS Grammar,5929,277.00,42.61% vs 42.92%,-0.31%,Control,8.92%,29 days
+course_v2/A0/homemaker,Spaced repetition track_V2 - new backend,5573,275.00,43.58% vs 42.37%,+1.21%,Experiment,33.43%,24 days
+course_v2/A1/homemaker,Spaced repetition track_V2 - new backend with pre and post test,7214,380.00,39.87% vs 41.28%,-1.41%,Control,44.43%,24 days
+course_v2/A1/homemaker,Spaced repetition track_V2 - new backend with smaller activities,2941,159.00,41.08% vs 41.16%,-0.08%,Control,1.84%,17 days
+course_v2/A2/homemaker,Spaced repetition track_V2 - new backend with pre and post test,3788,222.00,44.14% vs 42.57%,+1.57%,Experiment,37.28%,26 days
+course_v2/A0,SRS GC short+breakUI,10537,175.00,32.47% vs 26.47%,+6.00%,Experiment,97.69%,7 days
+course_v2/A0,SRS Gram/Can-dos Break UI,23272,705.00,26.67% vs 26.58%,+0.09%,Experiment,6.28%,16 days
+course_v2/A0,SRS Grammar with Can-dos,34144,1075.03,27.75% vs 29.77%,-2.02%,Control,97.13%,28 days
+course_v2/A0,SRS short activities,12917,425.02,27.85% vs 26.72%,+1.13%,Experiment,58.86%,17 days
+course_v2/A1,Spaced repetition track_V2 - new backend,10698,534.01,34.45% vs 32.29%,+2.16%,Experiment,88.12%,25 days
+course_v2/A1,Spaced repetition track_V2 - new backend with pre and post test,19186,983.99,32.40% vs 34.45%,-2.05%,Control,83.74%,25 days
+course_v2/A1,restructured - optimized order with pre and post test,2134,13.00,30.23% vs 37.41%,-7.18%,Control,61.25%,3 days
+course_v2/A1,restructured - with pre and post test,9204,397.00,31.53% vs 32.23%,-0.70%,Control,31.45%,11 days
+course_v2/A2,SRT - new backend with pre and post test,9812,380.00,29.14% vs 30.57%,-1.43%,Control,62.19%,29 days
+course_v2/A2,restructured - with pre and post test,2391,70.00,29.05% vs 30.39%,-1.34%,Control,30.59%,8 days
+course_v2/A3-auto,default - core grammar at top with pre and post test,2952,15.00,38.46% vs 44.63%,-6.17%,Control,52.81%,2 days

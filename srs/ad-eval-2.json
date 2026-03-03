@@ -1,0 +1,16 @@
+{
+  "data": {
+    "evaluation_config": {
+      "evaluationPromptId": "ebfade07-516b-4760-9991-3f465d53f115",
+      "evaluationType": "CANDO"
+    },
+    "vars": {
+      "concept": "Question 1: Introducing yourself; Question 2: Educational Background; Question 3: Basic Interview Questions; Question 4: Basic Resume Questions; Question 5: Introducing Friends & Family; Question 6: Introducing yourself; Question 7: Educational Background; Question 8: Basic Interview Questions; Question 9: Basic Resume Questions; Question 10: Introducing Friends & Family"
+    },
+    "roleplay_prompt_id": "7deb4075-c026-43fe-906c-5439d404bd9c",
+    "dry_run": false,
+    "scenario_ids": [
+      "831affab-3132-4e0f-8060-c61baa1e0ca1"
+    ]
+  }
+}
