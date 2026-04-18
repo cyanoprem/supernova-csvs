@@ -1,0 +1,58 @@
+screen_number,screen_type,video_url_script,hindi_video_url_script,video_url,R2 link,auto_advance,overlay_main_text,overlay_sub_text,overlay_hint,overlay_cta_label,correct_answer,mcq_option_a,mcq_option_b,correct_option_id,show_result,success_video_url,failure_video_url,partial_video_url,waiting_video_url
+1,media,"Learning to make polite requests helps you ask for things respectfully, get help when you need it, and communicate professionally in English.","Polite requests करना सीखने से आप respectfully चीज़ें माँग सकते हैं, जरूरत पड़ने पर मदद पा सकते हैं, और English में professionally बात कर सकते हैं।",PR 1,https://sn-main.b-cdn.net/system-uploads/scenario-data/61f3f8e8-3a63-4c81-aa7c-b3f6352f3788-PR-1_720p.mp4,TRUE,,,,,,,,,,,,,
+,media,"Let's start our lesson. When you want someone to do something, the simplest way is to say ""Please"" followed by an action and the thing. You say - ""Please open the door."" You can use any action like close, pass, turn off - just follow this pattern: Please + action + the thing!
+","चलिए lesson शुरू करते हैं। जब आप किसी से कुछ करने के लिए कहना चाहते हैं, तो सबसे आसान तरीका है ""Please"" के बाद action और object बोलना। जैसे — ""Please open the door."" आप कोई भी action use कर सकते हैं जैसे close, pass, turn off — बस इस pattern को follow करें: Please + action + the thing!",PR 2,https://sn-main.b-cdn.net/system-uploads/scenario-data/78357470-2ba9-469c-9fa4-d29a57d598fd-PR_2.mp4,,Please + action + the thing!,किसी को कुछ करने के लिए अच्छे से बोलना,,,,,,,,,,,
+,mcq,"Which option is correct for asking someone to close a window politely?
+A) Close the window
+B) Please close the window",Window बंद करने के लिए politely पूछने का सही option कौन सा है?,PR 3,https://sn-main.b-cdn.net/system-uploads/scenario-data/e2521bae-7d7e-406e-a52e-14747b5c4b17-PR_3.mp4,,Window बंद करने के लिए politely पूछने का सही option कौन सा है?,,,,b,Close the window,Please close the window,,TRUE,,,,
+2,translate,How would you politely ask someone to pass the salt?,आप किसी से salt pass करने के लिए politely कैसे पूछेंगे?,PR 4,https://sn-main.b-cdn.net/system-uploads/scenario-data/a7e21076-c480-4acf-a06c-c6c7d8f1a37c-PR_4.mp4,FALSE,आप किसी से salt pass करने के लिए politely कैसे पूछेंगे?,इसे English में बोलिए,Please + action + the thing!,,,,,,,,,,
+3,translate,How would you politely ask someone to turn on the light?,आप किसी से light on करने के लिए politely कैसे पूछेंगे?,PR 5,https://sn-main.b-cdn.net/system-uploads/scenario-data/9575df78-93f3-4ccd-9011-7afd618b3586-PR_5.mp4,FALSE,आप किसी से light on करने के लिए politely कैसे पूछेंगे?,इसे English में बोलिए,Please + action + the thing!,,,,,,TRUE,,,,
+4,media,"When you want to be more polite, you can ask ""Can you"" followed by the action and the thing, then end with ""please?"" You say - ""Can you open the door please?"" Use the same pattern: Can you + action + the thing + please?
+","जब आप और polite होना चाहते हैं, तो आप ""Can you"" के बाद action और object बोलते हैं, फिर अंत में ""please?"" लगाते हैं। जैसे — ""Can you open the door please?"" इस pattern का use करें: Can you + action + the thing + please?",PR 6,https://sn-main.b-cdn.net/system-uploads/scenario-data/73d84e4c-a3b6-4b33-bca0-76453217e9fd-PR_6.mp4,FALSE,Can you + action + the thing + please?,किसी को कुछ करने के लिए अच्छे से बोलना,,,,,,,TRUE,,,,
+5,mcq,"Which option is correct for politely asking someone to turn off the light?
+A) Can you turn off the light please?
+B) You turn off the light",Light बंद करने के लिए politely पूछने का सही option कौन सा है?,PR 7,https://sn-main.b-cdn.net/system-uploads/scenario-data/75880ce6-2a17-4897-930d-67407cd0c72f-PR_7.mp4,FALSE,Light बंद करने के लिए politely पूछने का सही option कौन सा है?,,,,a,Can you turn off the light please?,You turn off the light,,,,,,
+6,translate,How would you politely ask someone to close the window?,आप किसी से window बंद करने के लिए politely कैसे पूछेंगे?,PR 8,https://sn-main.b-cdn.net/system-uploads/scenario-data/2b10752e-f26d-4ec5-ac90-4967e703d852-PR_8.mp4,FALSE,आप किसी से window बंद करने के लिए politely कैसे पूछेंगे?,इसे English में बोलिए,Can you + action + the thing + please?,,,,,,,,,,
+7,translate,How would you politely ask someone to pass the water?,आप किसी से पानी pass करने के लिए politely कैसे पूछेंगे?,PR 9,https://sn-main.b-cdn.net/system-uploads/scenario-data/5a57a183-28f4-4c23-907b-1b350164f885-PR_9.mp4,FALSE,आप किसी से पानी pass करने के लिए politely कैसे पूछेंगे?,इसे English में बोलिए,Can you + action + the thing + please?,,,,,,,,,,
+9,media,"When you want to be very polite or formal, you say ""Would you mind"" followed by the action with -ing and the thing? You say - ""Would you mind opening the door?"" Notice the action becomes ""opening"" not ""open"". Use this pattern: Would you mind + action-ing + the thing?
+","जब आप बहुत polite या formal होना चाहते हैं, तो आप ""Would you mind"" के बाद action में -ing लगाकर बोलते हैं। जैसे — ""Would you mind opening the door?"" ध्यान दें action ""open"" से ""opening"" बन जाता है। इस pattern का use करें: Would you mind + action-ing + the thing?",PR 10,https://sn-main.b-cdn.net/system-uploads/scenario-data/a10e1329-6905-4b39-84fe-ca871308e449-PR_10.mp4,FALSE,Would you mind + action-ing + the thing?,किसी को कुछ करने के लिए अच्छे से बोलना,,,,,,,,,,,
+kitchen,mcq,"Which option is correct for very politely asking someone to lower the volume?
+A) Lower the volume
+B) Would you mind lowering the volume?",Volume कम करने के लिए बहुत politely पूछने का सही option कौन सा है?,PR 11,https://sn-main.b-cdn.net/system-uploads/scenario-data/b5c3b796-ef15-4227-9a2b-52d04800b1e3-PR_11.mp4,FALSE,Volume कम करने के लिए बहुत politely पूछने का सही option कौन सा है?,,,,b,Lower the volume,Would you mind lowering the volume?,,,,,,
+kitchen,translate,How would you very politely ask someone to send a file?,आप किसी से file भेजने के लिए बहुत politely कैसे पूछेंगे?,PR 12,https://sn-main.b-cdn.net/system-uploads/scenario-data/007ef6c7-f874-459a-b399-ceffd368b91a-PR_12.mp4,FALSE,आप किसी से file भेजने के लिए बहुत politely कैसे पूछेंगे?,इसे English में बोलिए,Would you mind + action-ing + the thing?,,,,,,,,,,
+,translate,How would you very politely ask someone to close the door?,आप किसी से door बंद करने के लिए बहुत politely कैसे पूछेंगे?,PR 13,https://sn-main.b-cdn.net/system-uploads/scenario-data/251436a4-e3b3-467d-b209-1b411e725a7b-PR_13.mp4,,आप किसी से door बंद करने के लिए बहुत politely कैसे पूछेंगे?,इसे English में बोलिए,Would you mind + action-ing + the thing?,,,,,,,,,,
+12,media,Great! Now you're going to practice making polite requests with Rahul. Use the polite forms you just learned!,Great! अब आप Rahul के साथ polite requests की practice करेंगे। अभी जो आपने सीखा है उसका use करें!,PR 14,https://sn-main.b-cdn.net/system-uploads/scenario-data/0ff1bea2-aecc-4465-9720-082204f2a8a2-PR_14.mp4,FALSE,,,,,,,,,,,,,
+,conversation,Hey! Let's get started. How would you ask me to pass the menu?,Hey! Let's get started. How would you ask me to pass the menu?,PR 24,https://sn-main.b-cdn.net/system-uploads/scenario-data/546a41c3-eec2-439d-8738-15e7558b1723-PR_24.mp4,,,Hey! चलिए शुरू करते हैं। आप मुझसे menu pass करने के लिए कैसे पूछेंगे?,,,,,,,,,,,
+,conversation,How would you ask me to open the window?,How would you ask me to open the window?,PR 25,https://sn-main.b-cdn.net/system-uploads/scenario-data/9d58e4d8-7129-46e8-b3d2-ac1b1318828f-PR_25.mp4,,,आप मुझसे window खोलने के लिए कैसे पूछेंगे?,,,,,,,,,,,
+,conversation,How would you ask me to turn on the fan?,How would you ask me to turn on the fan?,PR 26,https://sn-main.b-cdn.net/system-uploads/scenario-data/888af51a-0e90-4f84-b0af-c97a22f1ba90-PR_26.mp4,,,आप मुझसे fan on करने के लिए कैसे पूछेंगे?,,,,,,,,,,,
+,conversation,How would you ask me to check your email?,How would you ask me to check the email?,PR 27,https://sn-main.b-cdn.net/system-uploads/scenario-data/17745b0a-9c7a-44c2-b0d7-05d24483700a-PR_27.mp4,,,आप मुझसे अपना email check करने के लिए कैसे पूछेंगे?,,,,,,,,,,,
+,conversation,How would you ask me to move the chair?,How would you ask me to move the chair?,PR 28,https://sn-main.b-cdn.net/system-uploads/scenario-data/3993e444-7a31-4a35-b7c9-e1a8431550e6-PR_28.mp4,,,आप मुझसे chair move करने के लिए कैसे पूछेंगे?,,,,,,,,,,,
+,conversation,That was great! You made polite requests so well!,That was great! You made polite requests so well!,PR 20,https://sn-main.b-cdn.net/system-uploads/scenario-data/17f8d6c7-fe76-4fad-a749-71fc2b1f7193-PR_20.mp4,,,बहुत बढ़िया! आपने polite requests बहुत अच्छी तरह से कीं!,,,,,,,,,,,
+,conversation-result,All your answers are correct!,आपके सभी answers सही हैं!,PR 21,https://sn-main.b-cdn.net/system-uploads/scenario-data/2f721980-aa8e-41e8-aff3-a0ad9cca2386-PR_21.mp4,,,,,,,,,,,,,,
+,conversation-result,Let's review some of the mistakes you made,आइए आपकी कुछ mistakes को review करें।,PR 22,https://sn-main.b-cdn.net/system-uploads/scenario-data/1d0df778-3d4e-498b-957a-b51018691f76-PR_22.mp4,,,,,,,,,,,,,,
+,media,"Great job! You just learnt how to make polite requests in English. You can now ask for help politely in any situation - at work, at home, or with strangers. This will make you sound more professional and respectful when speaking English!","Great job! आपने English में polite requests करना सीख लिया है। अब आप किसी भी situation में politely मदद मांग सकते हैं — काम पर, घर पर, या strangers के साथ। इससे आप English बोलते समय ज़्यादा professional और respectful लगेंगे!",PR 23,https://sn-main.b-cdn.net/system-uploads/scenario-data/447e0836-7864-4cb3-96ec-5eb3b8c3ad78-PR_23.mp4,,,,,,,,,,,,,,
+,,,CORRECT 1 FOV3,,"V1.1
+https://sn-main.b-cdn.net/system-uploads/scenario-data/48e01722-656d-4cb7-adf2-79aeacdb5ca8-CORRECT-1-FOV3-v1.1.mp4 
+
+V1.2
+https://sn-main.b-cdn.net/system-uploads/scenario-data/df944622-2a6a-40aa-afec-906d6bdb0798-CORRECT-1-FOV3-v1.2.mp4 ",,,,,,,,,,,,,,
+,,,CORRECT 2 FOV3,,"V2.1https://sn-main.b-cdn.net/system-uploads/scenario-data/dedd3a89-39da-4411-9bdc-2d83ce935c3a-CORRECT-2-FOV3-1.1.mp44 
+
+V2.2
+https://sn-main.b-cdn.net/system-uploads/scenario-data/05508807-33dd-4d83-9a6b-99a785882422-CORRECT-2-FOV3-1.2.mp4 
+
+V2.3
+https://sn-main.b-cdn.net/system-uploads/scenario-data/b4795db3-df7c-4e7b-908a-9851c026beb1-CORRECT-2-FOV3-1.3.mp4 ",,,,,,,,,,,,,,
+,,,WRONG 1 FOV3,,"V1.1
+https://sn-main.b-cdn.net/system-uploads/scenario-data/c25bea80-1de3-42d2-ac19-05acb9092dc6-WRONG-1-FOV3-v1.1.mp4 
+
+V1.2
+https://sn-main.b-cdn.net/system-uploads/scenario-data/b5036fc9-0043-4317-808e-c91064c1c916-WRONG-1-FOV3-v1.2.mp4 ",,,,,,,,,,,,,,
+,,,WRONG 2 FOV3,,"V2.1
+https://sn-main.b-cdn.net/system-uploads/scenario-data/e3c9fbf4-38b9-4a12-ad66-b826fc25e4ee-WRONG-2-FOV3-1.2.mp4 
+
+V2.2
+https://sn-main.b-cdn.net/system-uploads/scenario-data/a81a49d2-7477-4707-bcd0-9b6caef74455-WRONG-2-FOV3-v1.1.mp4 ",,,,,,,,,,,,,,
+,,,wait FOV3,,https://sn-main.b-cdn.net/system-uploads/scenario-data/88b66b57-4949-455d-aabf-983972ac7419-wait-FOV3.mp4,,,,,,,,,,,,,,
+,,,partial correct F0V3,,"V1.1
+https://sn-main.b-cdn.net/system-uploads/scenario-data/841e1aba-4f53-433d-bd06-3977b7dee9f6-partial-correct-F0V3.mp4 ",,,,,,,,,,,,,,

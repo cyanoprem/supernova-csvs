@@ -1,0 +1,64 @@
+screen_number,screen_type,video_url_script,hindi_video_url_script,video_url,R2 links,auto_advance,overlay_main_text,overlay_sub_text,overlay_hint,overlay_cta_label,correct_answer,mcq_option_a,mcq_option_b,correct_option_id,show_result,success_video_url,failure_video_url,partial_video_url,waiting_video_url
+1,media,"Learning to talk about your daily routine helps you describe your day, share your schedule with others, and have everyday conversations in English.","अपनी daily routine के बारे में बात करना सीखने से आप अपना दिन describe कर सकते हैं, अपना schedule दूसरों के साथ share कर सकते हैं, और English में रोज़मर्रा की conversations कर सकते हैं।",DR 1,https://sn-main.b-cdn.net/system-uploads/scenario-data/f4f010dd-2dec-47d7-99dd-9d04c132ad93-DR_1.mp4,TRUE,,,,,,,,,,,,,
+,media,"Let's start our lesson. When you want to say what you do at a specific time, you say ""I"" followed by the action, what you're doing it to, and when. You say - ""I eat breakfast at 7 AM."" Follow this pattern: I + action + thing + at + time!","चलिए lesson शुरू करते हैं। जब आप बताना चाहते हैं कि आप किसी specific time पर क्या करते हैं, तो आप ""I"" के बाद action, फिर object, और फिर time बोलते हैं। जैसे — ""I eat breakfast at 7 AM."" इस pattern को follow करें: I + action + thing + at + time!",DR 2,https://sn-main.b-cdn.net/system-uploads/scenario-data/a8db4279-ac3a-4d10-a23f-f46d75d674fd-DR_2.mp4,,I + action + thing + at + time!,यह बोलना कि आप किसी specific time पर क्या करते हो,,,,,,,,,,,
+,mcq,"Which option is correct for saying when you drink coffee?
+A) I drink coffee at 8 AM
+B) at 8 AM I drink coffee",Coffee पीने का time बताने के लिए कौन सा option सही है?,DR 3,https://sn-main.b-cdn.net/system-uploads/scenario-data/66c1e0f9-58c4-438c-8f42-a379d4ca8069-DR_3.mp4,,Coffee पीने का time बताने के लिए कौन सा option सही है?,,,,a,I drink coffee at 8 AM,at 8 AM I drink coffee,,TRUE,,,,
+2,translate,How would you say you check emails at 9 AM?,आप 9AM पर emails check करने के लिए कैसे कहेंगे?,DR 4,https://sn-main.b-cdn.net/system-uploads/scenario-data/f9f04ffa-e12a-4c70-aa5c-6beb6e0719c4-DR_4.mp4,FALSE,आप 9 AM पर emails check करने के लिए कैसे कहेंगे?,इसे English में बोलिए,I + action + thing + at + time!,,,,,,,,,,
+3,translate,How would you say you eat lunch at 1 PM?,आप 1PM पर lunch खाने के लिए कैसे कहेंगे?,DR 5,https://sn-main.b-cdn.net/system-uploads/scenario-data/313e8876-04b6-4f78-a600-ae5af6613f9d-DR_5.mp4,FALSE,आप 1 PM पर lunch खाने के लिए कैसे कहेंगे?,इसे English में बोलिए,I + action + thing + at + time!,,,,,,TRUE,,,,
+4,media,"When you want to say what you do next in your routine, you say ""Then I"" followed by the action and what you're doing it to. You say - ""Then I read books."" Follow this pattern: Then I + action + thing!","जब आप अपनी routine में अगला काम बताना चाहते हैं, तो आप ""Then I"" के बाद action और object बोलते हैं। जैसे — ""Then I read books."" इस pattern को follow करें: Then I + action + thing!",DR 6,https://sn-main.b-cdn.net/system-uploads/scenario-data/f7ea3b92-eb4f-49e8-9d3f-e006e651d0a6-DR_6.mp4,FALSE,Then I + action + thing!,यह बोलना कि आप उसके बाद क्या करते हो,,,,,,,TRUE,,,,
+5,mcq,"Which option is correct for saying what you do after breakfast?
+A) Then I wash clothes
+B) After I wash cloth","Breakfast के बाद आप क्या करते हैं, यह बताने के लिए कौन सा option सही है?
+",DR 7,https://sn-main.b-cdn.net/system-uploads/scenario-data/c65188df-2df5-4763-81b0-913a0790ac67-DR_7.mp4,FALSE,"Breakfast के बाद आप क्या करते हैं, यह बताने के लिए कौन सा option सही है?
+",,,,a,Then I wash clothes,After I wash cloth,,,,,,
+6,translate,How would you say what you do after waking up? (Then I...),आप उठने के बाद क्या करते हैं? ,DR 8,https://sn-main.b-cdn.net/system-uploads/scenario-data/a2ad48ce-c902-4cf5-9447-bf5f2bfe6737-DR_8.mp4,FALSE,आप उठने के बाद क्या करते हैं? ,इसे English में बोलिए,Then I + action + thing!,,,,,,,,,,
+7,translate,How would you say what you do after lunch? (Then I...),आप lunch के बाद क्या करते हैं? ,DR 9,https://sn-main.b-cdn.net/system-uploads/scenario-data/06a93fae-251b-48b4-9702-395dfbcfd2c2-DR_9.mp4,FALSE,आप lunch के बाद क्या करते हैं? ,इसे English में बोलिए,Then I + action + thing!,,,,,,,,,,
+9,media,"When you want to say what happens later in your routine, you say ""After that I"" followed by the action and what you're doing it to. You say - ""After that I watch TV."" Follow this pattern: After that I + action + thing!","जब आप अपनी routine में बाद में होने वाली चीज़ बताना चाहते हैं, तो आप ""After that I"" के बाद action और object बोलते हैं। जैसे — ""After that I watch TV."" इस pattern को follow करें: After that I + action + thing!",DR 10,https://sn-main.b-cdn.net/system-uploads/scenario-data/1ccd7ea3-ae2f-45ca-b209-eaa35532ebf0-DR_10.mp4,FALSE,After that I + action + thing!,यह बोलना कि आप उसके बाद क्या करते हो,,,,,,,,,,,
+kitchen,mcq,"Which option is correct for saying what you do in the evening?
+A) After that I watch TV
+B) Next I watch TV","Evening में आप क्या करते हैं, यह बताने के लिए कौन सा option सही है?",DR 11,https://sn-main.b-cdn.net/system-uploads/scenario-data/2477deb8-4b42-4d3a-9d6b-36beaa587b52-DR_11.mp4,FALSE,"Evening में आप क्या करते हैं, यह बताने के लिए कौन सा option सही है?",,,,a,After that I watch TV,Next I watch TV,,,,,,
+kitchen,translate,How would you say what you do after work? (After that I...),आप काम के बाद क्या करते हैं? ,DR 12,https://sn-main.b-cdn.net/system-uploads/scenario-data/956aa30d-903b-4013-98a1-20c6f84971a0-DR_12.mp4,FALSE,आप काम के बाद क्या करते हैं? ,इसे English में बोलिए,Would you mind + action-ing + the thing?,,,,,,,,,,
+,translate,How would you say what you do before sleeping? (After that I...),आप सोने से पहले क्या करते हैं? ,DR 13,https://sn-main.b-cdn.net/system-uploads/scenario-data/3e2dd37e-4f03-4dd1-b54d-88c61f97891c-DR_13.mp4,,आप सोने से पहले क्या करते हैं? ,इसे English में बोलिए,Would you mind + action-ing + the thing?,,,,,,,,,,
+12,media,Great! Now you're going to talk about your daily routine with Priya. Use the patterns you just learned!,Great! अब आप Priya के साथ अपनी daily routine के बारे में बात करेंगे। अभी जो आपने सीखा है उसका use करें!,DR 14,https://sn-main.b-cdn.net/system-uploads/scenario-data/951bea5d-0bd6-4bab-b2c0-e5faccecbff7-DR_14.mp4,FALSE,,,,,,,,,,,,,
+,conversation,Hey! I'd love to know about your day. What time do you eat breakfast?,Hey! I'd love to know about your day. What time do you eat breakfast?,DR 26,https://sn-main.b-cdn.net/system-uploads/scenario-data/6e261d33-5ee8-44ab-b28e-828d44baf8c5-DR_26.mp4,,,Hey! मैं आपके दिन के बारे में जानना चाहूंगी। आप breakfast किस time करते हैं?,,,,,,,,,,,
+,conversation,Oh nice! I usually eat breakfast at 6 AM. What do you do after eating breakfast?,Oh nice! I usually eat breakfast at 6 AM. What do you do after eating breakfast?,DR 27,https://sn-main.b-cdn.net/system-uploads/scenario-data/be1a3a0f-4db8-499a-ad9e-d2eb721785ef-DR_27.mp4,,,अच्छा! मैं usually 6 AM पर breakfast करती हूँ। Breakfast के बाद आप क्या करते हैं?,,,,,,,,,,,
+,conversation,Interesting! I drink tea after breakfast. What do you do after that?,Interesting! What do you do after that?,DR 28,https://sn-main.b-cdn.net/system-uploads/scenario-data/10be3b16-f7bb-4c23-ad04-e2380a27f164-DR_28.mp4,,,Interesting! मैं breakfast के बाद tea पीती हूँ। उसके बाद आप क्या करते हैं?,,,,,,,,,,,
+,conversation,Cool routine! What time do you eat lunch?,Cool routine! What time do you eat lunch?,DR 29,https://sn-main.b-cdn.net/system-uploads/scenario-data/61c48f7a-94cb-4fbc-8f33-b57362e3ce7b-DR_29.mp4,,,Cool routine! आप lunch किस time करते हैं?,,,,,,,,,,,
+,conversation,That's a good time! I eat lunch at 12 PM. And what do you do after eating lunch?,That's a great time to eat lunch! And what do you do after eating lunch?,DR 30,https://sn-main.b-cdn.net/system-uploads/scenario-data/e391acad-1a57-495b-b31b-b104d5c8808d-DR_30.mp4,,,यह अच्छा time है! मैं 12 PM पर lunch करती हूँ। और lunch के बाद आप क्या करते हैं?,,,,,,,,,,,
+,conversation,That was great! You described your daily routine so well!,बहुत बढ़िया! आपने अपनी daily routine बहुत अच्छे से describe की!,DR 20,https://sn-main.b-cdn.net/system-uploads/scenario-data/1044502f-bf95-46d0-b40f-162f5a24ae65-DR_20.mp4,,,,,,,,,,,,,,
+,conversation-result,All your answers are correct!,आपके सभी answers सही हैं!,DR 21,https://sn-main.b-cdn.net/system-uploads/scenario-data/f1a8949f-de3f-48f7-971b-43a719859a29-DR_21.mp4,,,,,,,,,,,,,,
+,conversation-result,Let's review some of the mistakes you made,आइए आपकी कुछ mistakes को review करें।,DR 22,https://sn-main.b-cdn.net/system-uploads/scenario-data/435d1cb5-9342-400d-979d-85cfa11cadac-DR_22.mp4,,,,,,,,,,,,,,
+,media,"Great job! You just learnt how to talk about your daily routine in English. You can now describe your day, share your schedule with friends and colleagues, and have natural conversations about everyday life!","Great job! आपने English में अपनी daily routine के बारे में बात करना सीख लिया है। अब आप अपना दिन describe कर सकते हैं, अपना schedule friends और colleagues के साथ share कर सकते हैं, और daily conversations कर सकते हैं!",DR 23,https://sn-main.b-cdn.net/system-uploads/scenario-data/24e79c70-4d59-4162-a249-65c84b97245b-DR_23.mp4,,,,,,,,,,,,,,
+,,,चलो कुछ mistakes review करते हैं,DR 24,https://sn-main.b-cdn.net/system-uploads/scenario-data/90980ee8-b18f-417d-a866-7153b5f345d8-DR_24.mp4,,,,,,,,,,,,,,
+,,,आपके सारे answers सही हैं! Good job!,DR 25,https://sn-main.b-cdn.net/system-uploads/scenario-data/1fe3957f-abdf-41e3-a54c-c753d2d3feeb-DR_25.mp4,,,,,,,,,,,,,,
+,,,wrong nova,sadnova,"V1.1
+https://sn-main.b-cdn.net/system-uploads/scenario-data/975b5a85-f4fe-4b2c-9eb9-aa078d2c3042-OU3-wrong-1.1-thats-not-right.mp4 
+
+V1.2
+https://sn-main.b-cdn.net/system-uploads/scenario-data/065ee13a-15fa-4a21-951e-140e9a194236-OU3-wrong-1.2-better-luck.mp4 
+
+
+That's wrong
+https://sn-main.b-cdn.net/system-uploads/scenario-data/7a575e1c-e004-47bc-96ac-b6d62763bd20-OU3-wrong-1.3-thats-the-wrong-answer.mp4 
+",,,,,,,,,,,,,,
+,,,correct nova,Correct answer,"V1.1
+https://sn-main.b-cdn.net/system-uploads/scenario-data/93cb6414-4206-4b57-bccc-fbf5eec8465f-OU3-correct-1.1.mp4
+
+V1.2
+https://sn-main.b-cdn.net/system-uploads/scenario-data/925802d8-dcd7-4020-a296-cbb09f0c237b-OU3-correct-1.2.mp4 
+
+V1.3
+https://sn-main.b-cdn.net/system-uploads/scenario-data/b6a3d5fd-a6b1-4ba2-a582-21b20d7db238-OU3-correct-1.3.mp4 ",,,,,,,,,,,,,,
+,,,partially correct nova,partiallycorrect ,"That's almost
+https://sn-main.b-cdn.net/system-uploads/scenario-data/9e4c3f56-dd09-449d-b280-cbe8f603a515-OU3-partial-1.1.mp4
+
+
+
+Nice try
+https://sn-main.b-cdn.net/system-uploads/scenario-data/745bb8b5-5529-49bc-98a4-c18674652161-OU3-partial-1.2-nice-try.mp4
+
+
+Good effort
+https://sn-main.b-cdn.net/system-uploads/scenario-data/5964dc20-3432-4cf6-9aa5-b19fc8678460-OU3-partial-1.3-good-effort.mp4 ",,,,,,,,,,,,,,
+,,,waiting nova,waiting ,https://sn-main.b-cdn.net/system-uploads/scenario-data/5e0456e4-425e-4ed1-8e1d-a2413e270bef-OU3-waiting.mp4,,,,,,,,,,,,,,

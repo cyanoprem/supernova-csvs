@@ -1,0 +1,46 @@
+screen_number,screen_type,video_url_script,hindi_video_url_script,video_url,R2 link,auto_advance,overlay_main_text,overlay_sub_text,overlay_hint,overlay_cta_label,correct_answer,mcq_option_a,mcq_option_b,correct_option_id,show_result,success_video_url,failure_video_url,partial_video_url,waiting_video_url
+1,media,"Today, you'll learn how to say what you need in English.","आज, आप सीखेंगे कि English में अपनी जरूरतें कैसे बताएं।",NEED 6,https://sn-main.b-cdn.net/system-uploads/scenario-data/8445f4a1-1d51-4bef-af14-0ef7d0297efd-NEED_6.mp4,TRUE,,,,,,,,,,,,,
+,translate,"But first, can you say this in English? I need some water.","लेकिन पहले, क्या आप इसे English में बोल सकते हैं? मुझे थोड़ा पानी चाहिए।",NEED 7,https://sn-main.b-cdn.net/system-uploads/scenario-data/5bfde7ca-b6e1-40bc-9eb1-11404ace8293-NEED_7.mp4,,मुझे थोड़ा पानी चाहिए।,इसे English में बोलिए,,,,,,,,,,,
+,translate,"That sentence is 'I need some water' in English. You use 'I need some' before things you require like water, money, or help. Simple! Let's practice using this!","यह sentence English में 'I need some water' है। आप 'I need some' का use उन चीज़ों के पहले करते हैं जिनकी आपको ज़रूरत होती है जैसे water, money, या help। Simple! चलिए इसका इस्तेमाल करके practice करते हैं!",NEED 8,https://sn-main.b-cdn.net/system-uploads/scenario-data/8607cbca-61a9-40c8-ac94-8376573c31b5-NEED_8.mp4,,I need some.....,यह बोलने के लिए कि आप कुछ चाहते हैं,,,,,,,TRUE,,,,
+2,mcq,"Which sentence is correct to say you need coffee?
+A) I need few coffee
+B) I need some coffee","Coffee चाहिए, यह कहने के लिए कौन सा sentence सही है?",NEED 9,https://sn-main.b-cdn.net/system-uploads/scenario-data/c220556a-aeab-480d-b446-d7b1fea5a0fa-NEED_9.mp4,FALSE,Coffee की ज़रूरत बताने के लिए कौन सा sentence सही है?,,,,b,I need few coffee,I need some coffee,,,,,,
+3,translate,Let's keep going. Say this in English: I need some milk.,चलिए आगे बढ़ते हैं। इसे English में बोलिए: मुझे थोड़ा दूध चाहिए।,NEED 10,https://sn-main.b-cdn.net/system-uploads/scenario-data/4c6fa1ad-c517-466e-8922-894b6a431da7-NEED_10.mp4,FALSE,मुझे थोड़ा दूध चाहिए।,इसे English में बोलिए,I need some.....,,,,,a,TRUE,,,,
+4,translate,Say this in English: I need some time.,इसे English में बोलिए: मुझे थोड़ा time चाहिए।,NEED 11,https://sn-main.b-cdn.net/system-uploads/scenario-data/822fd741-c765-4eb7-97f4-6607b88269ab-NEED_11.mp4,FALSE,मुझे थोड़ा time चाहिए।,इसे English में बोलिए,I need some.....,,,,,,TRUE,,,,
+5,translate,I need some rice.,मुझे थोड़े चावल चाहिए।,NEED 12,https://sn-main.b-cdn.net/system-uploads/scenario-data/62926e50-9e88-4dff-b16e-696ca1232517-NEED_12.mp4,FALSE,मुझे थोड़े चावल चाहिए।,इसे English में बोलिए,I need some.....,,,,,,,,,,
+6,translate,I need some money.,मुझे थोड़े पैसे चाहिए।,NEED 13,https://sn-main.b-cdn.net/system-uploads/scenario-data/1c31a87d-9d2d-4dd5-98d1-a31c25d54268-NEED_13.mp4,FALSE,मुझे थोड़े पैसे चाहिए।,इसे English में बोलिए,I need some.....,,,,,,,,,,
+7,translate,Last question! I need some help.,आख़िरी सवाल! मुझे थोड़ी help चाहिए।,NEED 14,https://sn-main.b-cdn.net/system-uploads/scenario-data/2a071496-6538-43d7-8d67-8a5e210b2eef-NEED_14.mp4,FALSE,मुझे थोड़ी help चाहिए।,इसे English में बोलिए,I need some.....,,,,,,,,,,
+9,media,That was amazing! Now let's practice in real situations. You'll tell people what you need. Use 'I need some' to express what you require!,बहुत बढ़िया! अब real situations में practice करते हैं। आप लोगों को बताएंगे कि आपको क्या चाहिए। अपनी ज़रूरत बताने के लिए 'I need some' का use करें!,NEED 15,https://sn-main.b-cdn.net/system-uploads/scenario-data/53eefdac-442c-49e9-9ea9-73014bc8bd30-NEED_15.mp4,FALSE,,,,,,,,,,,,,
+kitchen,conversation,"[Dairy Shop] Hello! We have milk, cheese, and butter. What do you need?","[Dairy Shop] Hello! We have milk, cheese, and butter. What do you need?",NEED 1,https://sn-main.b-cdn.net/system-uploads/scenario-data/5487a566-4cd4-47e7-a8ba-891c19384c89-NEED_1.mp4,FALSE,,"Hello! हमारे पास milk, cheese, और butter हैं। आपको क्या चाहिए?",,,,,,,,,,,
+kitchen,conversation,"[Cafe] Good morning! We have coffee, tea, and juice. What do you need?","[Cafe] Good morning! We have coffee, tea, and juice. What do you need?",NEED 2,https://sn-main.b-cdn.net/system-uploads/scenario-data/5a723199-a794-4ecc-bb53-928852dcbdbb-NEED_2.mp4,FALSE,,"Good morning! हमारे पास coffee, tea, और juice हैं। आपको क्या चाहिए?",,,,,,,,,,,
+,conversation,"[Pharmacy] Welcome! We have medicine, bandages, and hand sanitizer. What do you need?","[Pharmacy] Welcome! We have medicine, bandages, and hand sanitizer. What do you need?",NEED 3,https://sn-main.b-cdn.net/system-uploads/scenario-data/33f54475-b4e3-4a6e-9908-0ae1f831a5d3-NEED_3.mp4,,,"Welcome! हमारे पास medicine, bandages, और hand sanitizer हैं। आपको क्या चाहिए?",,,,,,,,,,,
+12,conversation,"[Restaurant] Good evening! Can I get you something to drink? We have water, wine, and soda. What do you need?","[Restaurant] Good evening! Can I get you something to drink? We have water, wine, and soda. What do you need?",NEED 4,https://sn-main.b-cdn.net/system-uploads/scenario-data/529528fd-d352-4a25-9dbe-c626fdf73a3d-NEED_4.mp4,FALSE,,"Good evening! क्या आप कुछ पीना चाहेंगे? हमारे पास water, wine, और soda हैं। आपको क्या चाहिए?",,,,,,,,,,,
+,conversation,"[Bakery] Good afternoon! We have bread, cake, and cookies. What do you need?","[Bakery] Good afternoon! We have bread, cake, and cookies. What do you need?",NEED 5,https://sn-main.b-cdn.net/system-uploads/scenario-data/962ef424-2fbb-43fe-ab82-5d7eb1857f92-NEED_5.mp4,,,"Good afternoon! हमारे पास bread, cake, और cookies हैं। आपको क्या चाहिए?",,,,,,,,,,,
+,conversation-result,You did so well!,आपने बहुत अच्छा किया!,NEED 16,https://sn-main.b-cdn.net/system-uploads/scenario-data/6dfd418c-abd5-4a04-9b73-c6abdc8ed6bc-NEED_16.mp4,,,,,,,,,,,,,,
+,media,You now know how to say what you need using 'I need some' followed by the thing you require. Keep practicing and it'll feel natural in no time!,अब आप जानते हैं कि 'I need some' का use करके अपनी ज़रूरत कैसे बताएं और उसके बाद उस चीज़ का नाम बोलें जिसकी आपको ज़रूरत है। Practice करते रहें और यह जल्द ही natural लगने लगेगा!,NEED 17,https://sn-main.b-cdn.net/system-uploads/scenario-data/0892e5b8-ee50-4b75-a8e4-f91d9447d006-NEED_17.mp4,,,,,,,,,,,,,,
+,,,आपके सारे answers सही हैं! Good job!,NEED 18,https://sn-main.b-cdn.net/system-uploads/scenario-data/1851c796-3a89-4a68-9680-829ec4a524e0-NEED_18.mp4,,,,,,,,,,,,,,
+,,,चलो कुछ mistakes review करते हैं,NEED 19,https://sn-main.b-cdn.net/system-uploads/scenario-data/db9325df-0524-4993-9756-98da7274357d-NEED_19.mp4,,,,,,,,,,,,,,
+,,,wrong nova,sadnova,"V1.1
+https://sn-main.b-cdn.net/system-uploads/scenario-data/999a0986-52c9-47cb-a2f9-97bdc7f1bf71-OU4-wrong-1.1-thats-not-right.mp4 
+
+V1.2
+https://sn-main.b-cdn.net/system-uploads/scenario-data/11da9fd1-8cce-40d7-b9a5-b2190b9771e5-OU4-wrong-1.2-better-luck.mp4 
+
+
+That's wrong
+https://sn-main.b-cdn.net/system-uploads/scenario-data/08622c7f-19aa-4297-9573-8afec9fd3665-OU4-wrong-1.3-thats-the-wrong.mp4 
+",,,,,,,,,,,,,,
+,,,correct nova,Correct answer,"V1.1
+https://sn-main.b-cdn.net/system-uploads/scenario-data/86d975dc-3538-4d6f-90cc-a107523a82b6-OU4--correct-1.1-(1).mp4 
+
+V1.2
+https://sn-main.b-cdn.net/system-uploads/scenario-data/3447ccfe-b6b8-4c87-b571-d6678bb094f8-OU4--correct-1.2-(1).mp4 ",,,,,,,,,,,,,,
+,,,partially correct nova,partiallycorrect ,"V1.1
+https://sn-main.b-cdn.net/system-uploads/scenario-data/0a0768f2-b1fa-4ad0-b4ae-43eb98cac5d8-OU4-partial-1.1-thats-almost-correct.mp4 
+
+V1.2
+https://sn-main.b-cdn.net/system-uploads/scenario-data/f4f3db3e-7b3d-48d2-a45d-b4065e14193d-OU4-partial-1.2-nice-try.mp4 
+
+V1.3
+https://sn-main.b-cdn.net/system-uploads/scenario-data/58c51836-5f83-4653-b19c-7b4ef9499bd6-OU4-partial-1.3-good-effort.mp4 ",,,,,,,,,,,,,,
+,,,waiting nova,waiting ,https://sn-main.b-cdn.net/system-uploads/scenario-data/e31832af-66b2-4077-acf3-f3db2c44591f-OU4-waiting-1.1.mp4,,,,,,,,,,,,,,
